@@ -1,0 +1,35 @@
+{
+  "name": "tosback-cgus-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=12.17"
+  },
+  "scripts": {
+    "start": "node tosback-import.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambanum/TOSBack-CGUs-bridge.git"
+  },
+  "author": "",
+  "license": "EUPL-1.2",
+  "bugs": {
+    "url": "https://github.com/ambanum/TOSBack-CGUs-bridge/issues"
+  },
+  "homepage": "https://github.com/ambanum/TOSBack-CGUs-bridge#readme",
+  "dependencies": {
+    "ajv": "^6.12.3",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint": "^7.5.0",
+    "json-source-map": "^0.6.1",
+    "pg": "^8.3.0",
+    "simple-git": "^2.17.0",
+    "xml2json": "^0.12.0",
+    "xpath-to-css": "^1.0.5"
+  }
+}
