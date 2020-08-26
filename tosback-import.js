@@ -10,8 +10,8 @@ import { createRequire } from 'module';
 import pg from 'pg';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import pQueue from 'p-queue';
-import { assertValid, validateDocument } from './validation/validator.js';
-import serviceSchema from './validation/service.schema.js';
+import { assertValid, validateDocument } from './validator.js';
+import serviceSchema from './service.schema.js';
 
 const PQueue = pQueue.default;
 console.log(PQueue);
@@ -26,11 +26,11 @@ console.log(PQueue);
 const { Client } = pg;
 
 const require = createRequire(import.meta.url);
-const TYPES = require('../src/types.json');
+const TYPES = require('./types.json');
 
 const fs = fsApi.promises;
 
-const SERVICES_PATH = './services/';
+const SERVICES_PATH = '../CGUs/services/';
 const LOCAL_TOSBACK2_REPO = '/Volumes/Workspace/tosback2';
 const TOSBACK2_WEB_ROOT = 'https://github.com/tosdr/tosback2';
 const TOSBACK2_RULES_FOLDER_NAME = 'rules';
@@ -38,7 +38,7 @@ const TOSBACK2_CRAWLS_FOLDER_NAME_1 = 'crawl_reviewed';
 const TOSBACK2_CRAWLS_FOLDER_NAME_2 = 'crawl';
 const POSTGRES_URL = 'postgres://localhost/phoenix_development';
 const THREADS = 5;
-const SNAPSHOTS_PATH = 'data/snapshots/';
+const SNAPSHOTS_PATH = '../CGUs/data/snapshots/';
 
 const services = {};
 const urlAlreadyCovered = {};
@@ -47,6 +47,9 @@ const HTML_PREFIX = '<!DOCTYPE html><html><head></head><body>\n';
 const HTML_SUFFIX = '\n</body></html>';
 
 const typesMap = {
+  'Acceptable Use Policy for Xfinity Internet': 'Acceptable Use Policy',
+  'Agreement': 'Terms of Service',
+  'Amazon Privacy Notice': 'Privacy Policy',
   'API Terms of Use': 'Developer Terms',
   'APIs Terms of Use': 'Developer Terms',
   'Acceptable Use Policy': 'Terms of Service',
@@ -59,12 +62,14 @@ const typesMap = {
   'Conditions of Use': 'Terms of Service',
   'Consumer Terms of Sale': 'Terms of Service',
   'Cookie Policy': 'Cookies Policy',
+  'Cookies and Privacy Policy - About Privacy': 'Privacy Policy',
   'Copyright and Your use of the British Library Website': 'Terms of Service',
   'Customer Privacy Policy': 'Privacy Policy',
   DMCA: 'Copyright Policy',
   'Data Policy': 'Privacy Policy',
   'Data Use Policy': 'Privacy Policy',
   EULA: 'Terms of Service',
+  'Software License Agreement': 'Terms of Service',
   'Etiquette Policy': 'Community Guidelines',
   'Flickr Privacy Policy': 'Privacy Policy',
   'GOOGLE PRIVACY POLICY': 'Privacy Policy',
@@ -72,7 +77,10 @@ const typesMap = {
   'Host Guarantee Terms and Conditions': 'Seller Warranty',
   'Intellectual Property': 'Copyright Claims Policy',
   'Intellectual Property Policy': 'Copyright Claims Policy',
+  'Internet Terms of Service': 'Terms of Service',
+  'Legal Info': 'Legal Information',
   'Legal Information (Intuit)': 'Legal Information',
+  'Legal Notices': 'Legal Information',
   'LinkedIn in Microsoft Applications with Your Personal Account': 'Single Sign-On Policy',
   'Microsoft Services Agreement': 'Terms of Service',
   'Microsoft Terms of Use': 'Terms of Service',
@@ -80,6 +88,7 @@ const typesMap = {
   'PRIVACY POLICY': 'Privacy Policy',
   Privacy: 'Privacy Policy',
   'Privacy Notice': 'Privacy Policy',
+  'Privacy Statement': 'Privacy Policy',
   'Privacy Policy Agreement': 'Privacy Policy',
   'Privacy Policy and Terms of Use': 'Terms of Service',
   'Privacy and Cookies Policy': 'Privacy Policy',
@@ -93,6 +102,8 @@ const typesMap = {
   'Term of Service': 'Terms of Service',
   Terms: 'Terms of Service',
   'Terms & Conditions': 'Terms of Service',
+  'Terms and Conditions': 'Terms of Service',
+  'Terms of Use': 'Terms of Service',
   'Terms Of Use': 'Terms of Service',
   'Terms and Conditions and Privacy Policy': 'Terms of Service',
   'Terms and Conditions of Use': 'Terms of Service',
@@ -106,6 +117,7 @@ const typesMap = {
   'Terms of Use and Privacy Policy': 'Terms of Service',
   '"Third Party Advertising': ' Third Party Cookies',
   'Universal Terms Of Service': 'Terms of Service',
+  'Use Agreement': 'Terms of Service',
   'Visitor Agreement': 'Terms of Service',
   'Vunerability Disclosure Program': 'Vulnerability Disclosure Policy',
   'Web Notices and Terms of Use': 'Terms of Service',
@@ -114,13 +126,83 @@ const typesMap = {
   'YOUR PRIVACY & SECURITY': 'Privacy Policy',
   'end-user-license-agreement': 'Terms of Service'
 };
+const subServices = {
+  'Alexa': 'Alexa',
+  'Amazon App Suite': 'AppSuite',
+  'Amazon Appstore for Android': 'AmazonAppStoreAndroid',
+  'Amazon Appstore': 'AppStore',
+  // 'Amazon': '',
+  'Interest-Based Ads': 'Ads',
+  'Apple Support Communities': 'SupportCommunities',
+  'Game Center': 'GameCenter',
+  'iChat Account': 'IChat',
+  'iCloud': 'ICloud',
+  'iTunes': 'ITunes',
+  // 'Internet': 'Internet',
+  'Wireless': 'Wireless',
+  'Group Video Calling': 'GroupVideoCalling',
+  '(Mobile)': 'Mobile',
+  '(Premium)': 'Premium',
+  '(Unlimited)': 'Unlimited',
+  'Amazon Coins': 'Coins',
+  'Amazon Device': 'Device',
+  'Amazon Drive and Prime Photos': 'DriveAndPrimePhotos',
+  'Amazon FreeTime Unlimited Terms & Conditions and Kindle FreeTime Unlimited': 'FreeTimeUnlimited',
+  'Amazon GameCircle': 'GameCircle',
+  'Amazon Kindle Store': 'KindleStore',
+  'Amazon Maps': 'Maps',
+  'Amazon Music': 'Music',
+  'Amazon Prime': 'Prime',
+  'Amazon Silk': 'Silk',
+  'Amazon.com': '',
+  'Kindle Cloud Reader': 'KindleCloudReader',
+  'Kindle E-Reader and Fire Tablet': 'KindleTable',
+  'Kindle Personal Documents Distributor': 'KindleDistributor',
+  'Kindle Special Offer Text Notifications': 'KindleNotifications',
+  'Kindle Store': 'KindleStore',
+  'Kindle Unlimited': 'KindleUnlimited',
+  'Kindle for Android': 'KindleAndroid',
+  'Kindle for Mac': 'KindleMac',
+  'Kindle for PC': 'KindlePC',
+  'Kindle for Windows 8': 'KindleWindows',
+  'Limited-Time Special Offers Promotional Discount': 'Offers',
+  'Residential Subscriber': 'ResidentialSubscription',
+  'Monthly Payments': 'MonthlyPayments',
+  'Web Services': 'WebServices',
+  'for Xfinity Internet': ''
+};
 
-function translateSnapshotPath(serviceName, fileName) {
-  const map = {
-    'google.com/Terms of Service.txt': 'Google/Terms of Service.html',
-    'google.com/Privacy Policy.txt': 'Google/Privacy Policy.html'
-  };
-  return map[`${serviceName}/${fileName}`];
+function domainNameToService(domainName) {
+  return toPascalCase(domainName.split('.')[0]);
+}
+
+const typeNotFound = {};
+function translateSnapshotPath(domainName, fileName) {
+  let type;
+  let subServiceFound = '';
+  let typeString = fileName.replace(/.txt$/, '');
+  Object.keys(subServices).forEach(subService => {
+    if (typeString.startsWith(subService)) {
+      console.log('Starts with!', [subService, typeString]);
+      subServiceFound = subServices[subService];
+      typeString = typeString.substring(subService.length + 1);
+      console.log('substringing start', [ subServiceFound, typeString ]);
+    } else if (typeString.endsWith(subService)) {
+      console.log('Starts with!');
+      subServiceFound = subServices[subService];
+      typeString = typeString.substring(0, typeString.length - subService.length - 1);
+      console.log('substringing end', [ subService, typeString ]);
+    }
+  })
+  try {
+    type = toType(typeString);
+  } catch (e) {
+    console.log(e.message);
+    type = 'unknown';
+    typeNotFound[`[${domainName}] ${fileName.replace(/.txt$/, '')}`] = true;
+    // throw e;
+  }
+  return `${domainNameToService(domainName)}${subServiceFound}/${type}.html`;
 }
 
 function getLocalRulesFolder() {
@@ -217,7 +299,7 @@ async function processTosback2(importedFrom, imported) {
   if (!Array.isArray(imported.sitename.docname)) {
     imported.sitename.docname = [ imported.sitename.docname ];
   }
-  const serviceName = toPascalCase(imported.sitename.name.split('.')[0]);
+  const serviceName = domainNameToService(imported.sitename.name);
   const promises = imported.sitename.docname.map(async docnameObj => processWhenReady(serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom).catch(e => {
     console.log('Could not process', serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom, e.message);
   }));
@@ -277,6 +359,16 @@ const tosbackGitSemaphore = new PQueue({ concurrency: 1 });
 const snapshotGitSemaphore = new PQueue({ concurrency: 1 });
 
 async function importCrawl(fileName, foldersToTry, domainName) {
+  const destPath = path.join(SNAPSHOTS_PATH, translateSnapshotPath(domainName, fileName));
+  let exists;
+  try {
+    await fs.stat(destPath);
+    exists = true;
+  } catch (e) {
+    exists = false;
+  }
+  console.log('importCrawl', domainName, fileName, translateSnapshotPath(domainName, fileName), );
+  return;
   const tosbackGit = getTosbackGit();
   const snapshotGit = getSnapshotGit();
 
@@ -320,14 +412,13 @@ async function importCrawl(fileName, foldersToTry, domainName) {
         }
         html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
         await snapshotGitSemaphore.add(async () => {
-          const destPath = path.join(SNAPSHOTS_PATH, translateSnapshotPath(domainName, fileName));
           console.log('saving', destPath);
           const containingDir = path.dirname(destPath);
           await fs.mkdir(containingDir, { recursive: true });
           await fs.writeFile(destPath, html);
           console.log('committing', destPath, `From tosback2 ${commit.hash}`);
           await snapshotGit.add('.');
-          await snapshotGit.commit(`${translateSnapshotPath(domainName, fileName)} from tosback2@${commit.hash.substring(0, 7)}\n\nImported from ${sourceUrl}`, [ '-a', `--date="${commit.date}"` ]);
+          await snapshotGit.commit(`${translateSnapshotPath(domainName, fileName)} (${new Date(commit.date).toDateString()})\n\nImported from ${sourceUrl}`, [ '-a', `--date="${commit.date}"` ]);
         });
       });
       await Promise.all(commitPromises);
@@ -402,7 +493,8 @@ async function run(includeXml, includePsql, includeCrawls, only) {
   if (includeCrawls) {
     await importCrawls(getLocalCrawlsFolders(), only);
   }
+  console.log(Object.keys(typeNotFound));
 }
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
-run(false, false, true, 'google.com');
+run(false, false, true);
