@@ -359,24 +359,23 @@ const tosbackGitSemaphore = new PQueue({ concurrency: 1 });
 const snapshotGitSemaphore = new PQueue({ concurrency: 1 });
 
 async function importCrawl(fileName, foldersToTry, domainName) {
-  const destPath = path.join(SNAPSHOTS_PATH, translateSnapshotPath(domainName, fileName));
-  let exists;
-  try {
-    await fs.stat(destPath);
-    exists = true;
-  } catch (e) {
-    exists = false;
-  }
-  console.log('importCrawl', domainName, fileName, translateSnapshotPath(domainName, fileName), );
-  return;
-  const tosbackGit = getTosbackGit();
-  const snapshotGit = getSnapshotGit();
-
-  const filePath1 = path.join(foldersToTry[0], domainName, fileName);
-  const filePath2 = path.join(foldersToTry[1], domainName, fileName);
-  console.log('filePath', filePath1);
   let thisFileCommits;
   await tosbackGitSemaphore.add(async () => {
+    const destPath = path.join(SNAPSHOTS_PATH, translateSnapshotPath(domainName, fileName));
+    let exists;
+    try {
+      await fs.stat(destPath);
+      exists = true;
+    } catch (e) {
+      exists = false;
+    }
+    console.log('importCrawl', domainName, fileName, translateSnapshotPath(domainName, fileName), );
+    const tosbackGit = getTosbackGit();
+    const snapshotGit = getSnapshotGit();
+
+    const filePath1 = path.join(foldersToTry[0], domainName, fileName);
+    const filePath2 = path.join(foldersToTry[1], domainName, fileName);
+    console.log('filePath', filePath1);
     console.log('Tosback2 git checkout master');
     await tosbackGit.checkout('master');
     console.log('Tosback2 git pull');
@@ -385,10 +384,12 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     // https://github.com/steveukx/git-js/blob/80741ac/src/git.js#L891
     const gitLog = await tosbackGit.log({ file: filePath1 });
     thisFileCommits = gitLog.all.reverse();
-    console.log(fileName, thisFileCommits);
+    console.log('inbetween', domainName, fileName);
+    const commitsQueue = new PQueue({ concurrency: 1 });
     const commitPromises = thisFileCommits.map(async commit => {
-      let html;
-      await tosbackGitSemaphore.add(async () => {
+      commitsQueue.add(async() => {
+        console.log('handling commit', fileName, commit);
+        let html;
         console.log('tosback git checkout', commit.hash);
         await tosbackGit.checkout(commit.hash);
         console.log('Reading file', path.join(LOCAL_TOSBACK2_REPO, filePath1), commit.hash);
@@ -421,10 +422,9 @@ async function importCrawl(fileName, foldersToTry, domainName) {
           await snapshotGit.commit(`${translateSnapshotPath(domainName, fileName)} (${new Date(commit.date).toDateString()})\n\nImported from ${sourceUrl}`, [ '-a', `--date="${commit.date}"` ]);
         });
       });
-      await Promise.all(commitPromises);
-      console.log('Setting Tosback2 repo back to master');
-      await tosbackGit.checkout('master');
     });
+    await Promise.all(commitPromises);
+    console.log('importCrawl end', domainName, fileName);
   });
 }
 
@@ -493,6 +493,10 @@ async function run(includeXml, includePsql, includeCrawls, only) {
   if (includeCrawls) {
     await importCrawls(getLocalCrawlsFolders(), only);
   }
+  await tosbackGitSemaphore.add(async () => {
+    console.log('Setting Tosback2 repo back to master');
+    await tosbackGit.checkout('master');
+  });
   console.log(Object.keys(typeNotFound));
 }
 
