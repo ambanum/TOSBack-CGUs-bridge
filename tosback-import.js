@@ -355,12 +355,12 @@ async function parseAllPg(connectionString) {
 }
 
 const couldNotRead = {};
-const tosbackGitSemaphore = new PQueue({ concurrency: 1 });
-const snapshotGitSemaphore = new PQueue({ concurrency: 1 });
+const fileSemaphore = new PQueue({ concurrency: 1 });
+const commitSemaphore = new PQueue({ concurrency: 1 });
 
 async function importCrawl(fileName, foldersToTry, domainName) {
   let thisFileCommits;
-  await tosbackGitSemaphore.add(async () => {
+  await fileSemaphore.add(async () => {
     const destPath = path.join(SNAPSHOTS_PATH, translateSnapshotPath(domainName, fileName));
     let exists;
     try {
@@ -386,43 +386,41 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     thisFileCommits = gitLog.all.reverse();
     console.log('inbetween', domainName, fileName);
     const commitsQueue = new PQueue({ concurrency: 1 });
-    const commitPromises = thisFileCommits.map(async commit => {
-      commitsQueue.add(async() => {
-        console.log('handling commit', fileName, commit);
-        let html;
-        console.log('tosback git checkout', commit.hash);
-        await tosbackGit.checkout(commit.hash);
-        console.log('Reading file', path.join(LOCAL_TOSBACK2_REPO, filePath1), commit.hash);
-        let fileTxtAtCommit;
-        let sourceUrl;
+    const commitPromises = thisFileCommits.map(commit => commitsQueue.add(async() => {
+      console.log('handling commit', fileName, commit);
+      let html;
+      console.log('tosback git checkout', commit.hash);
+      await tosbackGit.checkout(commit.hash);
+      console.log('Reading file', path.join(LOCAL_TOSBACK2_REPO, filePath1), commit.hash);
+      let fileTxtAtCommit;
+      let sourceUrl;
+      try {
+        fileTxtAtCommit = await fs.readFile(path.join(LOCAL_TOSBACK2_REPO, filePath1));
+        sourceUrl = `https://github.com/tosdr/tosback2/blob/${commit.hash}/${filePath1}`;
+      } catch (e) {
+        console.log('Retrying to load file at', filePath2, commit.hash);
         try {
-          fileTxtAtCommit = await fs.readFile(path.join(LOCAL_TOSBACK2_REPO, filePath1));
-          sourceUrl = `https://github.com/tosdr/tosback2/blob/${commit.hash}/${filePath1}`;
+          fileTxtAtCommit = await fs.readFile(path.join(LOCAL_TOSBACK2_REPO, filePath2));
+          sourceUrl = `https://github.com/tosdr/tosback2/blob/${commit.hash}/${filePath2}`;
         } catch (e) {
-          console.log('Retrying to load file at', filePath2, commit.hash);
-          try {
-            fileTxtAtCommit = await fs.readFile(path.join(LOCAL_TOSBACK2_REPO, filePath2));
-            sourceUrl = `https://github.com/tosdr/tosback2/blob/${commit.hash}/${filePath2}`;
-          } catch (e) {
-            if (!couldNotRead[commit.hash]) {
-              couldNotRead[commit.hash] = [];
-            }
-            couldNotRead[commit.hash].push(filePath1);
-            console.log('Could not load, skipping', couldNotRead);
+          if (!couldNotRead[commit.hash]) {
+            couldNotRead[commit.hash] = [];
           }
+          couldNotRead[commit.hash].push(filePath1);
+          console.log('Could not load, skipping', couldNotRead);
         }
-        html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
-        await snapshotGitSemaphore.add(async () => {
-          console.log('saving', destPath);
-          const containingDir = path.dirname(destPath);
-          await fs.mkdir(containingDir, { recursive: true });
-          await fs.writeFile(destPath, html);
-          console.log('committing', destPath, `From tosback2 ${commit.hash}`);
-          await snapshotGit.add('.');
-          await snapshotGit.commit(`${translateSnapshotPath(domainName, fileName)} (${new Date(commit.date).toDateString()})\n\nImported from ${sourceUrl}`, [ '-a', `--date="${commit.date}"` ]);
-        });
+      }
+      html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
+      await commitSemaphore.add(async () => {
+        console.log('saving', destPath);
+        const containingDir = path.dirname(destPath);
+        await fs.mkdir(containingDir, { recursive: true });
+        await fs.writeFile(destPath, html);
+        console.log('committing', destPath, `From tosback2 ${commit.hash}`);
+        await snapshotGit.add('.');
+        await snapshotGit.commit(`${translateSnapshotPath(domainName, fileName)} (${new Date(commit.date).toDateString()})\n\nImported from ${sourceUrl}`, [ '-a', `--date="${commit.date}"` ]);
       });
-    });
+    }));
     await Promise.all(commitPromises);
     console.log('importCrawl end', domainName, fileName);
   });
@@ -493,7 +491,7 @@ async function run(includeXml, includePsql, includeCrawls, only) {
   if (includeCrawls) {
     await importCrawls(getLocalCrawlsFolders(), only);
   }
-  await tosbackGitSemaphore.add(async () => {
+  await fileSemaphore.add(async () => {
     console.log('Setting Tosback2 repo back to master');
     await tosbackGit.checkout('master');
   });
