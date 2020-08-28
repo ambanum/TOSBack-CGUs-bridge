@@ -564,4 +564,4 @@ async function run(includeXml, includePsql, includeCrawls, only) {
 }
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
-run(false, false, true, 'amazon.com');
+run(false, false, true);
