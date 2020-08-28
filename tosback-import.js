@@ -12,7 +12,7 @@ import pg from 'pg';
 import pQueue from 'p-queue';
 import { assertValid, validateDocument } from './validator.js';
 import serviceSchema from './service.schema.js';
-import { convertRelativeURLsToAbsolute } from '../CGUs/src/filter/index.js';
+import filter from '../CGUs/src/filter/index.js';
 
 const PQueue = pQueue.default;
 console.log(PQueue);
@@ -40,6 +40,7 @@ const TOSBACK2_CRAWLS_FOLDER_NAME_2 = 'crawl';
 const POSTGRES_URL = 'postgres://localhost/phoenix_development';
 const THREADS = 5;
 const SNAPSHOTS_PATH = '../CGUs/data/snapshots/';
+const VERSIONS_PATH = '../CGUs/data/versions/';
 
 const services = {};
 const urlAlreadyCovered = {};
@@ -214,6 +215,11 @@ function translateSnapshotPath(domainName, fileName) {
   return `${serviceName}/${type}.html`;
 }
 
+function translateVersionPath(domainName, fileName) {
+  const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
+  return `${serviceName}/${type}.md`;
+}
+
 function getLocalRulesFolder() {
   return path.join(LOCAL_TOSBACK2_REPO, TOSBACK2_RULES_FOLDER_NAME);
 }
@@ -329,6 +335,13 @@ function getSnapshotGit() {
     maxConcurrentProcesses: 6,
   });
 }
+function getVersionGit() {
+  return simpleGit({
+    baseDir: VERSIONS_PATH,
+    binary: 'git',
+    maxConcurrentProcesses: 6,
+  });
+}
 
 async function parseAllGitXml(folder, only) {
   const git = getTosbackGit();
@@ -371,7 +384,7 @@ function createRule(serviceName, type, docnameObj, importedFrom) {
   return processWhenReady(serviceName, type, docnameObj.url.name, docnameObj.url.xpath, importedFrom);
 }
 
-async function importRule(domainName, fileName) {
+async function importRule(domainName, fileName, masterHash) {
   let imported;
   try {
     imported = JSON.parse(await parseFile(path.join(getLocalRulesFolder(), `${domainName}.xml`)));
@@ -399,10 +412,11 @@ async function importRule(domainName, fileName) {
 async function importCrawl(fileName, foldersToTry, domainName) {
   let thisFileCommits;
   await fileSemaphore.add(async () => {
-    const destPath = path.join(SNAPSHOTS_PATH, translateSnapshotPath(domainName, fileName));
+    const snapshotDestPath = path.join(SNAPSHOTS_PATH, translateSnapshotPath(domainName, fileName));
+    const versionDestPath = path.join(VERSIONS_PATH, translateVersionPath(domainName, fileName));
     let exists;
     try {
-      await fs.stat(destPath);
+      await fs.stat(snapshotDestPath);
       exists = true;
     } catch (e) {
       exists = false;
@@ -410,6 +424,7 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     console.log('importCrawl', domainName, fileName, translateSnapshotPath(domainName, fileName), );
     const tosbackGit = getTosbackGit();
     const snapshotGit = getSnapshotGit();
+    const versionGit = getVersionGit();
 
     const filePath1 = path.join(foldersToTry[0], domainName, fileName);
     const filePath2 = path.join(foldersToTry[1], domainName, fileName);
@@ -420,7 +435,7 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     await tosbackGit.pull();
     const masterGitLog = await tosbackGit.log();
     const masterHash = masterGitLog.latest.hash;
-    await importRule(domainName, fileName);
+    await importRule(domainName, fileName, masterHash);
 
     // This will set the --follow flag, see:
     // https://github.com/steveukx/git-js/blob/80741ac/src/git.js#L891
@@ -453,13 +468,23 @@ async function importCrawl(fileName, foldersToTry, domainName) {
         }
       }
       html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
-      console.log('saving', destPath);
-      const containingDir = path.dirname(destPath);
-      await fs.mkdir(containingDir, { recursive: true });
-      await fs.writeFile(destPath, html);
-      console.log('committing', destPath, `From tosback2 ${commit.hash}`);
+      console.log('saving snapshot', snapshotDestPath);
+      const containingDirSnapshot = path.dirname(snapshotDestPath);
+      await fs.mkdir(containingDirSnapshot, { recursive: true });
+      await fs.writeFile(snapshotDestPath, html);
+      console.log('committing', snapshotDestPath, `From tosback2 ${commit.hash}`);
       await snapshotGit.add('.');
-      await snapshotGit.commit(`${translateSnapshotPath(domainName, fileName)} (${new Date(commit.date).toDateString()})\n\nImported from ${encodeURI(sourceUrl)}`, [ '-a', `--date="${commit.date}"` ]);
+      await snapshotGit.commit(`${translateSnapshotPath(domainName, fileName)} (snapshot ${new Date(commit.date).toDateString()})\n\nImported from ${encodeURI(sourceUrl)}`, [ '-a', `--date="${commit.date}"` ]);
+      const filteredContent = await filter(html, { select: 'body' }, []).catch(() => {
+        throw new Error(`Could not filter ${snapshotDestPath}`);
+      });
+      console.log('saving version', versionDestPath);
+      const containingDirVersion = path.dirname(versionDestPath);
+      await fs.mkdir(containingDirVersion, { recursive: true });
+      await fs.writeFile(versionDestPath, filteredContent);
+      console.log('committing', versionDestPath, `From tosback2 ${commit.hash}`);
+      await versionGit.add('.');
+      await versionGit.commit(`${translateSnapshotPath(domainName, fileName)} (version ${new Date(commit.date).toDateString()})\n\nImported from ${encodeURI(sourceUrl)}`, [ '-a', `--date="${commit.date}"` ]);
     }));
     await Promise.all(commitPromises);
     console.log('importCrawl end', domainName, fileName);
@@ -488,8 +513,8 @@ async function trySave(i) {
     try {
       assertValid(serviceSchema, services[i]);
       const fileName = path.join(SERVICES_PATH, i);
-      const containingDir = path.dirname(fileName);
-      await fs.mkdir(containingDir, { recursive: true });
+      const containingDirRule = path.dirname(fileName);
+      await fs.mkdir(containingDirRule, { recursive: true });
       await fs.writeFile(fileName, `${JSON.stringify(services[i], null, 2)}\n`);
       // await new Promise(resolve => setTimeout(resolve, 100));
       console.log('Saved', path.join(SERVICES_PATH, i));
