@@ -12,6 +12,7 @@ import pg from 'pg';
 import pQueue from 'p-queue';
 import { assertValid, validateDocument } from './validator.js';
 import serviceSchema from './service.schema.js';
+import { convertRelativeURLsToAbsolute } from '../CGUs/src/filter/index.js';
 
 const PQueue = pQueue.default;
 console.log(PQueue);
@@ -177,7 +178,7 @@ function domainNameToService(domainName) {
 }
 
 const typeNotFound = {};
-function translateSnapshotPath(domainName, fileName) {
+function getSnapshotPathComponents(domainName, fileName) {
   let type;
   let subServiceFound = '';
   let typeString = fileName.replace(/.txt$/, '');
@@ -202,7 +203,15 @@ function translateSnapshotPath(domainName, fileName) {
     typeNotFound[`[${domainName}] ${fileName.replace(/.txt$/, '')}`] = true;
     // throw e;
   }
-  return `${domainNameToService(domainName)}${subServiceFound}/${type}.html`;
+  return {
+    serviceName: `${domainNameToService(domainName)}${subServiceFound}`,
+    type
+  }
+}
+
+function translateSnapshotPath(domainName, fileName) {
+  const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
+  return `${serviceName}/${type}.html`;
 }
 
 function getLocalRulesFolder() {
@@ -358,6 +367,35 @@ const couldNotRead = {};
 const fileSemaphore = new PQueue({ concurrency: 1 });
 const commitSemaphore = new PQueue({ concurrency: 1 });
 
+function createRule(serviceName, type, docnameObj, importedFrom) {
+  return processWhenReady(serviceName, type, docnameObj.url.name, docnameObj.url.xpath, importedFrom);
+}
+
+async function importRule(domainName, fileName) {
+  let imported;
+  try {
+    imported = JSON.parse(await parseFile(path.join(getLocalRulesFolder(), `${domainName}.xml`)));
+  } catch (e) {
+    console.error('Error parsing xml', filename, e.message);
+    throw e;
+  }
+  if (!Array.isArray(imported.sitename.docname)) {
+    imported.sitename.docname = [ imported.sitename.docname ];
+  }
+  // const serviceName = domainNameToService(imported.sitename.name);
+  const docName = fileName.replace(/.txt$/g, '');
+  const promises = imported.sitename.docname.map(async docnameObj => {
+    console.log('looking for', docName, docnameObj);
+    if (docnameObj.name === docName) {
+      console.log('yes!');
+      const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
+      await createRule(serviceName, type, docnameObj, encodeURI(`https://github.com/tosdr/tosback2/blob/${masterHash}/rules/${domainName}.xml`));
+    }
+  });
+  // throw new Error('debug!');
+  // FIXME: only one of these promises actually does something
+  return Promise.all(promises);
+}
 async function importCrawl(fileName, foldersToTry, domainName) {
   let thisFileCommits;
   await fileSemaphore.add(async () => {
@@ -380,6 +418,10 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     await tosbackGit.checkout('master');
     console.log('Tosback2 git pull');
     await tosbackGit.pull();
+    const masterGitLog = await tosbackGit.log();
+    const masterHash = masterGitLog.latest.hash;
+    await importRule(domainName, fileName);
+
     // This will set the --follow flag, see:
     // https://github.com/steveukx/git-js/blob/80741ac/src/git.js#L891
     const gitLog = await tosbackGit.log({ file: filePath1 });
@@ -411,15 +453,13 @@ async function importCrawl(fileName, foldersToTry, domainName) {
         }
       }
       html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
-      await commitSemaphore.add(async () => {
-        console.log('saving', destPath);
-        const containingDir = path.dirname(destPath);
-        await fs.mkdir(containingDir, { recursive: true });
-        await fs.writeFile(destPath, html);
-        console.log('committing', destPath, `From tosback2 ${commit.hash}`);
-        await snapshotGit.add('.');
-        await snapshotGit.commit(`${translateSnapshotPath(domainName, fileName)} (${new Date(commit.date).toDateString()})\n\nImported from ${sourceUrl}`, [ '-a', `--date="${commit.date}"` ]);
-      });
+      console.log('saving', destPath);
+      const containingDir = path.dirname(destPath);
+      await fs.mkdir(containingDir, { recursive: true });
+      await fs.writeFile(destPath, html);
+      console.log('committing', destPath, `From tosback2 ${commit.hash}`);
+      await snapshotGit.add('.');
+      await snapshotGit.commit(`${translateSnapshotPath(domainName, fileName)} (${new Date(commit.date).toDateString()})\n\nImported from ${encodeURI(sourceUrl)}`, [ '-a', `--date="${commit.date}"` ]);
     }));
     await Promise.all(commitPromises);
     console.log('importCrawl end', domainName, fileName);
@@ -499,4 +539,4 @@ async function run(includeXml, includePsql, includeCrawls, only) {
 }
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
-run(false, false, true);
+run(false, false, true, 'amazon.com');
