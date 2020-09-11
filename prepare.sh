@@ -14,10 +14,12 @@ git clone https://github.com/TosbackCgusBridge-Bot/CGUs-versions
 git clone https://github.com/TosbackCgusBridge-Bot/CGUs
 cd TOSBack-CGUs-bridge
 npm install
+cd ../CGUs
+npm install
 cd ..
-git config user.name "TOSBack CGUs bridge"
-git config user.email "tosbac.cgus.bridge@unhosted.org"
-ssh-keygen -b 2048 -t rsa -q -N "" -C "tosbac.cgus.bridge@unhosted.org" -f ~/.ssh/id_rsa
+git config --global user.name "TOSBack CGUs bridge"
+git config --global user.email "tosback.cgus.bridge@unhosted.org"
+ssh-keygen -b 2048 -t rsa -q -N "" -C "tosback.cgus.bridge@unhosted.org" -f ~/.ssh/id_rsa
 echo =====================
 echo
 echo Please add the following ssh key to https://github.com/settings/ssh/new:
