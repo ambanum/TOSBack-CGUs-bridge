@@ -3,8 +3,8 @@ import Ajv from 'ajv';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import jsonSourceMap from 'json-source-map';
 
-import fetch from '../CGUs/src/lib/fetcher/index.js';
-import filter from '../CGUs/src/lib/filter/index.js';
+import fetch from '../CGUs/src/app/fetcher/index.js';
+import filter from '../CGUs/src/app/filter/index.js';
 
 const MIN_DOC_LENGTH = 100;
 const TIMEOUT = 10000;
