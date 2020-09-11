@@ -435,7 +435,11 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     await tosbackGit.pull();
     const masterGitLog = await tosbackGit.log();
     const masterHash = masterGitLog.latest.hash;
-    await importRule(domainName, fileName, masterHash);
+    try {
+      await importRule(domainName, fileName, masterHash);
+    } catch (e) {
+      console.error('Imported snapshots but could not import rule', domainName, fileName);
+    }
 
     // This will set the --follow flag, see:
     // https://github.com/steveukx/git-js/blob/80741ac/src/git.js#L891
