@@ -25,6 +25,12 @@ git checkout $BRANCH1
 cd ../TOSBack-CGUs-bridge
 node --unhandled-rejections=strict tosback-import.js
 cd ../CGUs-snapshots
+git push -u origin $BRANCH1
+cd ../CGUs-versions
+git push -u origin $BRANCH1
+cd ../CGUs
+git push -u origin $BRANCH1
+cd ../CGUs-snapshots
 git checkout master
 git rebase $BRANCH1
 git branch $BRANCH2
