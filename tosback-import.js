@@ -39,8 +39,8 @@ const TOSBACK2_CRAWLS_FOLDER_NAME_1 = 'crawl_reviewed';
 const TOSBACK2_CRAWLS_FOLDER_NAME_2 = 'crawl';
 const POSTGRES_URL = 'postgres://localhost/phoenix_development';
 const THREADS = 5;
-const SNAPSHOTS_PATH = '../CGUs/data/snapshots/';
-const VERSIONS_PATH = '../CGUs/data/versions/';
+const SNAPSHOTS_PATH = '../CGUs-snapshots/';
+const VERSIONS_PATH = '../CGUs-versions/';
 
 const services = {};
 const urlAlreadyCovered = {};
