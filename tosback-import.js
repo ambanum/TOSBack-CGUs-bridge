@@ -32,7 +32,7 @@ const TYPES = require('./types.json');
 const fs = fsApi.promises;
 
 const SERVICES_PATH = '../CGUs/services/';
-const LOCAL_TOSBACK2_REPO = '/Volumes/Workspace/tosback2';
+const LOCAL_TOSBACK2_REPO = '../tosback2';
 const TOSBACK2_WEB_ROOT = 'https://github.com/tosdr/tosback2';
 const TOSBACK2_RULES_FOLDER_NAME = 'rules';
 const TOSBACK2_CRAWLS_FOLDER_NAME_1 = 'crawl_reviewed';
@@ -447,8 +447,9 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     thisFileCommits = gitLog.all.reverse();
     console.log('inbetween', domainName, fileName);
     const commitsQueue = new PQueue({ concurrency: 1 });
+    let starting = true;
     const commitPromises = thisFileCommits.map(commit => commitsQueue.add(async() => {
-      console.log('handling commit', fileName, commit);
+      console.log('handling commit', fileName, commit, starting);
       let html;
       console.log('tosback git checkout', commit.hash);
       await tosbackGit.checkout(commit.hash);
@@ -478,7 +479,8 @@ async function importCrawl(fileName, foldersToTry, domainName) {
       await fs.writeFile(snapshotDestPath, html);
       console.log('committing', snapshotDestPath, `From tosback2 ${commit.hash}`);
       await snapshotGit.add('.');
-      const verb = 'Update'; // or 'Start tracking'
+      const verb = (starting ? 'Start tracking' : 'Update');
+      starting = false;
       const dateString = new Date(commit.date).toISOString().split('T')[0];
       const snapshotCommitMessage = [
         `${verb} ${translateSnapshotPath(domainName, fileName)}`,
