@@ -478,12 +478,16 @@ async function importCrawl(fileName, foldersToTry, domainName) {
       await fs.writeFile(snapshotDestPath, html);
       console.log('committing', snapshotDestPath, `From tosback2 ${commit.hash}`);
       await snapshotGit.add('.');
+      const verb = 'Update'; // or 'Start tracking'
+      const dateString = new Date(commit.date).toISOString().split('T')[0];
       const snapshotCommitMessage = [
-        `${translateSnapshotPath(domainName, fileName)} (snapshot ${new Date(commit.date).toDateString()})`,
+        `${verb} ${translateSnapshotPath(domainName, fileName)}`,
         '',
-        `Imported from ${encodeURI(sourceUrl)}`
+        `Imported from ${encodeURI(sourceUrl)}`,
+        `Snapshot originally obtained on ${dateString}`
       ].join('\n');
-      await snapshotGit.commit(snapshotCommitMessage, [ '-a', `--date="${commit.date}"` ]);
+      const snapshotCommitHash = await snapshotGit.commit(snapshotCommitMessage, [ '-a', `--date="${commit.date}"` ]);
+      console.log({ snapshotCommitMessage });
       const filteredContent = await filter(html, { select: 'body' }, []).catch(() => {
         throw new Error(`Could not filter ${snapshotDestPath}`);
       });
@@ -494,9 +498,10 @@ async function importCrawl(fileName, foldersToTry, domainName) {
       console.log('committing', versionDestPath, `From tosback2 ${commit.hash}`);
       await versionGit.add('.');
       const versionCommitMessage = [
-        `${translateSnapshotPath(domainName, fileName)} (version ${new Date(commit.date).toDateString()})`,
+        `${verb} ${translateSnapshotPath(domainName, fileName)}`,
         '',
-        `Imported from ${encodeURI(sourceUrl)}`
+        `This version was recorded after filtering snapshot ${snapshotCommitHash}`,
+        `Snapshot originally obtained on ${dateString}`
       ].join('\n');
       await versionGit.commit(versionCommitMessage, [ '-a', `--date="${commit.date}"` ]);
     }));
