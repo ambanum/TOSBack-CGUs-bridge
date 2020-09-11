@@ -7,6 +7,7 @@ BRANCH1=import-$TIMESTAMP
 BRANCH2=rebased-$TIMESTAMP
 cd ../tosback2
 git restore --staged .
+rm -rf *
 git checkout -- .
 git checkout master
 cd ../CGUs-snapshots
