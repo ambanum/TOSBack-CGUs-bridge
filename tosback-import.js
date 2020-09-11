@@ -488,8 +488,11 @@ async function importCrawl(fileName, foldersToTry, domainName) {
         `Imported from ${encodeURI(sourceUrl)}`,
         `Snapshot originally obtained on ${dateString}`
       ].join('\n');
-      const snapshotCommitHash = await snapshotGit.commit(snapshotCommitMessage, [ '-a', `--date="${commit.date}"` ]);
-      console.log({ snapshotCommitMessage });
+      console.log('committing snapshot');
+      await snapshotGit.commit(snapshotCommitMessage, [ '-a', `--date="${commit.date}"` ]);
+      const status = await snapshotGit.status();
+      const snapshotCommitHash = status.current;
+      console.log({ snapshotCommitHash });
       const filteredContent = await filter(html, { select: 'body' }, []).catch(() => {
         throw new Error(`Could not filter ${snapshotDestPath}`);
       });
