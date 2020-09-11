@@ -493,8 +493,9 @@ async function importCrawl(fileName, foldersToTry, domainName) {
       const gitLog = await tosbackGit.log();
       const snapshotCommitHash = gitLog.latest.hash;
       console.log({ snapshotCommitHash });
-      const filteredContent = await filter(html, { select: 'body' }, []).catch(() => {
-        throw new Error(`Could not filter ${snapshotDestPath}`);
+      const filteredContent = await filter({ content: html, mimeType: 'text/html', documentDeclaration: { fetch: 'http://ignore.me/', select: 'body' }, filterFunctions: [] }).catch((e) => {
+        console.log(e);
+        throw new Error(`Could not filter ${snapshotDestPath} ${e.message}`);
       });
       console.log('saving version', versionDestPath);
       const containingDirVersion = path.dirname(versionDestPath);
