@@ -204,8 +204,14 @@ function getSnapshotPathComponents(domainName, fileName) {
     typeNotFound[`[${domainName}] ${fileName.replace(/.txt$/, '')}`] = true;
     // throw e;
   }
+  function finalTouch(serviceName) {
+    const touchups = {
+      'AmazonAlexa': 'Alexa'
+    };
+    return touchups[serviceName] || serviceName;
+  }
   return {
-    serviceName: `${domainNameToService(domainName)}${subServiceFound}`,
+    serviceName: `${finalTouch(domainNameToService(domainName)}${subServiceFound})`,
     type
   }
 }

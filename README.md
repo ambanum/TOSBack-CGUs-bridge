@@ -14,7 +14,7 @@ curl -o- https://raw.githubusercontent.com/ambanum/TOSBack-CGUs-bridge/master/pr
 cd TOSBack-CGUs-bridge
 sh ./run.sh
 ```
-* Wait for several hours
+* Wait for several hours (note to self: started 15:30)
 * Check out the `import-123456789` and `rebased-123456789` branches for:
   - [snapshots](https://github.com/TosbackCgusBridge-Bot/CGUs-snapshots/branches)
   - [versions]https://github.com/TosbackCgusBridge-Bot/CGUs-versions/branches)
