@@ -12,7 +12,7 @@ import pg from 'pg';
 import pQueue from 'p-queue';
 import { assertValid, validateDocument } from './validator.js';
 import serviceSchema from './service.schema.js';
-import filter from '../CGUs/src/filter/index.js';
+import filter from '../CGUs/src/app/filter/index.js';
 
 const PQueue = pQueue.default;
 console.log(PQueue);
