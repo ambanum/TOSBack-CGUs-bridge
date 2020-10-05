@@ -12,10 +12,8 @@ curl -o- https://raw.githubusercontent.com/ambanum/TOSBack-CGUs-bridge/master/pr
 * Add the ssh key to the github account of https://github.com/TosbackCgusBridge-Bot
 * While still in the `tmux` session, run:
 ```sh
-git clone git@github.com:TosbackCgusBridge-Bot/CGUs-snapshots
-git clone git@github.com:TosbackCgusBridge-Bot/CGUs-versions
-git clone git@github.com:TosbackCgusBridge-Bot/CGUs
 cd TOSBack-CGUs-bridge
+sh ./prepare2.sh
 sh ./run.sh
 ```
 * You can now disconnect from your `tmux` session and come back several hours later (note to self: started 15:30)

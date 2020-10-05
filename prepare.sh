@@ -11,8 +11,6 @@ git clone https://github.com/ambanum/TOSBack-CGUs-bridge
 git clone https://github.com/tosdr/tosback2
 cd TOSBack-CGUs-bridge
 npm install
-cd ../CGUs
-npm install
 cd ..
 git config --global user.name "TOSBack CGUs bridge"
 git config --global user.email "tosback.cgus.bridge@unhosted.org"
