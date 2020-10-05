@@ -22,21 +22,37 @@ cd ../CGUs
 git checkout master
 git branch $BRANCH1
 git checkout $BRANCH1
+
 cd ../TOSBack-CGUs-bridge
 node --unhandled-rejections=strict tosback-import.js
+
 cd ../CGUs-snapshots
 git push -u origin $BRANCH1
 cd ../CGUs-versions
 git push -u origin $BRANCH1
 cd ../CGUs
 git push -u origin $BRANCH1
+
 cd ../CGUs-snapshots
+for file in */*
+do
+  echo truncate -s 0 \"$file\" | sh
+done
+git commit -am"Truncate all files for switch from tosback2 crawler to CGUs crawler"
+git push
 git checkout master
 git rebase $BRANCH1
 git branch $BRANCH2
 git checkout $BRANCH2
 git push -u origin $BRANCH2
+
 cd ../CGUs-versions
+for file in */*
+do
+  echo truncate -s 0 \"$file\" | sh
+done
+git commit -am"Truncate all files for switch from tosback2 crawler to CGUs crawler"
+git push
 git checkout master
 git rebase $BRANCH1
 git branch $BRANCH2
