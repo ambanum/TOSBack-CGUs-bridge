@@ -211,7 +211,7 @@ function getSnapshotPathComponents(domainName, fileName) {
     return touchups[serviceName] || serviceName;
   }
   return {
-    serviceName: `${finalTouch(domainNameToService(domainName)}${subServiceFound})`,
+    serviceName: `${finalTouch(domainNameToService(domainName))}${subServiceFound}`,
     type
   }
 }
