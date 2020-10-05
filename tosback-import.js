@@ -589,6 +589,7 @@ async function run(includeXml, includePsql, includeCrawls, only) {
   }
   await fileSemaphore.add(async () => {
     console.log('Setting Tosback2 repo back to master');
+    const tosbackGit = getTosbackGit();
     await tosbackGit.checkout('master');
   });
   console.log(Object.keys(typeNotFound));
