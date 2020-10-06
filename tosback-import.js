@@ -522,16 +522,16 @@ async function importCrawl(fileName, foldersToTry, domainName) {
   });
 }
 
-async function importCrawls(foldersToTry, only) {
+async function importCrawls(foldersToTry, only, folderIndex = 0) {
   console.log('Tosback2 gathering domain names');
-  const domainNames = await fs.readdir(path.join(LOCAL_TOSBACK2_REPO, foldersToTry[0]));
+  const domainNames = await fs.readdir(path.join(LOCAL_TOSBACK2_REPO, foldersToTry[folderIndex]));
   const domainPromises = domainNames.map(async domainName => {
     if (only && domainName !== only) {
       // console.log(`Skipping ${domainName}, only looking for ${only}.`);
       return;
     }
     console.log('Found!', domainName);
-    const fileNames = await fs.readdir(path.join(LOCAL_TOSBACK2_REPO, foldersToTry[0], domainName));
+    const fileNames = await fs.readdir(path.join(LOCAL_TOSBACK2_REPO, foldersToTry[folderIndex], domainName));
     const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, domainName));
     return Promise.all(filePromises);
   });
@@ -575,7 +575,7 @@ async function readExistingServices() {
   return urlAlreadyCovered;
 }
 
-async function run(includeXml, includePsql, includeCrawls, only) {
+async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCrawls, only) {
   await readExistingServices();
 
   if (includeXml) {
@@ -585,7 +585,10 @@ async function run(includeXml, includePsql, includeCrawls, only) {
     await parseAllPg(POSTGRES_URL, services);
   }
   if (includeCrawls) {
-    await importCrawls(getLocalCrawlsFolders(), only);
+    await importCrawls(getLocalCrawlsFolders(), only, 0);
+  }
+  if (includeUnreviewedCrawls) {
+    await importCrawls(getLocalCrawlsFolders(), only, 1);
   }
   await fileSemaphore.add(async () => {
     console.log('Setting Tosback2 repo back to master');
@@ -596,4 +599,4 @@ async function run(includeXml, includePsql, includeCrawls, only) {
 }
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
-run(false, false, true);
+run(false, false, true, true);
