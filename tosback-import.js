@@ -325,9 +325,21 @@ async function processTosback2(importedFrom, imported) {
     imported.sitename.docname = [ imported.sitename.docname ];
   }
   const serviceName = domainNameToService(imported.sitename.name);
-  const promises = imported.sitename.docname.map(async docnameObj => processWhenReady(serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom).catch(e => {
-    console.log('Could not process', serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom, e.message);
-  }));
+  const promises = imported.sitename.docname.map(async docnameObj => {
+    if (!docnameObj) {
+      return;
+    }
+    // console.log(serviceName, imported, docnameObj);
+    return processWhenReady(
+	    serviceName,
+	    docnameObj.name,
+	    docnameObj.url.name,
+	    docnameObj.url.xpath,
+	    importedFrom
+    ).catch(e => {
+      console.log('Could not process', serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom, e.message);
+    });
+  });
   return Promise.all(promises);
 }
 
