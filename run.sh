@@ -10,6 +10,7 @@ git restore --staged .
 rm -rf *
 git checkout -- .
 git checkout master
+git pull
 cd ../CGUs-snapshots
 git checkout c02f4f9f18aa336d51d6bddaa893ee822e03ad7f
 git branch $BRANCH1
@@ -20,6 +21,7 @@ git branch $BRANCH1
 git checkout $BRANCH1
 cd ../CGUs
 git checkout master
+git pull
 git branch $BRANCH1
 git checkout $BRANCH1
 
@@ -41,10 +43,13 @@ done
 git commit -am"Truncate all files for switch from tosback2 crawler to CGUs crawler"
 git push
 git checkout master
+git pull
 git rebase $BRANCH1
 git branch $BRANCH2
 git checkout $BRANCH2
 git push -u origin $BRANCH2
+git branch -D master
+git checkout --track origin/master
 
 cd ../CGUs-versions
 for file in */*
@@ -54,7 +59,10 @@ done
 git commit -am"Truncate all files for switch from tosback2 crawler to CGUs crawler"
 git push
 git checkout master
+git pull
 git rebase $BRANCH1
 git branch $BRANCH2
 git checkout $BRANCH2
 git push -u origin $BRANCH2
+git branch -D master
+git checkout --track origin/master
