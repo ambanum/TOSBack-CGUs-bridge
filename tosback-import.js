@@ -616,4 +616,4 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
 // run(false, false, true, true);
-run(true, false, false, false);
+run(false, true, false, false);
