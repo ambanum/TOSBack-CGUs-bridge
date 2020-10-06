@@ -6,7 +6,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install 14
 apt update
-apt install -yq build-essential
+apt install -yq build-essential libpq-dev
 git clone https://github.com/ambanum/TOSBack-CGUs-bridge
 git clone https://github.com/tosdr/tosback2
 cd TOSBack-CGUs-bridge
