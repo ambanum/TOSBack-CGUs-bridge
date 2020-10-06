@@ -53,6 +53,7 @@ const NEGATIVE_RESULT = {
 };
 
 async function validateDocumentImpl(docObj, filters) {
+  console.log('validateDocumentImpl', docObj, filters);
   const result = { ...NEGATIVE_RESULT };
   const { fetch: location } = docObj;
   const content = await fetch(location).catch(() => {
@@ -60,7 +61,13 @@ async function validateDocumentImpl(docObj, filters) {
   });
   result.fetchable = true;
   const filteredContent = [];
-  filteredContent[0] = await filter(content, docObj, filters).catch(() => {
+  const filterArgs = {
+    content,
+    documentDeclaration: docObj,
+    filterFunctions: filters
+  };
+  filteredContent[0] = await filter(filterArgs).catch((e) => {
+    console.log(e.message);
     throw new Error(`Could not filter ${location}`);
   });;
   result.selectorMatchesAnElement = (filteredContent[0].length > 0);
@@ -68,7 +75,14 @@ async function validateDocumentImpl(docObj, filters) {
   const content2 = await fetch(location).catch(() => {
     throw new Error(`Could not fetch second time ${location}`);
   });
-  filteredContent[1] = await filter(content2, docObj, filters).catch(() => {
+  const filterArgs2 = {
+    content2,
+    documentDeclaration: docObj,
+    filterFunctions: filters
+  };
+
+  filteredContent[1] = await filter(filterArgs2).catch((e) => {
+    console.log(e.message);
     throw new Error(`Could not filter second time ${location}`);
   });
   result.hasConsistentFilteredContent = (filteredContent[0] === filteredContent[1]);
