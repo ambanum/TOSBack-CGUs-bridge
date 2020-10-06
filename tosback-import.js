@@ -317,6 +317,10 @@ async function process(serviceName, docName, url, xpath, importedFrom) {
 }
 
 async function processTosback2(importedFrom, imported) {
+  if (!imported.sitename) {
+    console.log('no imported.sitename, skipping', importedFrom, imported);
+    return;
+  }
   if (!Array.isArray(imported.sitename.docname)) {
     imported.sitename.docname = [ imported.sitename.docname ];
   }
@@ -599,4 +603,5 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
 }
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
-run(false, false, true, true);
+// run(false, false, true, true);
+run(true, false, false, false);
