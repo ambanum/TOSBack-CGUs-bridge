@@ -56,13 +56,14 @@ async function validateDocumentImpl(docObj, filters) {
   console.log('validateDocumentImpl', docObj, filters);
   const result = { ...NEGATIVE_RESULT };
   const { fetch: location } = docObj;
-  const content = await fetch(location).catch(() => {
+  const { mimeType, content } = await fetch(location).catch(() => {
     throw new Error(`Could not fetch ${location}`);
   });
   result.fetchable = true;
   const filteredContent = [];
   const filterArgs = {
     content,
+    mimeType,
     documentDeclaration: docObj,
     filterFunctions: filters
   };
@@ -72,11 +73,12 @@ async function validateDocumentImpl(docObj, filters) {
   });;
   result.selectorMatchesAnElement = (filteredContent[0].length > 0);
   result.isLongEnough = isLongEnough(filteredContent[0]);
-  const content2 = await fetch(location).catch(() => {
+  const fetchResult2 = await fetch(location).catch(() => {
     throw new Error(`Could not fetch second time ${location}`);
   });
   const filterArgs2 = {
-    content2,
+    content: fetchResult2.content,
+    mimeType: fetchResult2.mimeType,
     documentDeclaration: docObj,
     filterFunctions: filters
   };
