@@ -275,11 +275,11 @@ const queue = new PQueue({ concurrency: THREADS });
 
 async function processWhenReady(serviceName, docName, url, xpath, importedFrom) {
   // console.log(serviceName, docName, 'queued');
-  queue.add(() => process(serviceName, docName, url, xpath, importedFrom));
+  queue.add(() => processNow(serviceName, docName, url, xpath, importedFrom));
 }
 
 const pending = {};
-async function process(serviceName, docName, url, xpath, importedFrom) {
+async function processNow(serviceName, docName, url, xpath, importedFrom) {
   // console.log(serviceName, docName, 'start');
   if (urlAlreadyCovered[url]) {
     // console.log(serviceName, docName, 'skip');
