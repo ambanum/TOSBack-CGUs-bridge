@@ -299,18 +299,26 @@ async function processNow(serviceName, docName, url, xpath, importedFrom) {
     if (services[fileName].documents[type]) {
       throw new Error('Same type used twice!');
     }
+    let select = 'body';
+    if (xpath) {
+      try {
+        select = xPathToCss(xpath);
+      } catch(e) {
+        // use 'body' as the selector
+      }
+    }
     const docObj = {
       fetch: url,
-      select: (xpath ? xPathToCss(xpath) : 'body')
+      select
     };
     const validationResult = await validateDocument(docObj, []);
     if (validationResult.ok) {
       services[fileName].documents[type] = docObj;
     }
     await trySave(fileName);
-    // console.log(serviceName, docName, 'done');
+    console.log(serviceName, docName, 'done');
   } catch (e) {
-    // console.log(serviceName, docName, 'fail');
+    console.log(serviceName, docName, 'fail', e.message);
   }
   delete pending[`${serviceName} - ${docName} - ${url}`];
   // console.log('Pending:', Object.keys(pending));
@@ -318,7 +326,7 @@ async function processNow(serviceName, docName, url, xpath, importedFrom) {
 
 async function processTosback2(importedFrom, imported) {
   if (!imported.sitename) {
-    console.log('no imported.sitename, skipping', importedFrom, imported);
+    // console.log('no imported.sitename, skipping', importedFrom, imported);
     return;
   }
   if (!Array.isArray(imported.sitename.docname)) {
@@ -380,7 +388,7 @@ async function parseAllGitXml(folder, only) {
     try {
       imported = JSON.parse(await parseFile(path.join(folder, filename)));
     } catch (e) {
-      console.error('Error parsing xml', filename, e.message);
+      // console.error('Error parsing xml', filename, e.message);
       return;
     }
     await processTosback2(getGitHubWebUrl(commitHash, filename), imported);
@@ -411,7 +419,7 @@ async function importRule(domainName, fileName, masterHash) {
   try {
     imported = JSON.parse(await parseFile(path.join(getLocalRulesFolder(), `${domainName}.xml`)));
   } catch (e) {
-    console.error('Error parsing xml', filename, e.message);
+    // console.error('Error parsing xml', filename, e.message);
     throw e;
   }
   if (!Array.isArray(imported.sitename.docname)) {
@@ -460,7 +468,7 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     try {
       await importRule(domainName, fileName, masterHash);
     } catch (e) {
-      console.error('Imported snapshots but could not import rule', domainName, fileName);
+      // console.error('Imported snapshots but could not import rule', domainName, fileName);
     }
 
     // This will set the --follow flag, see:
@@ -566,7 +574,7 @@ async function trySave(i) {
       // await new Promise(resolve => setTimeout(resolve, 100));
       // console.log('Saved', path.join(SERVICES_PATH, i));
     } catch (e) {
-      console.error('Could not save', e);
+      // console.error('Could not save', e);
     }
   }
 }

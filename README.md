@@ -15,7 +15,6 @@ curl -o- https://raw.githubusercontent.com/ambanum/TOSBack-CGUs-bridge/master/pr
 cd TOSBack-CGUs-bridge
 sh ./prepare2.sh
 export DATABASE_URL=...
-# FIXME: process.env is now available on the node repl, but process.env is undefined inside the script?
 sh ./run.sh
 ```
 * You can now disconnect from your `tmux` session and come back several hours later (note to self: started 15:30)
