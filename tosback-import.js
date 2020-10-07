@@ -37,7 +37,7 @@ const TOSBACK2_WEB_ROOT = 'https://github.com/tosdr/tosback2';
 const TOSBACK2_RULES_FOLDER_NAME = 'rules';
 const TOSBACK2_CRAWLS_FOLDER_NAME_1 = 'crawl_reviewed';
 const TOSBACK2_CRAWLS_FOLDER_NAME_2 = 'crawl';
-const POSTGRES_URL = 'postgres://localhost/phoenix_development';
+const POSTGRES_URL = process.env.DATABASE_URL || 'postgres://localhost/phoenix_development';
 const THREADS = 5;
 const SNAPSHOTS_PATH = '../CGUs-snapshots/';
 const VERSIONS_PATH = '../CGUs-versions/';
@@ -317,13 +317,29 @@ async function process(serviceName, docName, url, xpath, importedFrom) {
 }
 
 async function processTosback2(importedFrom, imported) {
+  if (!imported.sitename) {
+    console.log('no imported.sitename, skipping', importedFrom, imported);
+    return;
+  }
   if (!Array.isArray(imported.sitename.docname)) {
     imported.sitename.docname = [ imported.sitename.docname ];
   }
   const serviceName = domainNameToService(imported.sitename.name);
-  const promises = imported.sitename.docname.map(async docnameObj => processWhenReady(serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom).catch(e => {
-    // console.log('Could not process', serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom, e.message);
-  }));
+  const promises = imported.sitename.docname.map(async docnameObj => {
+    if (!docnameObj) {
+      return;
+    }
+    // console.log(serviceName, imported, docnameObj);
+    return processWhenReady(
+	    serviceName,
+	    docnameObj.name,
+	    docnameObj.url.name,
+	    docnameObj.url.xpath,
+	    importedFrom
+    ).catch(e => {
+      // console.log('Could not process', serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom, e.message);
+    });
+  });
   return Promise.all(promises);
 }
 
@@ -599,4 +615,5 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
 }
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
-run(false, false, true, true);
+// run(false, false, true, true);
+run(false, true, false, false);
