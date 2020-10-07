@@ -32,15 +32,15 @@ const TYPES = require('./types.json');
 const fs = fsApi.promises;
 
 const SERVICES_PATH = '../CGUs/services/';
-const LOCAL_TOSBACK2_REPO = '../tosback2';
+const LOCAL_TOSBACK2_REPO = (process.env.LAPTOP ? '../../tosdr/tosback2' : '../tosback2');
 const TOSBACK2_WEB_ROOT = 'https://github.com/tosdr/tosback2';
 const TOSBACK2_RULES_FOLDER_NAME = 'rules';
 const TOSBACK2_CRAWLS_FOLDER_NAME_1 = 'crawl_reviewed';
 const TOSBACK2_CRAWLS_FOLDER_NAME_2 = 'crawl';
 const POSTGRES_URL = process.env.DATABASE_URL || 'postgres://localhost/phoenix_development';
 const THREADS = 5;
-const SNAPSHOTS_PATH = '../CGUs-snapshots/';
-const VERSIONS_PATH = '../CGUs-versions/';
+const SNAPSHOTS_PATH = (process.env.LAPTOP ? '../CGUs/data/snapshots/' : '../CGUs-snapshots/');
+const VERSIONS_PATH = (process.env.LAPTOP ? '../CGUs/data/versions/' : '../CGUs-versions/');
 
 const services = {};
 const urlAlreadyCovered = {};
@@ -616,4 +616,4 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
 // run(false, false, true, true);
-run(false, true, false, false);
+run(true, false, false, false);
