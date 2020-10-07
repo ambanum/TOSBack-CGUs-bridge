@@ -15,7 +15,7 @@ import serviceSchema from './service.schema.js';
 import filter from '../CGUs/src/app/filter/index.js';
 
 const PQueue = pQueue.default;
-console.log(PQueue);
+// console.log(PQueue);
 
 // FIXME: Somehow Node.js ESM doesn't recognize this export:
 //
@@ -185,21 +185,21 @@ function getSnapshotPathComponents(domainName, fileName) {
   let typeString = fileName.replace(/.txt$/, '');
   Object.keys(subServices).forEach(subService => {
     if (typeString.startsWith(subService)) {
-      console.log('Starts with!', [subService, typeString]);
+      // console.log('Starts with!', [subService, typeString]);
       subServiceFound = subServices[subService];
       typeString = typeString.substring(subService.length + 1);
-      console.log('substringing start', [ subServiceFound, typeString ]);
+      // console.log('substringing start', [ subServiceFound, typeString ]);
     } else if (typeString.endsWith(subService)) {
-      console.log('Starts with!');
+      // console.log('Starts with!');
       subServiceFound = subServices[subService];
       typeString = typeString.substring(0, typeString.length - subService.length - 1);
-      console.log('substringing end', [ subService, typeString ]);
+      // console.log('substringing end', [ subService, typeString ]);
     }
   })
   try {
     type = toType(typeString);
   } catch (e) {
-    console.log(e.message);
+    // console.log(e.message);
     type = 'unknown';
     typeNotFound[`[${domainName}] ${fileName.replace(/.txt$/, '')}`] = true;
     // throw e;
@@ -274,15 +274,15 @@ function toType(str) {
 const queue = new PQueue({ concurrency: THREADS });
 
 async function processWhenReady(serviceName, docName, url, xpath, importedFrom) {
-  console.log(serviceName, docName, 'queued');
+  // console.log(serviceName, docName, 'queued');
   queue.add(() => process(serviceName, docName, url, xpath, importedFrom));
 }
 
 const pending = {};
 async function process(serviceName, docName, url, xpath, importedFrom) {
-  console.log(serviceName, docName, 'start');
+  // console.log(serviceName, docName, 'start');
   if (urlAlreadyCovered[url]) {
-    console.log(serviceName, docName, 'skip');
+    // console.log(serviceName, docName, 'skip');
     return;
   }
   pending[`${serviceName} - ${docName} - ${url}`] = true;
@@ -308,12 +308,12 @@ async function process(serviceName, docName, url, xpath, importedFrom) {
       services[fileName].documents[type] = docObj;
     }
     await trySave(fileName);
-    console.log(serviceName, docName, 'done');
+    // console.log(serviceName, docName, 'done');
   } catch (e) {
-    console.log(serviceName, docName, 'fail');
+    // console.log(serviceName, docName, 'fail');
   }
   delete pending[`${serviceName} - ${docName} - ${url}`];
-  console.log('Pending:', Object.keys(pending));
+  // console.log('Pending:', Object.keys(pending));
 }
 
 async function processTosback2(importedFrom, imported) {
@@ -322,7 +322,7 @@ async function processTosback2(importedFrom, imported) {
   }
   const serviceName = domainNameToService(imported.sitename.name);
   const promises = imported.sitename.docname.map(async docnameObj => processWhenReady(serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom).catch(e => {
-    console.log('Could not process', serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom, e.message);
+    // console.log('Could not process', serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom, e.message);
   }));
   return Promise.all(promises);
 }
@@ -404,9 +404,9 @@ async function importRule(domainName, fileName, masterHash) {
   // const serviceName = domainNameToService(imported.sitename.name);
   const docName = fileName.replace(/.txt$/g, '');
   const promises = imported.sitename.docname.map(async docnameObj => {
-    console.log('looking for', docName, docnameObj);
+    // console.log('looking for', docName, docnameObj);
     if (docnameObj.name === docName) {
-      console.log('yes!');
+      // console.log('yes!');
       const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
       await createRule(serviceName, type, docnameObj, encodeURI(`https://github.com/tosdr/tosback2/blob/${masterHash}/rules/${domainName}.xml`));
     }
@@ -427,17 +427,17 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     } catch (e) {
       exists = false;
     }
-    console.log('importCrawl', domainName, fileName, translateSnapshotPath(domainName, fileName), );
+    // console.log('importCrawl', domainName, fileName, translateSnapshotPath(domainName, fileName), );
     const tosbackGit = getTosbackGit();
     const snapshotGit = getSnapshotGit();
     const versionGit = getVersionGit();
 
     const filePath1 = path.join(foldersToTry[0], domainName, fileName);
     const filePath2 = path.join(foldersToTry[1], domainName, fileName);
-    console.log('filePath', filePath1);
-    console.log('Tosback2 git checkout master');
+    // console.log('filePath', filePath1);
+    // console.log('Tosback2 git checkout master');
     await tosbackGit.checkout('master');
-    console.log('Tosback2 git pull');
+    // console.log('Tosback2 git pull');
     await tosbackGit.pull();
     const masterGitLog = await tosbackGit.log();
     const masterHash = masterGitLog.latest.hash;
@@ -451,22 +451,22 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     // https://github.com/steveukx/git-js/blob/80741ac/src/git.js#L891
     const gitLog = await tosbackGit.log({ file: filePath1 });
     thisFileCommits = gitLog.all.reverse();
-    console.log('inbetween', domainName, fileName);
+    // console.log('inbetween', domainName, fileName);
     const commitsQueue = new PQueue({ concurrency: 1 });
     let starting = true;
     const commitPromises = thisFileCommits.map(commit => commitsQueue.add(async() => {
-      console.log('handling commit', fileName, commit, starting);
+      // console.log('handling commit', fileName, commit, starting);
       let html;
-      console.log('tosback git checkout', commit.hash);
+      // console.log('tosback git checkout', commit.hash);
       await tosbackGit.checkout(commit.hash);
-      console.log('Reading file', path.join(LOCAL_TOSBACK2_REPO, filePath1), commit.hash);
+      // console.log('Reading file', path.join(LOCAL_TOSBACK2_REPO, filePath1), commit.hash);
       let fileTxtAtCommit;
       let sourceUrl;
       try {
         fileTxtAtCommit = await fs.readFile(path.join(LOCAL_TOSBACK2_REPO, filePath1));
         sourceUrl = `https://github.com/tosdr/tosback2/blob/${commit.hash}/${filePath1}`;
       } catch (e) {
-        console.log('Retrying to load file at', filePath2, commit.hash);
+        // console.log('Retrying to load file at', filePath2, commit.hash);
         try {
           fileTxtAtCommit = await fs.readFile(path.join(LOCAL_TOSBACK2_REPO, filePath2));
           sourceUrl = `https://github.com/tosdr/tosback2/blob/${commit.hash}/${filePath2}`;
@@ -475,15 +475,15 @@ async function importCrawl(fileName, foldersToTry, domainName) {
             couldNotRead[commit.hash] = [];
           }
           couldNotRead[commit.hash].push(filePath1);
-          console.log('Could not load, skipping', couldNotRead);
+          // console.log('Could not load, skipping', couldNotRead);
         }
       }
       html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
-      console.log('saving snapshot', snapshotDestPath);
+      // console.log('saving snapshot', snapshotDestPath);
       const containingDirSnapshot = path.dirname(snapshotDestPath);
       await fs.mkdir(containingDirSnapshot, { recursive: true });
       await fs.writeFile(snapshotDestPath, html);
-      console.log('committing', snapshotDestPath, `From tosback2 ${commit.hash}`);
+      // console.log('committing', snapshotDestPath, `From tosback2 ${commit.hash}`);
       await snapshotGit.add('.');
       const verb = (starting ? 'Start tracking' : 'Update');
       starting = false;
@@ -494,20 +494,20 @@ async function importCrawl(fileName, foldersToTry, domainName) {
         `Imported from ${encodeURI(sourceUrl)}`,
         `Snapshot originally obtained on ${dateString}`
       ].join('\n');
-      console.log('committing snapshot');
+      // console.log('committing snapshot');
       await snapshotGit.commit(snapshotCommitMessage, [ '-a', `--date="${commit.date}"` ]);
       const gitLog = await tosbackGit.log();
       const snapshotCommitHash = gitLog.latest.hash;
-      console.log({ snapshotCommitHash });
+      // console.log({ snapshotCommitHash });
       const filteredContent = await filter({ content: html, mimeType: 'text/html', documentDeclaration: { fetch: 'http://ignore.me/', select: 'body' }, filterFunctions: [] }).catch((e) => {
-        console.log(e);
+        // console.log(e);
         throw new Error(`Could not filter ${snapshotDestPath} ${e.message}`);
       });
-      console.log('saving version', versionDestPath);
+      // console.log('saving version', versionDestPath);
       const containingDirVersion = path.dirname(versionDestPath);
       await fs.mkdir(containingDirVersion, { recursive: true });
       await fs.writeFile(versionDestPath, filteredContent);
-      console.log('committing', versionDestPath, `From tosback2 ${commit.hash}`);
+      // console.log('committing', versionDestPath, `From tosback2 ${commit.hash}`);
       await versionGit.add('.');
       const versionCommitMessage = [
         `${verb} ${translateSnapshotPath(domainName, fileName)}`,
@@ -518,19 +518,19 @@ async function importCrawl(fileName, foldersToTry, domainName) {
       await versionGit.commit(versionCommitMessage, [ '-a', `--date="${commit.date}"` ]);
     }));
     await Promise.all(commitPromises);
-    console.log('importCrawl end', domainName, fileName);
+    // console.log('importCrawl end', domainName, fileName);
   });
 }
 
 async function importCrawls(foldersToTry, only, folderIndex = 0) {
-  console.log('Tosback2 gathering domain names');
+  // console.log('Tosback2 gathering domain names');
   const domainNames = await fs.readdir(path.join(LOCAL_TOSBACK2_REPO, foldersToTry[folderIndex]));
   const domainPromises = domainNames.map(async domainName => {
     if (only && domainName !== only) {
       // console.log(`Skipping ${domainName}, only looking for ${only}.`);
       return;
     }
-    console.log('Found!', domainName);
+    // console.log('Found!', domainName);
     const fileNames = await fs.readdir(path.join(LOCAL_TOSBACK2_REPO, foldersToTry[folderIndex], domainName));
     const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, domainName));
     return Promise.all(filePromises);
@@ -539,7 +539,7 @@ async function importCrawls(foldersToTry, only, folderIndex = 0) {
 }
 
 async function trySave(i) {
-  console.log('Saving', path.join(SERVICES_PATH, i));
+  // console.log('Saving', path.join(SERVICES_PATH, i));
   if (Object.keys(services[i].documents).length) {
     try {
       assertValid(serviceSchema, services[i]);
@@ -548,7 +548,7 @@ async function trySave(i) {
       await fs.mkdir(containingDirRule, { recursive: true });
       await fs.writeFile(fileName, `${JSON.stringify(services[i], null, 2)}\n`);
       // await new Promise(resolve => setTimeout(resolve, 100));
-      console.log('Saved', path.join(SERVICES_PATH, i));
+      // console.log('Saved', path.join(SERVICES_PATH, i));
     } catch (e) {
       console.error('Could not save', e);
     }
@@ -591,11 +591,11 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
     await importCrawls(getLocalCrawlsFolders(), only, 1);
   }
   await fileSemaphore.add(async () => {
-    console.log('Setting Tosback2 repo back to master');
+    // console.log('Setting Tosback2 repo back to master');
     const tosbackGit = getTosbackGit();
     await tosbackGit.checkout('master');
   });
-  console.log(Object.keys(typeNotFound));
+  // console.log(Object.keys(typeNotFound));
 }
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
