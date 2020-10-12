@@ -1,0 +1,590 @@
+crawl/123greetings.com/Privacy Policy.txt
+crawl/abcnews.com/Privacy Policy.txt
+crawl/academia.edu/Privacy Policy.txt
+crawl/academia.edu/Terms of Service.txt
+crawl/advair.com/Privacy Policy.txt
+crawl/aeropostale.com/Privacy Policy.txt
+crawl/aetna.com/Privacy Policy.txt
+crawl/agame.com/Privacy Policy.txt
+crawl/alibaba.com/Alibaba.com Product Listing Information-Editing Guidelines.txt
+crawl/alibaba.com/Enforcement Actions for Displaying Prohibited and Controlled Items.txt
+crawl/alibaba.com/Enforcement Actions for Intellectual Property Rights Infringements Claims on Alibaba.com.txt
+crawl/alibaba.com/Intellectual Property Rights(IPR)Protection Policy.txt
+crawl/alibaba.com/Privacy Policy.txt
+crawl/alibaba.com/Product Listing Policy.txt
+crawl/alibaba.com/Rules against Duplicate Product Listing.txt
+crawl/alibaba.com/Rules for Enforcement Actions against Non-compliance Relating to Inappropriate Product Postings.txt
+crawl/alibaba.com/Rules for Handling Unauthorized Use of A Third Party's Information.txt
+crawl/alibaba.com/Rules on Resolving Image Piracy Complaints.txt
+crawl/alibaba.com/Terms and Conditions Governing Request for Quotation.txt
+crawl/alibaba.com/Terms of Use.txt
+crawl/alibaba.com/Updated Rules for Preventing Duplicate Product Postings.txt
+crawl/allthingsd.com/Privacy Policy.txt
+crawl/amazon.com/Amazon Advertising Preferences.txt
+crawl/amazon.com/Amazon Terms of Service.txt
+crawl/amazon.com/Official AWS Privacy Policy.txt
+crawl/ampedwireless.com/Privacy Policy.txt
+crawl/ampedwireless.com/Terms and Conditions.txt
+crawl/ampedwireless.com/Terms of Service.txt
+crawl/aoltv.com/Privacy Policy.txt
+crawl/apple.com/Apple Transparency Report.txt
+crawl/apple.com/California Privacy Disclosure.txt
+crawl/apple.com/Privacy Management Guide.txt
+crawl/arlo.com/Privacy Notice.txt
+crawl/arlo.com/Product Security.txt
+crawl/arlo.com/Terms of Service.txt
+crawl/asmallworld.net/Privacy Policy.txt
+crawl/asus.com/Hackerone Profile.txt
+crawl/asus.com/Privacy Policy.txt
+crawl/asus.com/Security Advisory.txt
+crawl/asus.com/Terms of Use.txt
+crawl/avis.com/Privacy Policy.txt
+crawl/backcountry.com/Privacy Policy.txt
+crawl/bankofamerica.com/Privacy Policy.txt
+crawl/bankrate.com/Privacy Policy.txt
+crawl/barnesandnoble.com/Privacy Policy.txt
+crawl/beemp3.com/Privacy Policy.txt
+crawl/bikeindex.org/Privacy Policy.txt
+crawl/bikeindex.org/Vendor Terms of Service.txt
+crawl/bikeindex.org/Website Terms of Service.txt
+crawl/bing.com/Privacy Policy.txt
+crawl/blablacar.co.uk/Privacy Policy.txt
+crawl/blip.fm/Privacy Policy.txt
+crawl/bloomingdales.com/Privacy Policy.txt
+crawl/blurtit.com/Privacy Policy.txt
+crawl/bored.com/Privacy Policy.txt
+crawl/boston.com/Privacy Policy.txt
+crawl/buckle.com/Privacy Policy.txt
+crawl/businessweek.com/Privacy Policy.txt
+crawl/cableone.net/Acceptable Use Policy.txt
+crawl/cableone.net/Terms and Conditions.txt
+crawl/canary.is/Cookie and Ad Policy.txt
+crawl/canary.is/EULA.txt
+crawl/canary.is/Privacy Policy.txt
+crawl/canary.is/Security.txt
+crawl/canary.is/Terms and Conditions.txt
+crawl/caranddriver.com/Privacy Policy.txt
+crawl/care2.com/Privacy Policy.txt
+crawl/careerbuilderinstitute.com/Privacy Policy.txt
+crawl/careerpath.com/Privacy Policy.txt
+crawl/careerrookie.com/Privacy Policy.txt
+crawl/careerrookie.com/Terms and Conditions.txt
+crawl/carsdirect.com/Privacy Policy.txt
+crawl/cbc.ca/Copyright.txt
+crawl/cbc.ca/Policies.txt
+crawl/cbc.ca/Your Content Submissions.txt
+crawl/cbsalary.com/Privacy Policy.txt
+crawl/centurylink.com/Acceptable Use Policy.txt
+crawl/chacha.com/Privacy Policy.txt
+crawl/chegg.com/Privacy Policy.txt
+crawl/chrysler.com/Privacy Policy.txt
+crawl/city-data.com/Privacy Policy.txt
+crawl/citygridmedia.com/Privacy Policy.txt
+crawl/citysearch.com/Privacy Policy.txt
+crawl/cnbc.com/Terms of Service.txt
+crawl/code.google.com/Google Project Hosting - Additional Terms.txt
+crawl/code.google.com/Google Project Hosting - User Content and Conduct Policy.txt
+crawl/comhaltasarchive.ie/Terms of Service.txt
+crawl/constantcontact.com/Privacy Policy.txt
+crawl/cosmopolitan.com/Privacy Policy.txt
+crawl/countryliving.com/Privacy Policy.txt
+crawl/cvs.com/Privacy Policy.txt
+crawl/dailymotion.com/Terms of Use.txt
+crawl/daum.net/Privacy Policy.txt
+crawl/debka.com/Privacy Policy.txt
+crawl/dell.com/Privacy Policy.txt
+crawl/delta.com/Privacy Policy.txt
+crawl/delta.com/Terms of Use.txt
+crawl/depositfiles.com/Privacy Policy.txt
+crawl/deviantart.com/Copyright Policy.txt
+crawl/deviantart.com/Etiquette Policy.txt
+crawl/deviantart.com/Privacy Policy.txt
+crawl/deviantart.com/Terms of Service.txt
+crawl/disney.go.com/Privacy Policy.txt
+crawl/dlink.com/Terms of Use.txt
+crawl/dodge.com/Privacy Policy.txt
+crawl/drudgereport.com/Privacy Policy.txt
+crawl/ebaumsworld.com/Privacy Policy.txt
+crawl/eclipse.org/Terms of Service.txt
+crawl/economist.com/Privacy Policy.txt
+crawl/eero.com/Privacy for eero Devices.txt
+crawl/eero.com/Terms of Service Agreement.txt
+crawl/eero.com/Vulnerability Disclosure Program.txt
+crawl/eff.org/Privacy Policy.txt
+crawl/elearners.com/Privacy Policy.txt
+crawl/elle.com/Privacy Policy.txt
+crawl/elledecor.com/Privacy Policy.txt
+crawl/elyrics.net/Privacy Policy.txt
+crawl/en.espnf1.com/Privacy Policy.txt
+crawl/en.softonic.com/Privacy Policy.txt
+crawl/espn.go.com/Privacy Policy.txt
+crawl/esquire.com/Privacy Policy.txt
+crawl/ets.org/Privacy Policy.txt
+crawl/experian.com/Privacy Policy.txt
+crawl/ezinearticles.com/Privacy Policy.txt
+crawl/facebook.com/Supplemental Portal Data Policy.txt
+crawl/fairpoint.com/Privacy Policy.txt
+crawl/fandango.com/Privacy Policy.txt
+crawl/fanpop.com/Privacy Policy.txt
+crawl/fanpop.com/Terms of Service.txt
+crawl/fark.com/Privacy Policy.txt
+crawl/farmprogress.com/Privacy Policy.txt
+crawl/fedex.com/Privacy Policy.txt
+crawl/feed43.com/Terms of Service.txt
+crawl/fidelity.com/Privacy Policy.txt
+crawl/fisher-price.com/Privacy Policy.txt
+crawl/fitbit.com/Privacy Policy.txt
+crawl/fitocracy.com/Privacy Policy.txt
+crawl/flickr.com/Additional Terms of Service.txt
+crawl/forbes.com/Privacy Policy.txt
+crawl/freeze.com/Privacy Policy.txt
+crawl/ft.com/Privacy Policy.txt
+crawl/funbrain.com/Privacy Policy.txt
+crawl/games.com/Privacy Policy.txt
+crawl/gartner.com/Privacy Policy.txt
+crawl/geico.com/Privacy Policy.txt
+crawl/getcocoon.com/Privacy Policy.txt
+crawl/gitlab.com/Privacy Policy.txt
+crawl/gitlab.com/Terms of Use.txt
+crawl/globalresearch.ca/Privacy Policy.txt
+crawl/godlikeproductions.com/Privacy Policy.txt
+crawl/godtube.com/Terms of Use.txt
+crawl/goodhousekeeping.com/Privacy Policy.txt
+crawl/google.ca/Privacy Policy.txt
+crawl/google.co.uk/Privacy Policy.txt
+crawl/google.com.br/Privacy Policy.txt
+crawl/google.com/Advertising Cookies Policy.txt
+crawl/google.com/GOOGLE PRIVACY POLICY.txt
+crawl/google.com/Privacy Policy.txt
+crawl/google.de/Privacy Policy.txt
+crawl/google.fr/Privacy Policy.txt
+crawl/google.nl/Privacy Policy.txt
+crawl/groupspaces.com/Terms of Service.txt
+crawl/harpersbazaar.com/Privacy Policy.txt
+crawl/hautelook.com/Privacy Policy.txt
+crawl/headhunter.com/Privacy Policy.txt
+crawl/health.com/Privacy Policy.txt
+crawl/hickoryfarms.com/Privacy Policy.txt
+crawl/home.mywebsearch.com/Privacy Policy.txt
+crawl/homestead.com/Privacy Policy.txt
+crawl/honeywell.com/Privacy Policy.txt
+crawl/honeywell.com/Security.txt
+crawl/housebeautiful.com/Privacy Policy.txt
+crawl/howstuffworks.com/Privacy Policy.txt
+crawl/hsbc.com/Privacy Policy.txt
+crawl/hubpages.com/Privacy Policy.txt
+crawl/iegallery.com/Privacy Policy.txt
+crawl/ign.com/Privacy Policy.txt
+crawl/imdb.com/Privacy Policy.txt
+crawl/imvu.com/Privacy Policy.txt
+crawl/inbox.com/Privacy Policy.txt
+crawl/indeed.com/Privacy Policy.txt
+crawl/infoplease.com/Privacy Policy.txt
+crawl/instapaper.com/API Terms of Use.txt
+crawl/instapaper.com/Copyright Policy.txt
+crawl/instapaper.com/Privacy Policy.txt
+crawl/instapaper.com/Terms of Service.txt
+crawl/instructables.com/Privacy Policy.txt
+crawl/intuit.com/Privacy Policy.txt
+crawl/invizua.com/Privacy Policy.txt
+crawl/jcrew.com/Privacy Policy.txt
+crawl/jeep.com/Privacy Policy.txt
+crawl/jobgo.com/Privacy Policy.txt
+crawl/jobs.net/Privacy Policy.txt
+crawl/jobsonthemenu.com/Privacy Policy.txt
+crawl/juno.com/Privacy Policy.txt
+crawl/kidshealth.org/Privacy Policy and Terms of Use.txt
+crawl/kongregate.com/Privacy Policy.txt
+crawl/landsend.com/Privacy Policy.txt
+crawl/lexus.com/Privacy Policy.txt
+crawl/linkedin.com/LinkedIn in Microsoft Applications with Your Personal Account.txt
+crawl/linkline.com/Privacy Policy.txt
+crawl/linksys.com/Belkin Ad and Cookie Policy.txt
+crawl/linksys.com/COORDINATED VULNERABILITY DISCLOSURE PROGRAM.txt
+crawl/linksys.com/Linksys Shield Privacy Notice.txt
+crawl/llbean.com/Privacy Policy.txt
+crawl/logitech.com/Terms of Service.txt
+crawl/mailgun.com/Terms of Service.txt
+crawl/mapquest.com/Privacy Policy.txt
+crawl/marieclaire.com/Privacy Policy.txt
+crawl/marketingvox.com/Privacy Policy.txt
+crawl/mediaplex.com/Privacy Policy.txt
+crawl/meetup.com/Privacy Policy.txt
+crawl/mega.co.nz/Privacy Policy.txt
+crawl/mega.co.nz/Terms of Service.txt
+crawl/mendeley.com/Terms of Service.txt
+crawl/microsoft.com/Law Enforcement Requests Report.txt
+crawl/microsoft.com/Microsoft Services Agreement.txt
+crawl/microsoft.com/Microsoft Terms of Use.txt
+crawl/microsoft.com/Windows 10 location service and privacy.txt
+crawl/miracleworkers.com/Privacy Policy.txt
+crawl/mlb.mlb.com/Privacy Policy.txt
+crawl/monkeybrains.net/All Policies.txt
+crawl/monster.com/Privacy Policy.txt
+crawl/monster.com/Terms of Use.txt
+crawl/motortrend.com/Privacy Policy.txt
+crawl/moviefone.com/Privacy Policy.txt
+crawl/mozilla.org/Privacy Policy.txt
+crawl/mylife.com/Privacy Policy.txt
+crawl/nature.org/Privacy Policy.txt
+crawl/naver.com/Privacy Policy.txt
+crawl/neimanmarcus.com/Privacy Policy.txt
+crawl/nest.com/End User License Agreement.txt
+crawl/nest.com/Frequently asked questions about privacy.txt
+crawl/nest.com/Google Nest: welcome to the helpful home.txt
+crawl/nest.com/How Google retains data we collect.txt
+crawl/nest.com/Nest Retention Statement.txt
+crawl/nest.com/Our Privacy and Security Principles.txt
+crawl/nest.com/Privacy Notice.txt
+crawl/nest.com/Terms of Service.txt
+crawl/nest.com/Who are Google's partners?.txt
+crawl/netgear.com/Privacy Policy.txt
+crawl/netgear.com/Terms of Service.txt
+crawl/netzero.net/Privacy Policy.txt
+crawl/netzero.net/Terms of Service.txt
+crawl/newser.com/Privacy Policy.txt
+crawl/newsmax.com/Privacy Policy.txt
+crawl/nfl.com/Privacy Policy.txt
+crawl/nickjr.com/Privacy Policy.txt
+crawl/nike.com/Privacy Policy.txt
+crawl/nissan.com/Privacy Policy.txt
+crawl/noaa.gov/Privacy Policy.txt
+crawl/npr.org/Privacy Policy.txt
+crawl/nps.gov/Privacy Policy.txt
+crawl/nytimes.com/Privacy Policy.txt
+crawl/oath.com/About Your Choices.txt
+crawl/oath.com/Ad Serving.txt
+crawl/oath.com/Appended and Matched Data.txt
+crawl/oath.com/Beacons & SDKs.txt
+crawl/oath.com/Browser Apps.txt
+crawl/oath.com/Children's Privacy And Family Accounts.txt
+crawl/oath.com/Communication Products.txt
+crawl/oath.com/Cookies and Similar Technologies.txt
+crawl/oath.com/Copyright and Intellectual Property Policy.txt
+crawl/oath.com/Data Storage and Anonymization.txt
+crawl/oath.com/Data Transfer.txt
+crawl/oath.com/IP Address.txt
+crawl/oath.com/Location.txt
+crawl/oath.com/Media.txt
+crawl/oath.com/OATH ENTERPRISE ACCOUNT PRIVACY POLICY.txt
+crawl/oath.com/Oath Analytics.txt
+crawl/oath.com/Oath Community Guidelines.txt
+crawl/oath.com/Oath Privacy Center.txt
+crawl/oath.com/Oath Promotions.txt
+crawl/oath.com/Oath Terms of Service.txt
+crawl/oath.com/Research.txt
+crawl/oath.com/Search Services.txt
+crawl/oath.com/Security.txt
+crawl/oath.com/Smart TV.txt
+crawl/oath.com/Third Parties.txt
+crawl/oath.com/Why This Ad?.txt
+crawl/oath.com/Yahoo Developer Network.txt
+crawl/officemax.com/Privacy Policy.txt
+crawl/okcupid.com/Privacy Policy.txt
+crawl/oodle.com/Privacy Policy.txt
+crawl/optimum.com/Acceptable Use Policy.txt
+crawl/orange.fr/Privacy Policy.txt
+crawl/orbitz.com/Privacy Policy.txt
+crawl/oreilly.com/Privacy Policy.txt
+crawl/otalliance.org/Privacy Policy.txt
+crawl/pagesjaunes.fr/Privacy Policy.txt
+crawl/patch.com/Privacy Policy.txt
+crawl/pbskids.org/Privacy Policy.txt
+crawl/pch.com/Privacy Policy.txt
+crawl/pchlotto.com/Privacy Policy.txt
+crawl/peekyou.com/Privacy Policy.txt
+crawl/people.com/Privacy Policy.txt
+crawl/peoplesmart.com/Privacy Policy.txt
+crawl/pg.com/Privacy Policy.txt
+crawl/pogo.com/Privacy Policy.txt
+crawl/pollen.com/Privacy Policy.txt
+crawl/popcap.com/Privacy Policy.txt
+crawl/poptropica.com/Privacy Policy.txt
+crawl/popularmechanics.com/Privacy Policy.txt
+crawl/priceminister.com/Privacy Policy.txt
+crawl/privacyscore.com/Privacy Policy.txt
+crawl/progressive.com/Privacy Policy.txt
+crawl/realclearpolitics.com/Privacy Policy.txt
+crawl/realtor.com/Privacy Policy.txt
+crawl/redbookmag.com/Privacy Policy.txt
+crawl/replacements.com/Privacy Policy.txt
+crawl/reuters.com/Privacy Policy.txt
+crawl/roadandtrack.com/Privacy Policy.txt
+crawl/samsung.com/Legal.txt
+crawl/samsung.com/SAMSUNG PRIVACY POLICY FOR THE U.S..txt
+crawl/samsung.com/SmartThings Privacy Policy.txt
+crawl/samsung.com/SmartThings Terms.txt
+crawl/scmagazine.com/Privacy Policy.txt
+crawl/search-results.com/Privacy Policy.txt
+crawl/seattletimes.nwsource.com/Privacy Policy.txt
+crawl/seekingalpha.com/Privacy Policy.txt
+crawl/sencha.com/Privacy Policy.txt
+crawl/seventeen.com/Privacy Policy.txt
+crawl/shockwave.com/Privacy Policy.txt
+crawl/shop.lenovo.com/Privacy Policy.txt
+crawl/shopstyle.com/Privacy Policy.txt
+crawl/shopstyle.com/Terms of Service.txt
+crawl/slideshare.net/Privacy Policy.txt
+crawl/snapfish.com/Privacy Policy.txt
+crawl/sologig.com/Privacy Policy.txt
+crawl/sony.com/Privacy Policy.txt
+crawl/southwest.com/Privacy Policy.txt
+crawl/sparkpeople.com/Privacy Policy.txt
+crawl/spiegel.de/Privacy Policy.txt
+crawl/sportsillustrated.cnn.com/Privacy Policy.txt
+crawl/starbucks.com/Privacy Policy.txt
+crawl/starbucks.com/Terms of Service.txt
+crawl/starwoodhotels.com/Privacy Policy.txt
+crawl/stepstone.com/Privacy Policy.txt
+crawl/stumbleupon.com/Privacy Policy.txt
+crawl/subaru.com/Privacy Policy.txt
+crawl/superpages.com/Privacy Policy.txt
+crawl/surveymonkey.com/Privacy Policy.txt
+crawl/syfy.com/Privacy Policy.txt
+crawl/synology.com/Cookie Policy.txt
+crawl/synology.com/LIMITED PRODUCT WARRANTY.txt
+crawl/synology.com/Privacy Policy.txt
+crawl/synology.com/Terms of Service.txt
+crawl/synology.com/WEBSITE TERMS OF USE.txt
+crawl/tagged.com/Privacy Policy.txt
+crawl/tealium.com/Privacy Policy.txt
+crawl/techcrunch.com/Privacy Policy.txt
+crawl/theguardian.com/Privacy Policy.txt
+crawl/thelawportal.co.uk/Privacy Policy.txt
+crawl/theregister.co.uk/Privacy Policy.txt
+crawl/thisismyjam.com/Privacy Policy.txt
+crawl/time.com/Privacy Policy.txt
+crawl/timeanddate.com/Privacy Policy.txt
+crawl/toodledo.com/Privacy Policy.txt
+crawl/toodledo.com/Terms of Service.txt
+crawl/toyota.com/Privacy Policy.txt
+crawl/tp-link.com/Customer Data Privacy for Smart Home.txt
+crawl/tp-link.com/Security Advisory.txt
+crawl/tp-link.com/TP-LINK Cloud Privacy Policy.txt
+crawl/tp-link.com/Terms of Service.txt
+crawl/trendmicro.com/Router Compatibility List.txt
+crawl/tube8.com/Privacy Policy.txt
+crawl/twitter.com/Our use of cookies and similar technologies.txt
+crawl/ubuntu.com/Terms of Service.txt
+crawl/ucla.edu/Privacy Policy.txt
+crawl/ui.com/Privacy Policy.txt
+crawl/ui.com/Terms of Service.txt
+crawl/ulster.ac.uk/Privacy Policy.txt
+crawl/ups.com/Privacy Policy.txt
+crawl/urbandictionary.com/Privacy Policy.txt
+crawl/usa.autodesk.com/Privacy Policy.txt
+crawl/usanetwork.com/Privacy Policy.txt
+crawl/usestealth.com/Privacy Policy.txt
+crawl/usps.com/Privacy Policy.txt
+crawl/veracitypayments.com/Privacy Policy.txt
+crawl/veranda.com/Privacy Policy.txt
+crawl/verizon.com/AppFlash Privacy Policy.txt
+crawl/verizon.com/Business and Marketing Insights FAQs.txt
+crawl/verizon.com/Cookies & Related Technologies.txt
+crawl/verizon.com/Full Privacy Policy.txt
+crawl/verizon.com/Gizmo Privacy Policy.txt
+crawl/verizon.com/Hum Privacy Policy.txt
+crawl/verizon.com/International Privacy Centre.txt
+crawl/verizon.com/Master Domain Registration Agreement for Verizon Domain Names.txt
+crawl/verizon.com/Message+ Privacy Policy.txt
+crawl/verizon.com/Mobile Location Analytics Privacy Notice.txt
+crawl/verizon.com/Privacy Policy Summary.txt
+crawl/verizon.com/Privacy Policy for Fios and other Fiber-to-the-Premises Customers.txt
+crawl/verizon.com/Smart Family Privacy Policy.txt
+crawl/verizon.com/VZ Navigator App Privacy Policy.txt
+crawl/verizon.com/Verizon Selects FAQs.txt
+crawl/verizon.com/Web com Master Services Agreement.txt
+crawl/vermontcountrystore.com/Privacy Policy.txt
+crawl/vh1.com/Privacy Policy.txt
+crawl/victoriassecret.com/Privacy Policy.txt
+crawl/vimeo.com/Privacy Policy.txt
+crawl/vimeo.com/Terms of Service.txt
+crawl/visible.com/Privacy Policy.txt
+crawl/visible.com/Terms and Conditions.txt
+crawl/visible.com/Terms of Use.txt
+crawl/visible.com/Visible Service Terms & Conditions.txt
+crawl/waterhavens.com/Privacy Policy.txt
+crawl/webcrawler.com/Privacy Policy.txt
+crawl/webmd.com/Privacy Policy.txt
+crawl/webpronews.com/Privacy Policy.txt
+crawl/webs.com/Privacy Policy.txt
+crawl/wellsfargo.com/Privacy Policy.txt
+crawl/whitepages.com/Privacy Policy.txt
+crawl/windstream.com/Term of Service.txt
+crawl/windstream.com/Terms of Service.txt
+crawl/wineverygame.com/Privacy Policy.txt
+crawl/wix.com/Privacy Policy.txt
+crawl/wolfram.com/Privacy Policy.txt
+crawl/wolframalpha.com/Privacy Policy.txt
+crawl/womansday.com/Privacy Policy.txt
+crawl/workinretail.com/Privacy Policy.txt
+crawl/worldmarket.com/Privacy Policy.txt
+crawl/www.craigslist.org/Terms of Use.txt
+crawl/xanga.com/Privacy Policy.txt
+crawl/y8.com/Privacy Policy.txt
+crawl/yahoo.fr/Privacy Policy.txt
+crawl/yellowpages.com/Privacy Policy.txt
+crawl/yfrog.com/Privacy Policy.txt
+crawl/zendesk.com/Terms of Service.txt
+crawl/zillow.com/Privacy Policy.txt
+crawl/zoomerang.com/Privacy Policy.txt
+crawl_reviewed/allrecipes.com/Terms and Conditions.txt
+crawl_reviewed/amazon.com/Alexa Terms of Use.txt
+crawl_reviewed/amazon.com/Amazon Appstore for Android Terms of Use.txt
+crawl_reviewed/amazon.com/Amazon Coins Terms.txt
+crawl_reviewed/amazon.com/Amazon Device Terms of Use.txt
+crawl_reviewed/amazon.com/Amazon Drive and Prime Photos Terms of Use.txt
+crawl_reviewed/amazon.com/Amazon FreeTime Unlimited Terms & Conditions and Kindle FreeTime Unlimited Terms & Conditions.txt
+crawl_reviewed/amazon.com/Amazon GameCircle Terms of Use.txt
+crawl_reviewed/amazon.com/Amazon Maps Terms of Use.txt
+crawl_reviewed/amazon.com/Amazon Music Terms of Use.txt
+crawl_reviewed/amazon.com/Amazon Prime Terms.txt
+crawl_reviewed/amazon.com/Amazon Privacy Notice.txt
+crawl_reviewed/amazon.com/Amazon Silk Terms & Conditions.txt
+crawl_reviewed/amazon.com/Backup and Restore FAQ.txt
+crawl_reviewed/amazon.com/Conditions of Use.txt
+crawl_reviewed/amazon.com/Firefly FAQ.txt
+crawl_reviewed/amazon.com/Interest-Based Ads.txt
+crawl_reviewed/amazon.com/Kindle E-Reader and Fire Tablet Terms.txt
+crawl_reviewed/amazon.com/Kindle Personal Documents Distributor Terms of Use.txt
+crawl_reviewed/amazon.com/Kindle Special Offer Text Notifications Terms & Conditions.txt
+crawl_reviewed/amazon.com/Kindle Store Terms of Use.txt
+crawl_reviewed/amazon.com/Limited-Time Special Offers Promotional Discount Terms & Conditions.txt
+crawl_reviewed/amazon.com/Location Services FAQ.txt
+crawl_reviewed/amazon.com/Monthly Payments Terms & Conditions.txt
+crawl_reviewed/amazon.com/Saving Your Wi-Fi Passwords to Amazon FAQs.txt
+crawl_reviewed/android.com/Privacy Policy.txt
+crawl_reviewed/apple.com/Apple Support Communities Use Agreement.txt
+crawl_reviewed/apple.com/Game Center Terms and Conditions.txt
+crawl_reviewed/apple.com/Privacy Policy.txt
+crawl_reviewed/apple.com/Website Terms of Service.txt
+crawl_reviewed/apple.com/iChat Account Terms of Service.txt
+crawl_reviewed/apple.com/iCloud Terms of Service.txt
+crawl_reviewed/apple.com/iTunes Terms of Service.txt
+crawl_reviewed/att.com/Acceptable Use Policy.txt
+crawl_reviewed/att.com/Internet Terms of Service.txt
+crawl_reviewed/att.com/Wireless Plan Terms.txt
+crawl_reviewed/bbc.com/Privacy and Cookies Policy.txt
+crawl_reviewed/bbc.com/Terms of Use.txt
+crawl_reviewed/blizzard.com/Privacy Policy.txt
+crawl_reviewed/blizzard.com/Terms of Use.txt
+crawl_reviewed/blogger.com/Privacy Policy.txt
+crawl_reviewed/blogger.com/Terms of Service.txt
+crawl_reviewed/blogspot.com/Privacy Policy.txt
+crawl_reviewed/blogspot.com/Terms of Service.txt
+crawl_reviewed/cloudant.com/Privacy.txt
+crawl_reviewed/cloudant.com/Terms of Service.txt
+crawl_reviewed/cnn.com/Privacy and Cookies Policy.txt
+crawl_reviewed/cnn.com/Terms of Use.txt
+crawl_reviewed/couchsurfing.org/Privacy Policy.txt
+crawl_reviewed/couchsurfing.org/Terms of Use.txt
+crawl_reviewed/coursera.org/Cookies Policy.txt
+crawl_reviewed/coursera.org/Privacy Policy.txt
+crawl_reviewed/coursera.org/Terms of Use.txt
+crawl_reviewed/dictionary.com/Terms of Service & Privacy Policy.txt
+crawl_reviewed/discordapp.com/Terms.txt
+crawl_reviewed/disqus.com/Privacy Policy.txt
+crawl_reviewed/disqus.com/Terms of Service.txt
+crawl_reviewed/duckduckgo.com/Privacy Policy.txt
+crawl_reviewed/evernote.com/Privacy Policy.txt
+crawl_reviewed/evernote.com/Terms of Service.txt
+crawl_reviewed/facebook.com/Data Policy.txt
+crawl_reviewed/facebook.com/Data Use Policy.txt
+crawl_reviewed/facebook.com/Terms of Service.txt
+crawl_reviewed/finance.yahoo.com/Privacy Policy.txt
+crawl_reviewed/flickr.com/Community Guidelines.txt
+crawl_reviewed/flickr.com/Flickr Privacy Policy.txt
+crawl_reviewed/flickr.com/Privacy Policy.txt
+crawl_reviewed/flickr.com/Terms of Service.txt
+crawl_reviewed/foursquare.com/Privacy Policy.txt
+crawl_reviewed/foursquare.com/Terms of Use.txt
+crawl_reviewed/foxnews.com/Closed Captioning Policy.txt
+crawl_reviewed/foxnews.com/Privacy Policy.txt
+crawl_reviewed/foxnews.com/Terms of Use.txt
+crawl_reviewed/gmail.com/Privacy Policy.txt
+crawl_reviewed/google.com/Privacy Policy.txt
+crawl_reviewed/google.com/Terms of Service.txt
+crawl_reviewed/grammarly.com/Privacy Policy.txt
+crawl_reviewed/grammarly.com/Terms of Service and License Agreement.txt
+crawl_reviewed/habbo.com/Privacy Policy.txt
+crawl_reviewed/habbo.com/Terms of Service.txt
+crawl_reviewed/ifttt.com/Terms of Use.txt
+crawl_reviewed/imgur.com/Privacy Policy.txt
+crawl_reviewed/imgur.com/Terms of Service.txt
+crawl_reviewed/instagr.am/Data Policy.txt
+crawl_reviewed/instagram.com/Data Policy.txt
+crawl_reviewed/instagram.com/Terms of Service.txt
+crawl_reviewed/lastpass.com/Privacy Statement.txt
+crawl_reviewed/lastpass.com/Terms of Service.txt
+crawl_reviewed/linkedin.com/Privacy Policy.txt
+crawl_reviewed/linkedin.com/Terms of Service.txt
+crawl_reviewed/live.com/Microsoft Services Agreement.txt
+crawl_reviewed/live.com/Privacy Policy.txt
+crawl_reviewed/market.envato.com/Terms and Conditions.txt
+crawl_reviewed/microsoft.com/Privacy Policy.txt
+crawl_reviewed/microsoftstore.com/Privacy Policy.txt
+crawl_reviewed/microsoftstore.com/Terms of Sale.txt
+crawl_reviewed/msn.com/Privacy Policy.txt
+crawl_reviewed/msn.com/Terms of Service.txt
+crawl_reviewed/nabble.com/Privacy Policy.txt
+crawl_reviewed/nabble.com/Terms of Service.txt
+crawl_reviewed/netflix.com/Privacy Policy.txt
+crawl_reviewed/netflix.com/Terms of Use.txt
+crawl_reviewed/packagetrackr.com/Privacy Policy.txt
+crawl_reviewed/packagetrackr.com/Terms of Service.txt
+crawl_reviewed/phpbb.com/Privacy Policy.txt
+crawl_reviewed/phpbb.com/Terms of Use.txt
+crawl_reviewed/play.google.com/Terms of Service.txt
+crawl_reviewed/plus.google.com/Privacy Policy.txt
+crawl_reviewed/quora.com/Privacy Policy.txt
+crawl_reviewed/quora.com/Terms of Service.txt
+crawl_reviewed/researchgate.net/Privacy Policy.txt
+crawl_reviewed/runescape.com/Privacy Policy.txt
+crawl_reviewed/runescape.com/Terms and Conditions.txt
+crawl_reviewed/seenthis.net/Intellectual Property.txt
+crawl_reviewed/skype.com/Fair Usage Policy for Subscriptions.txt
+crawl_reviewed/skype.com/Fair Usage Policy for US Minute Bundles.txt
+crawl_reviewed/skype.com/Group Video Calling Fair Usage Policy.txt
+crawl_reviewed/skype.com/Privacy Policy.txt
+crawl_reviewed/skype.com/Terms of Use.txt
+crawl_reviewed/sonic.com/All Policies.txt
+crawl_reviewed/spotify.com/Privacy Policy.txt
+crawl_reviewed/spotify.com/Terms and Conditions of Use.txt
+crawl_reviewed/steampowered.com/Legal Info.txt
+crawl_reviewed/steampowered.com/Privacy Policy Agreement.txt
+crawl_reviewed/steampowered.com/Steam Refunds.txt
+crawl_reviewed/steampowered.com/Steam Subscriber Agreement.txt
+crawl_reviewed/trello.com/Operations and Security.txt
+crawl_reviewed/tumblr.com/Privacy Policy.txt
+crawl_reviewed/tumblr.com/Terms of Service.txt
+crawl_reviewed/twitpic.com/Privacy Policy.txt
+crawl_reviewed/twitpic.com/Terms of Service.txt
+crawl_reviewed/twitter.com/Privacy Policy.txt
+crawl_reviewed/twitter.com/Terms of Service.txt
+crawl_reviewed/vbulletin.com/Privacy Policy.txt
+crawl_reviewed/vbulletin.com/Terms and Conditions.txt
+crawl_reviewed/verizon.com/Terms of Service.txt
+crawl_reviewed/w3schools.com/Cookies and Privacy Policy - About Privacy.txt
+crawl_reviewed/w3schools.com/Terms of Use - About Copyright.txt
+crawl_reviewed/whatsapp.com/Terms of Service and Privacy (EU).txt
+crawl_reviewed/whatsapp.com/Terms of Service and Privacy.txt
+crawl_reviewed/wikimediafoundation.org/Privacy Policy.txt
+crawl_reviewed/wikimediafoundation.org/Terms of Use.txt
+crawl_reviewed/wikipedia.org/Privacy Policy.txt
+crawl_reviewed/wikipedia.org/Terms of Use.txt
+crawl_reviewed/wordfeud.com/Privacy Policy.txt
+crawl_reviewed/wordfeud.com/Terms of Service.txt
+crawl_reviewed/wordpress.com/Terms of Service.txt
+crawl_reviewed/xfinity.com/Acceptable Use Policy for Xfinity Internet.txt
+crawl_reviewed/xfinity.com/Customer Privacy Policy.txt
+crawl_reviewed/xfinity.com/Privacy Statement.txt
+crawl_reviewed/xfinity.com/Residential Subscriber Agreement.txt
+crawl_reviewed/xfinity.com/Software License Agreement.txt
+crawl_reviewed/xfinity.com/Web Services Terms of Service.txt
+crawl_reviewed/xing.com/Privacy Policy.txt
+crawl_reviewed/xing.com/Terms and Conditions.txt
+crawl_reviewed/yahoo.com/Privacy Policy.txt
+crawl_reviewed/yahoo.com/Terms of Service.txt
+crawl_reviewed/youtube.com/Privacy Policy.txt
+crawl_reviewed/youtube.com/Terms of Service.txt
+crawl_reviewed/zoosk.com/Privacy Policy.txt
