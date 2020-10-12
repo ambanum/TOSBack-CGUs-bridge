@@ -273,22 +273,22 @@ function toType(str) {
 
 const queue = new PQueue({ concurrency: THREADS });
 
-async function processWhenReady(serviceName, docName, url, xpath, importedFrom) {
+async function processWhenReady(serviceName, docName, url, xpath, importedFrom, filePathIn) {
   // console.log(serviceName, docName, 'queued');
-  queue.add(() => processNow(serviceName, docName, url, xpath, importedFrom));
+  return queue.add(() => processNow(serviceName, docName, url, xpath, importedFrom, filePathIn));
 }
 
 const pending = {};
-async function processNow(serviceName, docName, url, xpath, importedFrom) {
-  // console.log(serviceName, docName, 'start');
+async function processNow(serviceName, docName, url, xpath, importedFrom, filePathIn) {
+  console.log(filePathIn, serviceName, docName, 'processing');
   if (urlAlreadyCovered[url]) {
-    // console.log(serviceName, docName, 'skip');
+    console.log(filePathIn, serviceName, docName, 'Already covered');
     return;
   }
   pending[`${serviceName} - ${docName} - ${url}`] = true;
-  const fileName = `${serviceName}.json`;
-  if (!services[fileName]) {
-    services[fileName] = {
+  const fileNameOut = `${serviceName}.json`;
+  if (!services[fileNameOut]) {
+    services[fileNameOut] = {
       name: serviceName,
       importedFrom,
       documents: {}
@@ -296,7 +296,7 @@ async function processNow(serviceName, docName, url, xpath, importedFrom) {
   }
   try {
     const type = toType(docName);
-    if (services[fileName].documents[type]) {
+    if (services[fileNameOut].documents[type]) {
       throw new Error('Same type used twice!');
     }
     let select = 'body';
@@ -313,12 +313,12 @@ async function processNow(serviceName, docName, url, xpath, importedFrom) {
     };
     const validationResult = await validateDocument(docObj, []);
     if (validationResult.ok) {
-      services[fileName].documents[type] = docObj;
+      services[fileNameOut].documents[type] = docObj;
     }
-    await trySave(fileName);
-    console.log(serviceName, docName, 'done');
+    await trySave(fileNameOut);
+    console.log(filePathIn, serviceName, docName, 'done');
   } catch (e) {
-    console.log(serviceName, docName, 'fail', e.message);
+    console.log(filePathIn, serviceName, docName, 'fail', e.message);
   }
   delete pending[`${serviceName} - ${docName} - ${url}`];
   // console.log('Pending:', Object.keys(pending));
@@ -410,16 +410,17 @@ const couldNotRead = {};
 const fileSemaphore = new PQueue({ concurrency: 1 });
 const commitSemaphore = new PQueue({ concurrency: 1 });
 
-function createRule(serviceName, type, docnameObj, importedFrom) {
-  return processWhenReady(serviceName, type, docnameObj.url.name, docnameObj.url.xpath, importedFrom);
+function createRule(serviceName, type, docnameObj, importedFrom, filePathIn) {
+  return processWhenReady(serviceName, type, docnameObj.url.name, docnameObj.url.xpath, importedFrom, filePathIn);
 }
 
-async function importRule(domainName, fileName, masterHash) {
+async function importRule(domainName, fileName, masterHash, filePathIn) {
+  // console.log(domainName, fileName, masterHash);
   let imported;
   try {
     imported = JSON.parse(await parseFile(path.join(getLocalRulesFolder(), `${domainName}.xml`)));
   } catch (e) {
-    // console.error('Error parsing xml', filename, e.message);
+    console.error('Error parsing xml', filename, e.message);
     throw e;
   }
   if (!Array.isArray(imported.sitename.docname)) {
@@ -432,7 +433,7 @@ async function importRule(domainName, fileName, masterHash) {
     if (docnameObj.name === docName) {
       // console.log('yes!');
       const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
-      await createRule(serviceName, type, docnameObj, encodeURI(`https://github.com/tosdr/tosback2/blob/${masterHash}/rules/${domainName}.xml`));
+      await createRule(serviceName, type, docnameObj, encodeURI(`https://github.com/tosdr/tosback2/blob/${masterHash}/rules/${domainName}.xml`), filePathIn);
     }
   });
   // throw new Error('debug!');
@@ -546,28 +547,52 @@ async function importCrawl(fileName, foldersToTry, domainName) {
   });
 }
 
-function fileNameToDomainName(fileName) {
-  const parts = fileName.split('/');
-  return parts[1];
+function filePathToDomainName(filePath) {
+  const parts = filePath.split('/');
+  let ret = parts[1];
+  if (!ret) {
+    console.log('huh?', filePath);
+  }
+  const exceptions = {
+    'help.twcable.com': 'twcable_Residential_Services_Subscriber_Agreement',
+    'www.craigslist.org': 'craigslist_Terms_Of_Use'
+  };
+  if (exceptions[ret]) {
+    return exceptions[ret];
+  }
+  return ret;
 }
+function filePathToFileName(filePath) {
+  const parts = filePath.split('/');
+  return parts[parts.length-1];
+}
+
 async function importCrawls(foldersToTry, only, rulesOnly) {
-  // let fileNames = (await fs.readFile('./crawl-files-list.txt')).toString().split('\n');
-  let fileNames = (await fs.readFile('./crawl-files-list-current.txt')).toString().split('\n');
+  // Reasoning here is that if you only want the rules then you're not interested
+  // in documents that can no longer be crawled, because those rules will fail to import anyway.
+  // So using the shorter list in that case (590 instead of 1711).
+  let fileNames = (await fs.readFile(
+    (rulesOnly ? './crawl-files-list-current.txt' : './crawl-files-list.txt')
+  )).toString().split('\n').filter(x => x.length);
   if (only) {
     console.log('Filtering filenames for importCrawls, looking for', only);
     fileNames = fileNames.filter(x => (x.indexOf(only) !== -1));
   }
 
   if (rulesOnly) {
+    const tosbackGit = getTosbackGit();
     await tosbackGit.checkout('master');
     await tosbackGit.pull();
     const masterGitLog = await tosbackGit.log();
     const masterHash = masterGitLog.latest.hash;
-    const filePromises = fileNames.map(fileName => importRule(fileNameToDomainName(fileName), fileName, masterHash));
+    const filePromises = fileNames.map(filePath => {
+      return importRule(filePathToDomainName(filePath), filePathToFileName(filePath), masterHash, filePath)
+        .catch(e => console.log(filePath, 'bomb', e.message));
+    });
     return Promise.all(filePromises);
   }
 
-  const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, fileNameToDomainName(fileName)));
+  const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, filePathToDomainName(fileName)));
   return Promise.all(filePromises);
 }
 
