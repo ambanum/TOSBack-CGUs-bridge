@@ -345,7 +345,7 @@ async function processTosback2(importedFrom, imported) {
 	    docnameObj.url.xpath,
 	    importedFrom
     ).catch(e => {
-      // console.log('Could not process', serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom, e.message);
+      console.log('Could not process', serviceName, docnameObj.name, docnameObj.url.name, docnameObj.url.xpath, importedFrom, e.message);
     });
   });
   return Promise.all(promises);
@@ -546,20 +546,16 @@ async function importCrawl(fileName, foldersToTry, domainName) {
   });
 }
 
-async function importCrawls(foldersToTry, only, folderIndex = 0) {
-  // console.log('Tosback2 gathering domain names');
-  const domainNames = await fs.readdir(path.join(LOCAL_TOSBACK2_REPO, foldersToTry[folderIndex]));
-  const domainPromises = domainNames.map(async domainName => {
-    if (only && domainName !== only) {
-      // console.log(`Skipping ${domainName}, only looking for ${only}.`);
-      return;
-    }
-    // console.log('Found!', domainName);
-    const fileNames = await fs.readdir(path.join(LOCAL_TOSBACK2_REPO, foldersToTry[folderIndex], domainName));
-    const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, domainName));
-    return Promise.all(filePromises);
-  });
-  await Promise.all(domainPromises);
+async function importCrawls(foldersToTry, only) {
+  let fileNames = (await fs.readFile('./crawl-files-list.txt')).toString().split('\n');
+  if (only) {
+    console.log('Filtering filenames for importCrawls, looking for', only);
+    fileNames = fileNames.filter(x => (x.indexOf(only) !== -1));
+  }
+  console.log(fileNames);
+  return;
+  const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, domainName));
+  return Promise.all(filePromises);
 }
 
 async function trySave(i) {
@@ -624,4 +620,4 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
 // run(false, false, true, true);
-run(true, false, false, false);
+run(false, false, false, true);
