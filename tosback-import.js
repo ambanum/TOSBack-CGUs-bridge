@@ -571,12 +571,12 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
   // Reasoning here is that if you only want the rules then you're not interested
   // in documents that can no longer be crawled, because those rules will fail to import anyway.
   // So using the shorter list in that case (590 instead of 1711).
-  let fileNames = (await fs.readFile(
+  let filePaths = (await fs.readFile(
     (rulesOnly ? './crawl-files-list-current.txt' : './crawl-files-list.txt')
   )).toString().split('\n').filter(x => x.length);
   if (only) {
     console.log('Filtering filenames for importCrawls, looking for', only);
-    fileNames = fileNames.filter(x => (x.indexOf(only) !== -1));
+    filePaths = filePaths.filter(x => (x.indexOf(only) !== -1));
   }
 
   if (rulesOnly) {
@@ -585,14 +585,14 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
     await tosbackGit.pull();
     const masterGitLog = await tosbackGit.log();
     const masterHash = masterGitLog.latest.hash;
-    const filePromises = fileNames.map(filePath => {
+    const filePromises = filePaths.map(filePath => {
       return importRule(filePathToDomainName(filePath), filePathToFileName(filePath), masterHash, filePath)
         .catch(e => console.log(filePath, 'bomb', e.message));
     });
     return Promise.all(filePromises);
   }
 
-  const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, filePathToDomainName(fileName)));
+  const filePromises = filePaths.map(filePath => importCrawl(filePathToFileName(filePath), foldersToTry, filePathToDomainName(filePath)));
   return Promise.all(filePromises);
 }
 
