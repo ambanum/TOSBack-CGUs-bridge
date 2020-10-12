@@ -550,16 +550,23 @@ function fileNameToDomainName(fileName) {
   const parts = fileName.split('/');
   return parts[1];
 }
-async function importCrawls(foldersToTry, only) {
+async function importCrawls(foldersToTry, only, rulesOnly) {
   // let fileNames = (await fs.readFile('./crawl-files-list.txt')).toString().split('\n');
   let fileNames = (await fs.readFile('./crawl-files-list-current.txt')).toString().split('\n');
   if (only) {
     console.log('Filtering filenames for importCrawls, looking for', only);
     fileNames = fileNames.filter(x => (x.indexOf(only) !== -1));
   }
-  console.log(fileNames.map(fileName => [ fileName, fileNameToDomainName(fileName)]));
-  return;
-  //  importRule(domainName, fileName, masterHash);
+
+  if (rulesOnly) {
+    await tosbackGit.checkout('master');
+    await tosbackGit.pull();
+    const masterGitLog = await tosbackGit.log();
+    const masterHash = masterGitLog.latest.hash;
+    const filePromises = fileNames.map(fileName => importRule(fileNameToDomainName(fileName), fileName, masterHash));
+    return Promise.all(filePromises);
+  }
+
   const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, fileNameToDomainName(fileName)));
   return Promise.all(filePromises);
 }
@@ -601,7 +608,7 @@ async function readExistingServices() {
   return urlAlreadyCovered;
 }
 
-async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCrawls, only) {
+async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCrawls, only, rulesOnly) {
   await readExistingServices();
 
   if (includeXml) {
@@ -611,10 +618,10 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
     await parseAllPg(POSTGRES_URL, services);
   }
   if (includeCrawls) {
-    await importCrawls(getLocalCrawlsFolders(), only, 0);
+    await importCrawls(getLocalCrawlsFolders(), only, rulesOnly);
   }
   if (includeUnreviewedCrawls) {
-    await importCrawls(getLocalCrawlsFolders(), only, 1);
+    await importCrawls(getLocalCrawlsFolders(), only, rulesOnly);
   }
   await fileSemaphore.add(async () => {
     // console.log('Setting Tosback2 repo back to master');
@@ -626,4 +633,4 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
 // run(false, false, true, true);
-run(false, false, false, true);
+run(false, false, false, true, undefined, true);
