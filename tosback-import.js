@@ -578,6 +578,17 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
     console.log('Filtering filenames for importCrawls, looking for', only);
     filePaths = filePaths.filter(x => (x.indexOf(only) !== -1));
   }
+  filePaths = filePaths.filter(x => {
+    if (x.startsWith('crawl_reviewed/')) {
+      return true;
+    }
+    const equivalent = x.replace('crawl/', 'crawl_reviewed/');
+    if (filePaths.indexOf(equivalent) !== -1) {
+      console.log(x, 'equivalent to', equivalent);
+      return false;
+    }
+    return true;
+  });
 
   if (rulesOnly) {
     const tosbackGit = getTosbackGit();
