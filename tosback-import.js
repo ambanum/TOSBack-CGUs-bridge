@@ -656,9 +656,6 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
   if (includeCrawls) {
     await importCrawls(getLocalCrawlsFolders(), only, rulesOnly);
   }
-  if (includeUnreviewedCrawls) {
-    await importCrawls(getLocalCrawlsFolders(), only, rulesOnly);
-  }
   await fileSemaphore.add(async () => {
     // console.log('Setting Tosback2 repo back to master');
     const tosbackGit = getTosbackGit();
@@ -668,5 +665,5 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
 }
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
-// run(false, false, true, true);
-run(false, false, false, true, undefined, true);
+// run(false, false, true);
+run(false, false, true, undefined, true);
