@@ -546,15 +546,21 @@ async function importCrawl(fileName, foldersToTry, domainName) {
   });
 }
 
+function fileNameToDomainName(fileName) {
+  const parts = fileName.split('/');
+  return parts[1];
+}
 async function importCrawls(foldersToTry, only) {
-  let fileNames = (await fs.readFile('./crawl-files-list.txt')).toString().split('\n');
+  // let fileNames = (await fs.readFile('./crawl-files-list.txt')).toString().split('\n');
+  let fileNames = (await fs.readFile('./crawl-files-list-current.txt')).toString().split('\n');
   if (only) {
     console.log('Filtering filenames for importCrawls, looking for', only);
     fileNames = fileNames.filter(x => (x.indexOf(only) !== -1));
   }
-  console.log(fileNames);
+  console.log(fileNames.map(fileName => [ fileName, fileNameToDomainName(fileName)]));
   return;
-  const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, domainName));
+  //  importRule(domainName, fileName, masterHash);
+  const filePromises = fileNames.map(fileName => importCrawl(fileName, foldersToTry, fileNameToDomainName(fileName)));
   return Promise.all(filePromises);
 }
 
@@ -620,4 +626,4 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
 // run(false, false, true, true);
-run(true, false, false, false);
+run(false, false, false, true);
