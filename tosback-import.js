@@ -281,7 +281,7 @@ async function processWhenReady(serviceName, docName, url, xpath, importedFrom, 
 
 const pending = {};
 async function processNow(serviceName, docName, url, xpath, importedFrom, filePathIn) {
-  console.log(filePathIn, serviceName, docName, 'processing');
+  // console.log(filePathIn, serviceName, docName, 'processing');
   // console.log(filePathIn);
   // return;
   if (urlAlreadyCovered[url]) {
@@ -317,9 +317,19 @@ async function processNow(serviceName, docName, url, xpath, importedFrom, filePa
     const validationResult = await validateDocument(docObj, []);
     if (validationResult.ok) {
       services[fileNameOut].documents[type] = docObj;
+      await trySave(fileNameOut);
+      console.log(filePathIn, serviceName, docName, 'done');  
+    } else if (!validationResult.fetchable) {
+      console.log(filePathIn, 'not fetchable', url);
+    } else if (!validationResult.selectorMatchesAnElement) {
+      console.log(filePathIn, 'selector not found', url, selector);
+    } else if (!validationResult.hasConsistentFilteredContent) {
+      console.log(filePathIn, 'inconsistent');
+    } else if (!validationResult.isLongEnough) {
+      console.log(filePathIn, 'too short');
+    } else {
+      console.log(filePathIn, 'invalid for unrecognized reason');
     }
-    await trySave(fileNameOut);
-    console.log(filePathIn, serviceName, docName, 'done');
   } catch (e) {
     console.log(filePathIn, serviceName, docName, 'fail', e.message);
   }
@@ -435,7 +445,7 @@ async function importRule(domainName, fileName, tosback2Hash, filePathIn) {
   let found = 0;
   const promises = imported.sitename.docname.map(async docnameObj => {
     // console.log('looking for', docName, docnameObj);
-    if (docnameObj.name === docName) {
+    if (docnameObj.name === docName && !found) {
       // console.log('yes!');
       found++;
       const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
@@ -647,6 +657,8 @@ async function trySave(i) {
     } catch (e) {
       console.error('Could not save', e);
     }
+  } else {
+    // console.log('No docs!', i, services[i]);
   }
 }
 
