@@ -322,7 +322,7 @@ async function processNow(serviceName, docName, url, xpath, importedFrom, filePa
     } else if (!validationResult.fetchable) {
       console.log(filePathIn, 'not fetchable', url);
     } else if (!validationResult.selectorMatchesAnElement) {
-      console.log(filePathIn, 'selector not found', url, selector);
+      console.log(filePathIn, 'selector not found', url, select);
     } else if (!validationResult.hasConsistentFilteredContent) {
       console.log(filePathIn, 'inconsistent');
     } else if (!validationResult.isLongEnough) {
@@ -331,6 +331,7 @@ async function processNow(serviceName, docName, url, xpath, importedFrom, filePa
       console.log(filePathIn, 'invalid for unrecognized reason');
     }
   } catch (e) {
+    // console.log(e);
     console.log(filePathIn, serviceName, docName, 'fail', e.message);
   }
   delete pending[`${serviceName} - ${docName} - ${url}`];
