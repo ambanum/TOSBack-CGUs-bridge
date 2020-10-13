@@ -34,6 +34,7 @@ const fs = fsApi.promises;
 const SERVICES_PATH = '../CGUs/services/';
 const LOCAL_TOSBACK2_REPO = (process.env.LAPTOP ? '../../tosdr/tosback2' : '../tosback2');
 const TOSBACK2_WEB_ROOT = 'https://github.com/tosdr/tosback2';
+const BRANCH_TO_USE = 'all-file-paths';
 const TOSBACK2_RULES_FOLDER_NAME = 'rules';
 const TOSBACK2_CRAWLS_FOLDER_NAME_1 = 'crawl_reviewed';
 const TOSBACK2_CRAWLS_FOLDER_NAME_2 = 'crawl';
@@ -417,8 +418,8 @@ function createRule(serviceName, type, docnameObj, importedFrom, filePathIn) {
   return processWhenReady(serviceName, type, docnameObj.url.name, docnameObj.url.xpath, importedFrom, filePathIn);
 }
 
-async function importRule(domainName, fileName, masterHash, filePathIn) {
-  // console.log(domainName, fileName, masterHash);
+async function importRule(domainName, fileName, tosback2Hash, filePathIn) {
+  // console.log(domainName, fileName, tosback2Hash);
   let imported;
   try {
     imported = JSON.parse(await parseFile(path.join(getLocalRulesFolder(), `${domainName}.xml`)));
@@ -438,7 +439,7 @@ async function importRule(domainName, fileName, masterHash, filePathIn) {
       // console.log('yes!');
       found++;
       const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
-      await createRule(serviceName, type, docnameObj, encodeURI(`https://github.com/tosdr/tosback2/blob/${masterHash}/rules/${domainName}.xml`), filePathIn);
+      await createRule(serviceName, type, docnameObj, encodeURI(`https://github.com/tosdr/tosback2/blob/${tosback2Hash}/rules/${domainName}.xml`), filePathIn);
     }
   });
   // throw new Error('debug!');
@@ -474,14 +475,14 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
       filePath2 = path.join(foldersToTry[1], domainName, fileName);
     }
     // console.log('filePath', filePath1);
-    // console.log('Tosback2 git checkout master');
-    await tosbackGit.checkout('master');
+    // console.log('Tosback2 git checkout BRANCH_TO_USE');
+    await tosbackGit.checkout(BRANCH_TO_USE);
     // console.log('Tosback2 git pull');
     await tosbackGit.pull();
-    const masterGitLog = await tosbackGit.log();
-    const masterHash = masterGitLog.latest.hash;
+    const tosback2GitLog = await tosbackGit.log();
+    const tosback2Hash = tosback2GitLog.latest.hash;
     try {
-      await importRule(domainName, fileName, masterHash, filePathIn);
+      await importRule(domainName, fileName, tosback2Hash, filePathIn);
     } catch (e) {
       // console.error('Imported snapshots but could not import rule', domainName, fileName);
     }
@@ -617,12 +618,12 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
 
   if (rulesOnly) {
     const tosbackGit = getTosbackGit();
-    await tosbackGit.checkout('master');
+    await tosbackGit.checkout(BRANCH_TO_USE);
     await tosbackGit.pull();
-    const masterGitLog = await tosbackGit.log();
-    const masterHash = masterGitLog.latest.hash;
+    const tosback2GitLog = await tosbackGit.log();
+    const tosback2Hash = tosback2GitLog.latest.hash;
     const filePromises = filePaths.map(filePath => {
-      return importRule(filePathToDomainName(filePath), filePathToFileName(filePath), masterHash, filePath)
+      return importRule(filePathToDomainName(filePath), filePathToFileName(filePath), tosback2Hash, filePath)
         .catch(e => console.log(filePath, 'bomb', e.message));
     });
     return Promise.all(filePromises);
@@ -642,9 +643,9 @@ async function trySave(i) {
       await fs.mkdir(containingDirRule, { recursive: true });
       await fs.writeFile(fileName, `${JSON.stringify(services[i], null, 2)}\n`);
       // await new Promise(resolve => setTimeout(resolve, 100));
-      // console.log('Saved', path.join(SERVICES_PATH, i));
+      console.log('Saved', path.join(SERVICES_PATH, i));
     } catch (e) {
-      // console.error('Could not save', e);
+      console.error('Could not save', e);
     }
   }
 }
@@ -682,9 +683,9 @@ async function run(includeXml, includePsql, includeCrawls, only, rulesOnly) {
     await importCrawls(getLocalCrawlsFolders(), only, rulesOnly);
   }
   await fileSemaphore.add(async () => {
-    // console.log('Setting Tosback2 repo back to master');
+    // console.log('Setting Tosback2 repo back to BRANCH_TO_USE');
     const tosbackGit = getTosbackGit();
-    await tosbackGit.checkout('master');
+    await tosbackGit.checkout(BRANCH_TO_USE);
   });
   // console.log(Object.keys(typeNotFound));
 }
