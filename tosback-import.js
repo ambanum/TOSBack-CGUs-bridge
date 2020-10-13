@@ -458,7 +458,10 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     const versionGit = getVersionGit();
 
     const filePath1 = path.join(foldersToTry[0], domainName, fileName);
-    const filePath2 = path.join(foldersToTry[1], domainName, fileName);
+    let filePath2;
+    if (foldersToTry.length > 1) {
+      filePath2 = path.join(foldersToTry[1], domainName, fileName);
+    }
     // console.log('filePath', filePath1);
     // console.log('Tosback2 git checkout master');
     await tosbackGit.checkout('master');
@@ -491,16 +494,23 @@ async function importCrawl(fileName, foldersToTry, domainName) {
         fileTxtAtCommit = await fs.readFile(path.join(LOCAL_TOSBACK2_REPO, filePath1));
         sourceUrl = `https://github.com/tosdr/tosback2/blob/${commit.hash}/${filePath1}`;
       } catch (e) {
-        // console.log('Retrying to load file at', filePath2, commit.hash);
-        try {
-          fileTxtAtCommit = await fs.readFile(path.join(LOCAL_TOSBACK2_REPO, filePath2));
-          sourceUrl = `https://github.com/tosdr/tosback2/blob/${commit.hash}/${filePath2}`;
-        } catch (e) {
+        if (filePath2) {
+          // console.log('Retrying to load file at', filePath2, commit.hash);
+          try {
+            fileTxtAtCommit = await fs.readFile(path.join(LOCAL_TOSBACK2_REPO, filePath2));
+            sourceUrl = `https://github.com/tosdr/tosback2/blob/${commit.hash}/${filePath2}`;
+          } catch (e) {
+            if (!couldNotRead[commit.hash]) {
+              couldNotRead[commit.hash] = [];
+            }
+            couldNotRead[commit.hash].push(filePath1);
+            // console.log('Could not load, skipping', couldNotRead);
+          }
+        } else {
           if (!couldNotRead[commit.hash]) {
             couldNotRead[commit.hash] = [];
           }
           couldNotRead[commit.hash].push(filePath1);
-          // console.log('Could not load, skipping', couldNotRead);
         }
       }
       html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
