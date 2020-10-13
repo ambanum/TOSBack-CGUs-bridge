@@ -609,7 +609,7 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
     }
     const equivalent = x.replace('crawl/', 'crawl_reviewed/');
     if (filePaths.indexOf(equivalent) !== -1) {
-      console.log(x, 'equivalent to', equivalent);
+      // console.log(x, 'equivalent to', equivalent);
       return false;
     }
     return true;
