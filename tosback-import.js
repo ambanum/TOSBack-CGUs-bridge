@@ -679,5 +679,4 @@ async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCraw
 }
 
 // Edit this line to run the Tosback rules / ToS;DR rules / Tosback crawls import(s) you want:
-// run(false, false, true);
-run(false, false, true, undefined, true);
+run(false, false, true, process.env.ONLY, process.env.RULES_ONLY);
