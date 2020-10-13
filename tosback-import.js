@@ -566,6 +566,10 @@ function filePathToFileName(filePath) {
   const parts = filePath.split('/');
   return parts[parts.length-1];
 }
+function filePathToFoldersToTry(filePath) {
+  const parts = filePath.split('/');
+  return [ parts[0] ];
+}
 
 async function importCrawls(foldersToTry, only, rulesOnly) {
   // Reasoning here is that if you only want the rules then you're not interested
@@ -603,7 +607,7 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
     return Promise.all(filePromises);
   }
 
-  const filePromises = filePaths.map(filePath => importCrawl(filePathToFileName(filePath), foldersToTry, filePathToDomainName(filePath)));
+  const filePromises = filePaths.map(filePath => importCrawl(filePathToFileName(filePath), filePathToFoldersToTry(filePath), filePathToDomainName(filePath)));
   return Promise.all(filePromises);
 }
 
