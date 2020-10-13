@@ -305,7 +305,7 @@ async function processNow(serviceName, docName, url, xpath, importedFrom, filePa
     let select = 'body';
     if (xpath) {
       try {
-        select = xPathToCss(xpath);
+        select = xPathToCss(xpath) || 'body';
       } catch(e) {
         // use 'body' as the selector
       }
