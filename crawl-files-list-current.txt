@@ -302,6 +302,7 @@ crawl/popcap.com/Privacy Policy.txt
 crawl/poptropica.com/Privacy Policy.txt
 crawl/popularmechanics.com/Privacy Policy.txt
 crawl/priceminister.com/Privacy Policy.txt
+crawl/privacychoice.org/Privacy Policy.txt
 crawl/privacyscore.com/Privacy Policy.txt
 crawl/progressive.com/Privacy Policy.txt
 crawl/realclearpolitics.com/Privacy Policy.txt
@@ -315,6 +316,7 @@ crawl/samsung.com/SAMSUNG PRIVACY POLICY FOR THE U.S..txt
 crawl/samsung.com/SmartThings Privacy Policy.txt
 crawl/samsung.com/SmartThings Terms.txt
 crawl/scmagazine.com/Privacy Policy.txt
+crawl/scribd.com/Privacy Policy.txt
 crawl/search-results.com/Privacy Policy.txt
 crawl/seattletimes.nwsource.com/Privacy Policy.txt
 crawl/seekingalpha.com/Privacy Policy.txt

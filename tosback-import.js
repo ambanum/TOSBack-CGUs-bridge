@@ -281,6 +281,7 @@ async function processWhenReady(serviceName, docName, url, xpath, importedFrom, 
 const pending = {};
 async function processNow(serviceName, docName, url, xpath, importedFrom, filePathIn) {
   console.log(filePathIn, serviceName, docName, 'processing');
+  return;
   if (urlAlreadyCovered[url]) {
     console.log(filePathIn, serviceName, docName, 'Already covered');
     return;
