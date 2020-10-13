@@ -8,7 +8,7 @@ nvm install 14
 apt update
 apt install -yq build-essential libpq-dev
 git clone https://github.com/ambanum/TOSBack-CGUs-bridge
-git clone https://github.com/tosdr/tosback2
+git clone https://github.com/TosbackCgusBridge-Bot/tosback2
 cd TOSBack-CGUs-bridge
 npm install
 cd ..

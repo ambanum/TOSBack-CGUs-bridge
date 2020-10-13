@@ -6,7 +6,7 @@ cd ../tosback2
 git restore --staged .
 rm -rf *
 git checkout -- .
-git checkout master
+git checkout all-file-paths
 git pull
 cat ../TOSBack-CGUs-bridge/crawl-files-list.txt | awk -F'/' '{print "mkdir \"" $1 "/" $2 "\"; touch \"" $0 "\"" }' | sh
 ls -l crawl*/*/*.txt | wc -l
