@@ -440,7 +440,7 @@ async function importRule(domainName, fileName, masterHash, filePathIn) {
   // FIXME: only one of these promises actually does something
   return Promise.all(promises);
 }
-async function importCrawl(fileName, foldersToTry, domainName) {
+async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
   let thisFileCommits;
   await fileSemaphore.add(async () => {
     const snapshotDestPath = path.join(SNAPSHOTS_PATH, translateSnapshotPath(domainName, fileName));
@@ -470,7 +470,7 @@ async function importCrawl(fileName, foldersToTry, domainName) {
     const masterGitLog = await tosbackGit.log();
     const masterHash = masterGitLog.latest.hash;
     try {
-      await importRule(domainName, fileName, masterHash);
+      await importRule(domainName, fileName, masterHash, filePathIn);
     } catch (e) {
       // console.error('Imported snapshots but could not import rule', domainName, fileName);
     }
@@ -617,7 +617,7 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
     return Promise.all(filePromises);
   }
 
-  const filePromises = filePaths.map(filePath => importCrawl(filePathToFileName(filePath), filePathToFoldersToTry(filePath), filePathToDomainName(filePath)));
+  const filePromises = filePaths.map(filePath => importCrawl(filePathToFileName(filePath), filePathToFoldersToTry(filePath), filePathToDomainName(filePath), filePath));
   return Promise.all(filePromises);
 }
 
