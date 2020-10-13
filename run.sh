@@ -38,33 +38,17 @@ cd ../CGUs
 git push -u origin $BRANCH1
 
 cd ../CGUs-snapshots
-for file in */*
-do
-  echo truncate -s 0 \"$file\" | sh
-done
-git commit -am"Truncate all files for switch from tosback2 crawler to CGUs crawler"
-git push
 git checkout master
 git pull
-git rebase $BRANCH1
 git branch $BRANCH2
 git checkout $BRANCH2
+git rebase --strategy-option=theirs $BRANCH1
 git push -u origin $BRANCH2
-git branch -D master
-git checkout --track origin/master
 
 cd ../CGUs-versions
-for file in */*
-do
-  echo truncate -s 0 \"$file\" | sh
-done
-git commit -am"Truncate all files for switch from tosback2 crawler to CGUs crawler"
-git push
 git checkout master
 git pull
-git rebase $BRANCH1
 git branch $BRANCH2
 git checkout $BRANCH2
+git rebase --strategy-option=theirs $BRANCH1
 git push -u origin $BRANCH2
-git branch -D master
-git checkout --track origin/master
