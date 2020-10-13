@@ -280,9 +280,9 @@ async function processWhenReady(serviceName, docName, url, xpath, importedFrom, 
 
 const pending = {};
 async function processNow(serviceName, docName, url, xpath, importedFrom, filePathIn) {
-  // console.log(filePathIn, serviceName, docName, 'processing');
-  console.log(filePathIn);
-  return;
+  console.log(filePathIn, serviceName, docName, 'processing');
+  // console.log(filePathIn);
+  // return;
   if (urlAlreadyCovered[url]) {
     console.log(filePathIn, serviceName, docName, 'Already covered');
     return;
@@ -446,6 +446,9 @@ async function importRule(domainName, fileName, masterHash, filePathIn) {
   await Promise.all(promises);
   if (found !== 1) {
     console.log(filePathIn, `Found ${found} docname objects with name "${docName}" in ${path.join(getLocalRulesFolder(), `${domainName}.xml`)}`);
+    // imported.sitename.docname.map(async docnameObj => {
+    //   console.log(filePathIn, `Found "${docnameObj.name}"`);
+    // });
   }
 }
 async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
