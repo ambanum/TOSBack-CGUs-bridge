@@ -11,6 +11,8 @@ rm -rf *
 git checkout -- .
 git checkout master
 git pull
+cat ../TOSBack-CGUs-bridge/crawl-files-list.txt | awk '{print "mkdir -p \"" $0 "\"; touch \"" $0 "\"" }' | sh
+ls -l crawl*/*/*.txt | wc -l
 cd ../CGUs-snapshots
 git checkout c02f4f9f18aa336d51d6bddaa893ee822e03ad7f
 git branch $BRANCH1
