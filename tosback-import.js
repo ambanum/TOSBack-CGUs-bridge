@@ -280,7 +280,8 @@ async function processWhenReady(serviceName, docName, url, xpath, importedFrom, 
 
 const pending = {};
 async function processNow(serviceName, docName, url, xpath, importedFrom, filePathIn) {
-  console.log(filePathIn, serviceName, docName, 'processing');
+  // console.log(filePathIn, serviceName, docName, 'processing');
+  console.log(filePathIn);
   return;
   if (urlAlreadyCovered[url]) {
     console.log(filePathIn, serviceName, docName, 'Already covered');
@@ -339,6 +340,7 @@ async function processTosback2(importedFrom, imported) {
       return;
     }
     // console.log(serviceName, imported, docnameObj);
+    // processWhenReady(serviceName, docName, url, xpath, importedFrom, filePathIn)
     return processWhenReady(
 	    serviceName,
 	    docnameObj.name,
@@ -429,17 +431,22 @@ async function importRule(domainName, fileName, masterHash, filePathIn) {
   }
   // const serviceName = domainNameToService(imported.sitename.name);
   const docName = fileName.replace(/.txt$/g, '');
+  let found = 0;
   const promises = imported.sitename.docname.map(async docnameObj => {
     // console.log('looking for', docName, docnameObj);
     if (docnameObj.name === docName) {
       // console.log('yes!');
+      found++;
       const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
       await createRule(serviceName, type, docnameObj, encodeURI(`https://github.com/tosdr/tosback2/blob/${masterHash}/rules/${domainName}.xml`), filePathIn);
     }
   });
   // throw new Error('debug!');
   // FIXME: only one of these promises actually does something
-  return Promise.all(promises);
+  await Promise.all(promises);
+  if (found !== 1) {
+    console.log(filePathIn, `Found ${found} docname objects with name "${docName}" in ${path.join(getLocalRulesFolder(), `${domainName}.xml`)}`);
+  }
 }
 async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
   let thisFileCommits;
@@ -599,7 +606,7 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
     }
     const equivalent = x.replace('crawl/', 'crawl_reviewed/');
     if (filePaths.indexOf(equivalent) !== -1) {
-      // console.log(x, 'equivalent to', equivalent);
+      console.log(x, 'equivalent to', equivalent);
       return false;
     }
     return true;
@@ -659,7 +666,7 @@ async function readExistingServices() {
   return urlAlreadyCovered;
 }
 
-async function run(includeXml, includePsql, includeCrawls, includeUnreviewedCrawls, only, rulesOnly) {
+async function run(includeXml, includePsql, includeCrawls, only, rulesOnly) {
   await readExistingServices();
 
   if (includeXml) {
