@@ -35,6 +35,8 @@ git push -u origin $BRANCH1
 cd ../CGUs-versions
 git push -u origin $BRANCH1
 cd ../CGUs
+git add services/
+git commit -am"Services imported from tosback2 using https://github.com/ambanum/TOSBack-CGUs-bridge"
 git push -u origin $BRANCH1
 
 cd ../CGUs-snapshots
