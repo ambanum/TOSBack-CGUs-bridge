@@ -203,7 +203,9 @@ function getSnapshotPathComponents(domainName, fileName) {
     // console.log(e.message);
     type = 'unknown';
     typeNotFound[`[${domainName}] ${fileName.replace(/.txt$/, '')}`] = true;
-    // throw e;
+    if (!process.env.ALLOW_UNKNOWN) {
+      throw e;
+    }
   }
   function finalTouch(serviceName) {
     const touchups = {
