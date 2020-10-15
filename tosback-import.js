@@ -573,10 +573,11 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
       // console.log('committing', snapshotDestPath, `From tosback2 ${commit.hash}`);
       await snapshotGit.add('.');
       const verb = (starting ? 'Start tracking' : 'Update');
+      const { serviceName, type } = getSnapshotPathComponents(domainName, fileName);
       starting = false;
       const dateString = new Date(commit.date).toISOString().split('T')[0];
       const snapshotCommitMessage = [
-        `${verb} ${translateSnapshotPath(domainName, fileName)}`,
+        `${verb} ${serviceName} ${type}`,
         '',
         `Imported from ${encodeURI(sourceUrl)}`,
         `Snapshot originally obtained on ${dateString}`
@@ -601,7 +602,7 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
       // console.log('committing', versionDestPath, `From tosback2 ${commit.hash}`);
       await versionGit.add('.');
       const versionCommitMessage = [
-        `${verb} ${translateSnapshotPath(domainName, fileName)}`,
+        `${verb} ${serviceName} ${type}`,
         '',
         `This version was recorded after filtering snapshot ${snapshotCommitHash}`,
         `Snapshot originally obtained on ${dateString}`
