@@ -561,7 +561,7 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
           couldNotRead[commit.hash].push(filePath1);
         }
       }
-      if (!fileTextAtCommit) {
+      if (!fileTxtAtCommit) {
         console.log(filePathIn, `no file text at tosback2-commit ${commit.hash}`);
         return;
       }
