@@ -584,7 +584,7 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
       ].join('\n');
       // console.log('committing snapshot');
       await snapshotGit.commit(snapshotCommitMessage, [ '-a', `--date="${commit.date}"` ]);
-      const gitLog = await snapshot10Git.log();
+      const gitLog = await snapshotGit.log();
       const snapshotCommitHash = gitLog.latest.hash;
       // console.log({ snapshotCommitHash });
       const filteredContent = await filter({ content: html, mimeType: 'text/html', documentDeclaration: { fetch: 'http://ignore.me/', select: 'body' }, filterFunctions: [] }).catch((e) => {
