@@ -222,7 +222,7 @@ function getSnapshotPathComponents(domainName, fileName) {
       'Adn': 'Anchorage Daily News',
       'Af-medical': 'AF Medical',
       'Allthingsd': 'AllThingsD',
-      'Americanmedical-id': 'American Medical ID'
+      'Americanmedical-id': 'American Medical ID',
       'AmazonAlexa': 'Alexa',
       'Bl': 'The British Library',
       'AppleITunes': 'Apple iTunes',
