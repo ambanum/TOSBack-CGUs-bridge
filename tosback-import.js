@@ -559,6 +559,10 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
           couldNotRead[commit.hash].push(filePath1);
         }
       }
+      if (!fileTextAtCommit) {
+        console.log(filePathIn, `no file text at tosback2-commit ${commit.hash}`);
+        return;
+      }
       html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
       // console.log('saving snapshot', snapshotDestPath);
       const containingDirSnapshot = path.dirname(snapshotDestPath);
@@ -577,13 +581,17 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
       ].join('\n');
       // console.log('committing snapshot');
       await snapshotGit.commit(snapshotCommitMessage, [ '-a', `--date="${commit.date}"` ]);
-      const gitLog = await snapshotGit.log();
+      const gitLog = await snapshot10Git.log();
       const snapshotCommitHash = gitLog.latest.hash;
       // console.log({ snapshotCommitHash });
       const filteredContent = await filter({ content: html, mimeType: 'text/html', documentDeclaration: { fetch: 'http://ignore.me/', select: 'body' }, filterFunctions: [] }).catch((e) => {
         // console.log(e);
         throw new Error(`Could not filter ${snapshotDestPath} ${e.message}`);
       });
+      if (!filteredContent) {
+        console.log(filePathIn, `no filtered content from tosback2-commit ${commit.hash}`);
+        return;
+      }
       // console.log('saving version', versionDestPath);
       const containingDirVersion = path.dirname(versionDestPath);
       await fs.mkdir(containingDirVersion, { recursive: true });
