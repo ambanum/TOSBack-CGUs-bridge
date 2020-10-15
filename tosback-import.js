@@ -207,7 +207,30 @@ function getSnapshotPathComponents(domainName, fileName) {
   }
   function finalTouch(serviceName) {
     const touchups = {
-      'AmazonAlexa': 'Alexa'
+      '123greetings': '123 Greetings',
+      'Aa': 'Alcoholics Anonymous',
+      'Aarp': 'AARP',
+      'Abcnews': 'ABC News',
+      'Abercrombie': 'Abercrombie & Fitch',
+      'About': 'About.com',
+      'Accuweather': 'AccuWeather',
+      'Acdelco': 'ACDelco',
+      'Adage': 'Ad Age',
+      'Addthis': 'AddThis',
+      'Adn': 'Anchorage Daily News',
+      'Af-medical': 'AF Medical',
+      'Allthingsd': 'AllThingsD',
+      'Americanmedical-id': 'American Medical ID'
+      'AmazonAlexa': 'Alexa',
+      'Bl': 'The British Library',
+      'AppleITunes': 'Apple iTunes',
+      'Ask': 'ASKfm',
+      'Asmallworld': 'ASMALLWORLD',
+      'Deviantart': 'DeviantArt',
+      'Last': 'Last.fm',
+      'Livejournal': 'LiveJournal',
+      'Stackexchange': 'Stack Exchange',
+      'Whatsapp': 'WhatsApp'
     };
     return touchups[serviceName] || serviceName;
   }

@@ -1,0 +1,54 @@
+ASKfm
+AdMob
+AdSense
+App Store
+Apple
+Badoo
+CafeMom
+DeviantArt
+Discord
+Facebook
+Facebook Ads
+Facebook Payments
+Flickr
+Foursquare
+Goodreads
+Google
+Google Ads
+Google Analytics
+Google Play
+Instagram
+LICENSE
+LINE
+Last.fm
+LibraryThing
+Lingualeo
+LiveJournal
+Match
+Meetup
+Mix
+MouthShut
+Myspace
+Ning
+Pinterest
+Quora
+README.md
+Reddit
+SNCF Pro
+Skype
+Snapchat
+Stack Overflow
+Tagged
+Telegram
+Tencent
+TikTok
+Twitch
+Twitter
+Viber
+Vimeo
+We Heart It
+WeChat
+WeChat Open Platform
+WhatsApp
+Yelp
+hi5
