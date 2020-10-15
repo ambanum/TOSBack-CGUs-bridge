@@ -674,7 +674,10 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
     return Promise.all(filePromises);
   }
 
-  const filePromises = filePaths.map(filePath => importCrawl(filePathToFileName(filePath), filePathToFoldersToTry(filePath), filePathToDomainName(filePath), filePath));
+  const filePromises = filePaths.map(filePath => {
+    return importCrawl(filePathToFileName(filePath), filePathToFoldersToTry(filePath), filePathToDomainName(filePath), filePath)
+      .catch(e => console.log(filePath, 'bomb', e.message));
+  });
   return Promise.all(filePromises);
 }
 
