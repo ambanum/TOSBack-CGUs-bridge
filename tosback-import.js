@@ -203,9 +203,6 @@ function getSnapshotPathComponents(domainName, fileName) {
     // console.log(e.message);
     type = 'unknown';
     typeNotFound[`[${domainName}] ${fileName.replace(/.txt$/, '')}`] = true;
-    if (!process.env.ALLOW_UNKNOWN) {
-      throw e;
-    }
   }
   function finalTouch(serviceName) {
     const touchups = {
@@ -244,12 +241,15 @@ function getSnapshotPathComponents(domainName, fileName) {
 
 function translateSnapshotPath(domainName, fileName) {
   const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
-  return `${serviceName}/${type}.html`;
+  return path.join(SNAPSHOTS_PATH, `${serviceName}/${type}.html`);
 }
 
 function translateVersionPath(domainName, fileName) {
   const { serviceName, type } = getSnapshotPathComponents(domainName, fileName)
-  return `${serviceName}/${type}.md`;
+  if ((type === 'unknown')  && (!process.env.ALLOW_UNKNOWN)) {
+    return null;
+  }
+  return path.join(VERSIONS_PATH, `${serviceName}/${type}.md`);
 }
 
 function getLocalRulesFolder() {
@@ -491,8 +491,8 @@ async function importRule(domainName, fileName, tosback2Hash, filePathIn) {
 async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
   let thisFileCommits;
   await fileSemaphore.add(async () => {
-    const snapshotDestPath = path.join(SNAPSHOTS_PATH, translateSnapshotPath(domainName, fileName));
-    const versionDestPath = path.join(VERSIONS_PATH, translateVersionPath(domainName, fileName));
+    const snapshotDestPath = translateSnapshotPath(domainName, fileName);
+    const versionDestPath = translateVersionPath(domainName, fileName);
     let exists;
     try {
       await fs.stat(snapshotDestPath);
@@ -517,12 +517,15 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
     await tosbackGit.pull();
     const tosback2GitLog = await tosbackGit.log();
     const tosback2Hash = tosback2GitLog.latest.hash;
-    try {
-      await importRule(domainName, fileName, tosback2Hash, filePathIn);
-    } catch (e) {
-      // console.error('Imported snapshots but could not import rule', domainName, fileName);
+    if (versionDestPath) {
+      try {
+        await importRule(domainName, fileName, tosback2Hash, filePathIn);
+      } catch (e) {
+        // console.error('Imported snapshots but could not import rule', domainName, fileName);
+      }
+    } else {
+      console.log(filePathIn, 'not importing rule since versionDestPath is null (doc-type unknown, probably?)');
     }
-
     // This will set the --follow flag, see:
     // https://github.com/steveukx/git-js/blob/80741ac/src/git.js#L891
     const gitLog = await tosbackGit.log({ file: filePath1 });
@@ -532,7 +535,6 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
     let starting = true;
     const commitPromises = thisFileCommits.map(commit => commitsQueue.add(async() => {
       // console.log('handling commit', fileName, commit, starting);
-      let html;
       // console.log('tosback git checkout', commit.hash);
       await tosbackGit.checkout(commit.hash);
       // console.log('Reading file', path.join(LOCAL_TOSBACK2_REPO, filePath1), commit.hash);
@@ -565,7 +567,8 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
         console.log(filePathIn, `no file text at tosback2-commit ${commit.hash}`);
         return;
       }
-      html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
+
+      const html = HTML_PREFIX + fileTxtAtCommit + HTML_SUFFIX;
       // console.log('saving snapshot', snapshotDestPath);
       const containingDirSnapshot = path.dirname(snapshotDestPath);
       await fs.mkdir(containingDirSnapshot, { recursive: true });
@@ -586,6 +589,12 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
       await snapshotGit.commit(snapshotCommitMessage, [ '-a', `--date="${commit.date}"` ]);
       const gitLog = await snapshotGit.log();
       const snapshotCommitHash = gitLog.latest.hash;
+
+      if (!versionDestPath) {
+        console.log(filePathIn, `recording snapshot but not version (doc-type unknown, probably?)`);
+        return;
+      }
+
       // console.log({ snapshotCommitHash });
       const filteredContent = await filter({ content: html, mimeType: 'text/html', documentDeclaration: { fetch: 'http://ignore.me/', select: 'body' }, filterFunctions: [] }).catch((e) => {
         // console.log(e);
