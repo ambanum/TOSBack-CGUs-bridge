@@ -32,7 +32,7 @@ const TYPES = require('./types.json');
 const fs = fsApi.promises;
 
 const SERVICES_PATH = '../CGUs/services/';
-const SERVICES_UNKNOWN_INVALID = './servicesInvalid/';
+const SERVICES_INVALID_PATH = './servicesInvalid/';
 const SERVICES_UNKNOWN_TYPE_PATH = './servicesUnknownType/';
 const LOCAL_TOSBACK2_REPO = (process.env.LAPTOP ? '../../tosdr/tosback2' : '../tosback2');
 const TOSBACK2_WEB_ROOT = 'https://github.com/tosdr/tosback2';
