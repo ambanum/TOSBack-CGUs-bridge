@@ -1,0 +1,1711 @@
+crawl/123greetings.com/Privacy Policy.txt done
+crawl/4shared.com/Privacy Policy.txt cannotRead
+crawl/500px.com/Privacy Policy.txt cannotRead
+crawl/500px.com/Terms of Service.txt cannotRead
+crawl/6pm.com/Privacy Policy.txt cannotRead
+crawl/Bitcasa/TOS, Privacy Policy, DMCA Policy, Refunds Policy, Security, AUP.txt unknownType
+crawl/CableOne.net/Acceptable Use Policy.txt noFilteredContent
+crawl/CableOne.net/Terms and Conditions.txt noFilteredContent
+crawl/Centurylink.com/Acceptable Use Policy.txt noFilteredContent
+crawl/Frontier.com/Terms of Service.txt noFilteredContent
+crawl/HP.com/Privacy Policy.txt noFilteredContent
+crawl/Monkeybrains.net/All Policies.txt noFilteredContent
+crawl/Optimum.com/Acceptable Use Policy.txt noFilteredContent
+crawl/Sonic.net/All Policies.txt noFilteredContent
+crawl/Suddenlink.com/Terms of Service.txt noFilteredContent
+crawl/aa.com/Privacy Policy.txt cannotRead
+crawl/aarp.org/Terms of Service.txt cannotRead
+crawl/abcnews.com/Privacy Policy.txt inconsistent
+crawl/abercrombie.com/Privacy Policy.txt cannotRead
+crawl/about.com/Privacy Policy.txt cannotRead
+crawl/academia.edu/Privacy Policy.txt done
+crawl/academia.edu/Terms of Service.txt done
+crawl/accesshollywood.com/Privacy Policy.txt cannotRead
+crawl/accuweather.com/Privacy Policy.txt cannotRead
+crawl/acdelco.com/Privacy Policy.txt done
+crawl/acrobat.com/Privacy Policy.txt cannotRead
+crawl/adage.com/Privacy Policy.txt cannotRead
+crawl/addictinggames.com/Privacy Policy.txt cannotRead
+crawl/addthis.com/Terms of Service.txt cannotRead
+crawl/adidas.com/Privacy Policy.txt cannotRead
+crawl/adn.com/Privacy Policy.txt cannotRead
+crawl/adobe.com/Privacy Policy.txt cannotRead
+crawl/adotas.com/Privacy Policy.txt cannotRead
+crawl/advair.com/Privacy Policy.txt done
+crawl/advanceautoparts.com/Privacy Policy.txt cannotRead
+crawl/advanceautoparts.com/Terms and Conditions.txt cannotRead
+crawl/adweek.com/Privacy Policy.txt cannotRead
+crawl/aeropostale.com/Privacy Policy.txt inconsistent
+crawl/aetna.com/Privacy Policy.txt done
+crawl/aetv.com/Privacy Policy.txt cannotRead
+crawl/af-medical.com/Privacy Policy.txt cannotRead
+crawl/agame.com/Privacy Policy.txt inconsistent
+crawl/agweb.com/Privacy Policy.txt cannotRead
+crawl/agweb.com/Terms and Conditions.txt cannotRead
+crawl/airbnb.com/Copyright Policy.txt unknownType
+crawl/airbnb.com/Guest Refund Policy Terms.txt unknownType
+crawl/airbnb.com/Host Guarantee Terms and Conditions.txt cannotRead
+crawl/airbnb.com/Privacy Policy.txt cannotRead
+crawl/airbnb.com/Terms of Service.txt cannotRead
+crawl/albertsons.com/Privacy Policy.txt cannotRead
+crawl/alexanderstreet.com/Terms of Service.txt cannotRead
+crawl/alibaba.com/Alibaba.com Product Listing Information-Editing Guidelines.txt unknownType
+crawl/alibaba.com/Enforcement Actions for Displaying Prohibited and Controlled Items.txt unknownType
+crawl/alibaba.com/Enforcement Actions for Intellectual Property Rights Infringements Claims on Alibaba.com.txt unknownType
+crawl/alibaba.com/Intellectual Property Rights(IPR)Protection Policy.txt unknownType
+crawl/alibaba.com/Privacy Policy.txt done
+crawl/alibaba.com/Product Listing Policy.txt unknownType
+crawl/alibaba.com/Rules against Duplicate Product Listing.txt unknownType
+crawl/alibaba.com/Rules for Enforcement Actions against Non-compliance Relating to Inappropriate Product Postings.txt unknownType
+crawl/alibaba.com/Rules for Handling Unauthorized Use of A Third Party's Information.txt unknownType
+crawl/alibaba.com/Rules on Resolving Image Piracy Complaints.txt done
+crawl/alibaba.com/Terms and Conditions Governing Request for Quotation.txt unknownType
+crawl/alibaba.com/Terms of Use.txt done
+crawl/alibaba.com/Updated Rules for Preventing Duplicate Product Postings.txt unknownType
+crawl/allrecipes.com/Privacy Policy.txt cannotRead
+crawl/allrecipies.com/Privacy Policy.txt noFilteredContent
+crawl/allstate.com/Privacy Policy.txt done
+crawl/allthingsd.com/Privacy Policy.txt done
+crawl/alot.com/Privacy Policy.txt cannotRead
+crawl/amazon.co.uk/Privacy Policy.txt cannotRead
+crawl/amazon.com/AMAZON SILK TERMS & CONDITIONS.txt unknownType
+crawl/amazon.com/Amazon Advertising Preferences.txt unknownType
+crawl/amazon.com/Amazon App Suite Legal Notices.txt ruleWasDeleted
+crawl/amazon.com/Amazon Kindle Store Terms of Use.txt ruleWasDeleted
+crawl/amazon.com/Amazon Terms of Service.txt unknownType
+crawl/amazon.com/Amazon.com Privacy Notice.txt ruleWasDeleted
+crawl/amazon.com/Conditions of Use.txt done
+crawl/amazon.com/Interest-Based Ads.txt unknownType
+crawl/amazon.com/Kindle Cloud Reader Legal Notices.txt ruleWasDeleted
+crawl/amazon.com/Kindle License Agreement and Terms of Use.txt unknownType
+crawl/amazon.com/Kindle for Android Legal Notices.txt ruleWasDeleted
+crawl/amazon.com/Kindle for Mac Legal Notices.txt ruleWasDeleted
+crawl/amazon.com/Kindle for PC Legal Notices.txt ruleWasDeleted
+crawl/amazon.com/Kindle for Windows 8 Legal Notices.txt ruleWasDeleted
+crawl/amazon.com/Official AWS Privacy Policy.txt unknownType
+crawl/amazon.com/Privacy Policy.txt ruleWasDeleted
+crawl/amazon.com/Third Party Licenses.txt unknownType
+crawl/amazon.de/Privacy Policy.txt cannotRead
+crawl/amazon.fr/Privacy Policy.txt cannotRead
+crawl/amctheaters.com/Privacy Policy.txt noFilteredContent
+crawl/amctheatres.com/Privacy Policy.txt cannotRead
+crawl/amctheatres.com/Terms and Conditions.txt cannotRead
+crawl/americanexpress.com/Privacy Policy.txt cannotRead
+crawl/americangreetings.com/Privacy Policy.txt cannotRead
+crawl/americanidol.com/Privacy Policy.txt cannotRead
+crawl/americanidol.com/Terms and Conditions.txt cannotRead
+crawl/americanmedical-id.com/Privacy Policy.txt cannotRead
+crawl/ampedwireless.com/Privacy Policy.txt cannotRead
+crawl/ampedwireless.com/Terms and Conditions.txt cannotRead
+crawl/ampedwireless.com/Terms of Service.txt ruleWasDeleted
+crawl/amtrak.com/Privacy Policy.txt cannotRead
+crawl/amtrak.com/Web Notices and Terms of Use.txt ruleWasDeleted
+crawl/ancestry.com/Privacy Policy.txt cannotRead
+crawl/android.com/Privacy Policy.txt done
+crawl/answerbag.com/Privacy Policy.txt cannotRead
+crawl/answers.com/Privacy Policy.txt ruleWasDeleted
+crawl/answers.com/Terms of Use and Privacy Policy.txt cannotRead
+crawl/aol.com/Privacy Policy.txt cannotRead
+crawl/aol.com/Terms of Service.txt cannotRead
+crawl/aoltv.com/Privacy Policy.txt selectorNotFound
+crawl/app.net/Privacy Policy.txt noFilteredContent
+crawl/app.net/Terms of Service.txt noFilteredContent
+crawl/appchronicles.com/Privacy Policy.txt cannotRead
+crawl/apple.com/Apple Transparency Report.txt unknownType
+crawl/apple.com/California Privacy Disclosure.txt unknownType
+crawl/apple.com/Privacy Management Guide.txt unknownType
+crawl/apple.com/Privacy Policy.txt covered
+crawl/apple.com/Website Terms of Service.txt done
+crawl/apple.com/iCloud Terms of Service.txt done
+crawl/apple.com/iTunes Terms Of Service.txt unknownType
+crawl/apple.com/iTunes Terms of Service.txt done
+crawl/argos.co.uk/Privacy Policy.txt cannotRead
+crawl/arlo.com/Privacy Notice.txt done
+crawl/arlo.com/Product Security.txt unknownType
+crawl/arlo.com/Terms of Service.txt done
+crawl/arstechnica.com/Privacy Policy.txt cannotRead
+crawl/asia.real.com/Privacy Policy.txt cannotRead
+crawl/ask.co.uk/Privacy Policy.txt duplicateType
+crawl/ask.com/Privacy Policy.txt duplicateType
+crawl/ask.com/Terms of Service.txt duplicateType
+crawl/asmallworld.net/Privacy Policy.txt inconsistent
+crawl/asus.com/Hackerone Profile.txt unknownType
+crawl/asus.com/Privacy Policy.txt done
+crawl/asus.com/Security Advisory.txt done
+crawl/asus.com/Terms of Use.txt done
+crawl/att.com/AT&T Consumer Marketing.txt unknownType
+crawl/att.com/AT&T Privacy Policy FAQ.txt unknownType
+crawl/att.com/Acceptable Use Policy.txt done
+crawl/att.com/Cookies and Other Technologies.txt unknownType
+crawl/att.com/Internet Terms of Service.txt duplicateType
+crawl/att.com/Privacy Policy.txt cannotRead
+crawl/att.com/Terms of Service.txt ruleWasDeleted
+crawl/att.com/Wireless Plan Terms.txt unknownType
+crawl/att.com/Your Rights & Choices.txt unknownType
+crawl/aufeminin.com/Privacy Policy.txt cannotRead
+crawl/autopartswarehouse.com/Privacy Policy.txt cannotRead
+crawl/autotrader.com/Privacy Policy.txt cannotRead
+crawl/autotrader.com/Visitor Agreement.txt cannotRead
+crawl/autozone.com/Privacy Policy.txt cannotRead
+crawl/avast.com/Privacy Policy.txt cannotRead
+crawl/avg.com/Privacy Policy.txt cannotRead
+crawl/avidaviator.com/Privacy Policy.txt noFilteredContent
+crawl/avis.com/Privacy Policy.txt done
+crawl/babycenter.com/Privacy Policy.txt cannotRead
+crawl/babycenter.com/Terms of Use.txt cannotRead
+crawl/backcountry.com/Privacy Policy.txt done
+crawl/backpage.com/Privacy Policy.txt cannotRead
+crawl/baidu.com/Copyright Notices and Counter-notices.txt unknownType
+crawl/baidu.com/Copyright.txt unknownType
+crawl/baidu.com/Disclaimer.txt unknownType
+crawl/baidu.com/Privacy Policy.txt cannotRead
+crawl/bankofamerica.com/Privacy Policy.txt done
+crawl/bankrate.com/Privacy Policy.txt done
+crawl/barbie.com/Privacy Policy.txt cannotRead
+crawl/barnesandnoble.com/Privacy Policy.txt done
+crawl/barneys.com/Privacy Policy.txt cannotRead
+crawl/basspro.com/Privacy Policy.txt cannotRead
+crawl/bathandbodyworks.com/Privacy Policy.txt cannotRead
+crawl/bathandbodyworks.com/Terms of Service.txt cannotRead
+crawl/bbb.org/Privacy Policy.txt cannotRead
+crawl/bbc.co.uk/Terms of Service.txt noFilteredContent
+crawl/beadzgames.com/Privacy Policy.txt cannotRead
+crawl/bedbathandbeyond.com/Privacy Policy.txt cannotRead
+crawl/beemp3.com/Privacy Policy.txt cannotRead
+crawl/bestbuy.com/Privacy Policy.txt cannotRead
+crawl/bettycrocker.com/Privacy Policy.txt inconsistent
+crawl/bhg.com/Privacy Policy.txt cannotRead
+crawl/biblegateway.com/Privacy Policy.txt cannotRead
+crawl/bigfishgames.com/Privacy Policy.txt cannotRead
+crawl/bigpoint.com/Privacy Policy.txt cannotRead
+crawl/bikeexif.com/Privacy Policy.txt cannotRead
+crawl/bikeindex.org/Privacy Policy.txt done
+crawl/bikeindex.org/Vendor Terms of Service.txt unknownType
+crawl/bikeindex.org/Website Terms of Service.txt done
+crawl/bild.de/Privacy Policy.txt cannotRead
+crawl/billboard.com/Privacy Policy.txt cannotRead
+crawl/bing.com/Privacy Policy.txt done
+crawl/bit.ly/Terms of Service.txt cannotRead
+crawl/bitcasa.com/Acceptable Use Policy.txt cannotRead
+crawl/bitcasa.com/Privacy Policy.txt cannotRead
+crawl/bitcasa.com/Terms of Service.txt cannotRead
+crawl/bizrate.com/Privacy Policy.txt cannotRead
+crawl/bl.uk/Copyright and Your use of the British Library Website.txt ruleWasDeleted
+crawl/bl.uk/Legal Disclaimer.txt unknownType
+crawl/bl.uk/Privacy Statement.txt cannotRead
+crawl/blablacar.co.uk/Privacy Policy.txt cannotRead
+crawl/blackboard.com/Privacy Policy.txt cannotRead
+crawl/blackboard.com/Security.txt cannotRead
+crawl/blackboard.com/Terms of Use.txt cannotRead
+crawl/blair.com/Privacy Policy.txt cannotRead
+crawl/bleacherreport.com/Privacy Policy.txt cannotRead
+crawl/blip.fm/Privacy Policy.txt done
+crawl/blockbuster.com/Privacy Policy.txt cannotRead
+crawl/blogger.com/Privacy Policy.txt done
+crawl/blogger.com/Terms Of Service.txt unknownType
+crawl/blogspot.com/Privacy Policy.txt done
+crawl/blogspot.com/Terms Of Service.txt unknownType
+crawl/bloomberg.com/Privacy Policy.txt cannotRead
+crawl/bloomberg.com/Terms of Service.txt cannotRead
+crawl/bloomingdales.com/Privacy Policy.txt inconsistent
+crawl/bluefly.com/Privacy Policy.txt cannotRead
+crawl/blurtit.com/Privacy Policy.txt done
+crawl/bmwusa.com/Privacy Policy.txt cannotRead
+crawl/boardgamegeek.com/Privacy Policy.txt cannotRead
+crawl/bodybuilding.com/Privacy Policy.txt done
+crawl/booking.com/Privacy Policy.txt cannotRead
+crawl/bored.com/Privacy Policy.txt cannotRead
+crawl/boston.com/Privacy Policy.txt done
+crawl/bostonglobe.com/Privacy Policy.txt cannotRead
+crawl/bostonherald.com/Privacy Policy.txt cannotRead
+crawl/brainyquote.com/Privacy Policy.txt cannotRead
+crawl/brainyquote.com/Terms of Service.txt cannotRead
+crawl/bravotv.com/Privacy Policy.txt cannotRead
+crawl/break.com/Privacy Policy.txt cannotRead
+crawl/brookstone.com/Privacy Policy.txt cannotRead
+crawl/buckle.com/Privacy Policy.txt cannotRead
+crawl/buick.com/Privacy Policy.txt done
+crawl/businessinsider.com/Privacy Policy.txt cannotRead
+crawl/businessweek.com/Privacy Policy.txt cannotRead
+crawl/buy.com/Privacy Policy.txt cannotRead
+crawl/buycheapr.com/Privacy Policy.txt cannotRead
+crawl/byliner.com/Privacy Policy.txt cannotRead
+crawl/ca.gov/Privacy Policy.txt cannotRead
+crawl/cabelas.com/Privacy Policy.txt cannotRead
+crawl/cableone.net/Acceptable Use Policy.txt done
+crawl/cableone.net/Terms and Conditions.txt duplicateType
+crawl/cadillac.com/Privacy Policy.txt done
+crawl/cafepress.com/Privacy Policy.txt cannotRead
+crawl/canary.is/Cookie and Ad Policy.txt unknownType
+crawl/canary.is/EULA.txt done
+crawl/canary.is/Privacy Policy.txt done
+crawl/canary.is/Security.txt done
+crawl/canary.is/Terms and Conditions.txt duplicateType
+crawl/capitalone.com/Privacy Policy.txt cannotRead
+crawl/capitalone.com/Terms and Conditions.txt cannotRead
+crawl/caranddriver.com/Privacy Policy.txt done
+crawl/carbonite.com/Privacy Policy.txt cannotRead
+crawl/carbonunity.com/Privacy Policy.txt cannotRead
+crawl/care2.com/Privacy Policy.txt done
+crawl/careerbuilder.com/Privacy Policy.txt cannotRead
+crawl/careerbuilderinstitute.com/Privacy Policy.txt inconsistent
+crawl/careerpath.com/Privacy Policy.txt inconsistent
+crawl/careerrookie.com/Privacy Policy.txt cannotRead
+crawl/careerrookie.com/Terms and Conditions.txt cannotRead
+crawl/carfax.com/Privacy Policy.txt cannotRead
+crawl/carmax.com/Privacy Policy.txt cannotRead
+crawl/cars.com/Privacy Policy.txt cannotRead
+crawl/cars.com/Terms of Service.txt cannotRead
+crawl/carsdirect.com/Privacy Policy.txt inconsistent
+crawl/cartoonnetwork.com/Privacy Policy.txt cannotRead
+crawl/catalogchoice.org/Terms of Service.txt cannotRead
+crawl/cbc.ca/Copyright.txt unknownType
+crawl/cbc.ca/Policies.txt unknownType
+crawl/cbc.ca/Privacy.txt cannotRead
+crawl/cbc.ca/Terms of Service.txt ruleWasDeleted
+crawl/cbc.ca/Terms of Use.txt cannotRead
+crawl/cbc.ca/Your Content Submissions.txt unknownType
+crawl/cbsalary.com/Privacy Policy.txt inconsistent
+crawl/cbssports.com/Privacy Policy.txt cannotRead
+crawl/cdiscount.com/Privacy Policy.txt cannotRead
+crawl/centerforinquiry.net/Terms of Service.txt cannotRead
+crawl/centurylink.com/Acceptable Use Policy.txt inconsistent
+crawl/chacha.com/Privacy Policy.txt tooShort
+crawl/champssports.com/Privacy Policy.txt cannotRead
+crawl/change.org/Privacy Policy.txt ruleWasDeleted
+crawl/change.org/Terms of Service.txt cannotRead
+crawl/charter.net/Acceptable Use Policy.txt cannotRead
+crawl/charter.net/Privacy Policy.txt cannotRead
+crawl/chase.com/Online Practices.txt unknownType
+crawl/chase.com/Privacy Policy.txt ruleWasDeleted
+crawl/chase.com/Terms and Conditions.txt cannotRead
+crawl/chase.com/US Consumer Privacy Notice.txt unknownType
+crawl/cheapflights.com/Privacy Policy.txt cannotRead
+crawl/cheapoair.com/Privacy Policy.txt cannotRead
+crawl/cheaptickets.com/Privacy Policy.txt cannotRead
+crawl/chegg.com/Privacy Policy.txt cannotRead
+crawl/chevrolet.com/Privacy Policy.txt done
+crawl/chicagotribune.com/Privacy Policy.txt cannotRead
+crawl/chip.de/Privacy Policy.txt cannotRead
+crawl/chowhound.chow.com/Privacy Policy.txt cannotRead
+crawl/christianpost.com/Privacy Policy.txt cannotRead
+crawl/chrysler.com/Privacy Policy.txt done
+crawl/cio-today.com/Privacy Policy.txt cannotRead
+crawl/citizensbank.com/Privacy Policy.txt cannotRead
+crawl/city-data.com/Privacy Policy.txt done
+crawl/citygridmedia.com/Privacy Policy.txt done
+crawl/citysearch.com/Privacy Policy.txt done
+crawl/classmates.com/Privacy Policy.txt cannotRead
+crawl/cloudant.com/Privacy.txt done
+crawl/cloudant.com/Terms of Service.txt done
+crawl/clubpenguin.com/Privacy Policy.txt cannotRead
+crawl/clubpenguin.com/Terms of Use.txt cannotRead
+crawl/cnbc.com/Privacy Policy.txt cannotRead
+crawl/cnbc.com/Terms of Service.txt cannotRead
+crawl/cnet.com/Privacy Policy.txt cannotRead
+crawl/cnn.com/Privacy Policy.txt ruleWasDeleted
+crawl/coach.com/Privacy Policy.txt cannotRead
+crawl/cocacola.com/Privacy Policy.txt cannotRead
+crawl/code.google.com/Google Project Hosting - Additional Terms.txt unknownType
+crawl/code.google.com/Google Project Hosting - User Content and Conduct Policy.txt unknownType
+crawl/collectionsetc.com/Privacy Policy.txt cannotRead
+crawl/color.com/Privacy Policy.txt noFilteredContent
+crawl/color.com/Terms of Service.txt noFilteredContent
+crawl/comcast.com/Acceptable Use Policy for Xfinity Internet.txt noFilteredContent
+crawl/comcast.com/Customer Privacy Policy.txt noFilteredContent
+crawl/comcast.com/Privacy Policy.txt noFilteredContent
+crawl/comcast.com/Privacy Statement.txt noFilteredContent
+crawl/comcast.com/Residential Subscriber Agreement.txt noFilteredContent
+crawl/comcast.net/Software License Agreement.txt noFilteredContent
+crawl/comcast.net/Web Services Privacy Policy.txt noFilteredContent
+crawl/comcast.net/Web Terms of Service.txt unknownType
+crawl/comedycentral.com/Privacy Policy.txt cannotRead
+crawl/comhaltasarchive.ie/Terms of Service.txt inconsistent
+crawl/commentcamarche.net/Privacy Policy.txt done
+crawl/conduit.com/Privacy Policy.txt cannotRead
+crawl/constantcontact.com/Privacy Policy.txt done
+crawl/consumerist.com/Privacy Policy.txt done
+crawl/consumerist.com/Terms of Service.txt inconsistent
+crawl/consumerreports.org/Privacy Policy.txt cannotRead
+crawl/consumersearch.com/Privacy Policy.txt cannotRead
+crawl/consumersenergy.com/Privacy Policy.txt cannotRead
+crawl/continental.com/Privacy Policy.txt cannotRead
+crawl/cooks.com/Privacy Policy.txt ruleWasDeleted
+crawl/cooks.com/Third Party Advertising, Third Party Cookies, Affiliation, and Terms of Usage.txt unknownType
+crawl/cosmopolitan.com/Privacy Policy.txt done
+crawl/costco.com/Privacy Policy.txt cannotRead
+crawl/countryliving.com/Privacy Policy.txt done
+crawl/coupons.com/Privacy Policy.txt cannotRead
+crawl/coursera.org/Terms of Use.txt done
+crawl/cox.com/Acceptable Use Policy.txt cannotRead
+crawl/cox.com/Privacy Policy.txt cannotRead
+crawl/cracked.com/Privacy Policy.txt cannotRead
+crawl/cracked.com/Terms and Conditions.txt cannotRead
+crawl/crackle.com/Privacy Policy.txt cannotRead
+crawl/craigslist.org/Privacy Policy.txt cannotRead
+crawl/crateandbarrel.com/Privacy Policy.txt cannotRead
+crawl/creditcheck.experiandirect.com/Terms of Service.txt cannotRead
+crawl/cruise.co.uk/Privacy Policy.txt cannotRead
+crawl/cruise.co.uk/Terms and Conditions.txt cannotRead
+crawl/cruises.co.uk/Privacy Policy.txt cannotRead
+crawl/csmonitor.com/Privacy Policy.txt cannotRead
+crawl/csoboard.com/Privacy Policy.txt cannotRead
+crawl/curves.com/Privacy Policy.txt cannotRead
+crawl/cvs.com/Privacy Policy.txt done
+crawl/cyberpresse.ca/Privacy Policy.txt cannotRead
+crawl/dailycaller.com/Privacy Policy.txt cannotRead
+crawl/dailymail.co.uk/Privacy Policy.txt done
+crawl/dailymotion.com/Privacy Policy.txt cannotRead
+crawl/dailymotion.com/Terms of Use.txt done
+crawl/dashlane.com/Privacy Policy.txt cannotRead
+crawl/dashlane.com/Terms of Service.txt cannotRead
+crawl/data.gov/Data Policy.txt cannotRead
+crawl/data.gov/Privacy Policy.txt cannotRead
+crawl/daum.net/Privacy Policy.txt done
+crawl/debka.com/Privacy Policy.txt done
+crawl/degreedriven.com/Privacy Policy.txt cannotRead
+crawl/delicious.com/Privacy Policy.txt noFilteredContent
+crawl/delicious.com/Terms of Service.txt noFilteredContent
+crawl/dell.com/Consumer Terms of Sale.txt cannotRead
+crawl/dell.com/Privacy Policy.txt cannotRead
+crawl/delta.com/Privacy Policy.txt cannotRead
+crawl/delta.com/Terms of Use.txt cannotRead
+crawl/depositfiles.com/Privacy Policy.txt done
+crawl/detroitmedia.com/Privacy Policy.txt cannotRead
+crawl/deviantart.com/Copyright Policy.txt unknownType
+crawl/deviantart.com/Etiquette Policy.txt done
+crawl/deviantart.com/Privacy Policy.txt duplicateType
+crawl/deviantart.com/Terms of Service.txt duplicateType
+crawl/dickssportinggoods.com/Privacy Policy.txt cannotRead
+crawl/dictionary.com/Privacy Policy.txt ruleWasDeleted
+crawl/digg.com/Privacy Policy.txt cannotRead
+crawl/digg.com/Terms of Service.txt cannotRead
+crawl/dillards.com/Policies and Notices.txt unknownType
+crawl/dillards.com/Privacy Policy.txt ruleWasDeleted
+crawl/directv.com/Privacy Policy.txt cannotRead
+crawl/dishnetwork.com/Privacy Policy.txt done
+crawl/disney.go.com/Privacy Policy.txt inconsistent
+crawl/disqus.com/Privacy Policy.txt done
+crawl/disqus.com/Terms of Service.txt done
+crawl/diynetwork.com/Privacy Policy.txt cannotRead
+crawl/dlink.com/Terms of Use.txt done
+crawl/docstoc.com/Privacy Policy.txt cannotRead
+crawl/dodge.com/Privacy Policy.txt inconsistent
+crawl/dowjones.com/Terms of Service.txt cannotRead
+crawl/drjays.com/Privacy Policy.txt inconsistent
+crawl/dropbox.com/Privacy Policy.txt cannotRead
+crawl/drudgereport.com/Privacy Policy.txt inconsistent
+crawl/drugs.com/Privacy Policy.txt done
+crawl/drugstore.com/Privacy Policy.txt cannotRead
+crawl/dsc.discovery.com/Privacy Policy.txt cannotRead
+crawl/duckduckgo.com/Privacy Policy.txt done
+crawl/earthlink.net/Acceptable Use Policy.txt done
+crawl/earthlink.net/Cable Internet Terms of Use.txt ruleWasDeleted
+crawl/earthlink.net/Internet Service Agreement.txt unknownType
+crawl/earthlink.net/Privacy Policy.txt cannotRead
+crawl/earthlink.net/Terms of Use.txt duplicateType
+crawl/eastbay.com/Privacy Policy.txt cannotRead
+crawl/ebags.com/Privacy Policy.txt cannotRead
+crawl/ebaumsworld.com/Privacy Policy.txt done
+crawl/ebay.co.uk/Privacy Policy.txt cannotRead
+crawl/ebay.com/Privacy Policy.txt cannotRead
+crawl/ebay.com/Terms of Service.txt cannotRead
+crawl/ebay.de/Privacy Policy.txt cannotRead
+crawl/eclipse.org/Terms of Service.txt done
+crawl/economist.com/Privacy Policy.txt done
+crawl/eddiebauer.com/Privacy Policy.txt cannotRead
+crawl/edmunds.com/Privacy Policy.txt cannotRead
+crawl/eero.com/Privacy for eero Devices.txt done
+crawl/eero.com/Privacy policy for eero Devices, Applications and Services.txt unknownType
+crawl/eero.com/Terms of Service Agreement.txt unknownType
+crawl/eero.com/Terms of Service.txt ruleWasDeleted
+crawl/eero.com/Vulnerability Disclosure Program.txt unknownType
+crawl/eff.org/Privacy Policy.txt done
+crawl/eharmony.com/Privacy Policy.txt cannotRead
+crawl/ehow.com/Privacy Policy.txt cannotRead
+crawl/ehow.com/Terms of Service.txt cannotRead
+crawl/einsurance.com/Privacy Policy.txt cannotRead
+crawl/elearners.com/Privacy Policy.txt done
+crawl/elle.com/Privacy Policy.txt done
+crawl/elledecor.com/Privacy Policy.txt done
+crawl/elpasotimes.com/Privacy Policy.txt cannotRead
+crawl/elyrics.net/Privacy Policy.txt done
+crawl/en.espnf1.com/Privacy Policy.txt inconsistent
+crawl/en.softonic.com/Privacy Policy.txt done
+crawl/endless.com/Privacy Policy.txt cannotRead
+crawl/eonline.com/Privacy Policy.txt cannotRead
+crawl/ephotozine.com/Privacy Policy.txt cannotRead
+crawl/epicurious.com/Privacy Policy.txt cannotRead
+crawl/epinions.com/Privacy Policy.txt cannotRead
+crawl/epinions.com/User Agreement.txt unknownType
+crawl/epulettar.hu/Privacy Policy.txt cannotRead
+crawl/epulettar.hu/Terms of Use.txt cannotRead
+crawl/equifax.com/Privacy Policy.txt cannotRead
+crawl/equine.com/Privacy Policy.txt cannotRead
+crawl/ereader.soc.io/Privacy Policy.txt cannotRead
+crawl/espn.go.com/Privacy Policy.txt inconsistent
+crawl/esquire.com/Privacy Policy.txt done
+crawl/ets.org/Privacy Policy.txt done
+crawl/etsy.com/Privacy Policy.txt cannotRead
+crawl/everlane.com/Privacy Policy.txt cannotRead
+crawl/everydayhealth.com/Privacy Policy.txt cannotRead
+crawl/examiner.com/Privacy Policy.txt cannotRead
+crawl/expedia.com/Privacy Policy.txt cannotRead
+crawl/experian.com/Privacy Policy.txt done
+crawl/experiandirect.com/Terms of Service.txt cannotRead
+crawl/express.com/Privacy Policy.txt cannotRead
+crawl/ezinearticles.com/Privacy Policy.txt done
+crawl/facebook.com/Data Use Policy.txt covered
+crawl/facebook.com/Supplemental Portal Data Policy.txt unknownType
+crawl/facebook.com/Terms of Service.txt duplicateType
+crawl/fairpoint.com/Privacy Policy.txt done
+crawl/fandango.com/Privacy Policy.txt done
+crawl/fanpop.com/Privacy Policy.txt done
+crawl/fanpop.com/Terms of Service.txt done
+crawl/fark.com/Privacy Policy.txt done
+crawl/farmfutures.com/Privacy Policy.txt cannotRead
+crawl/farmprogress.com/Privacy Policy.txt cannotRead
+crawl/fastcompany.com/Privacy Policy.txt cannotRead
+crawl/fedex.com/Privacy Policy.txt done
+crawl/feed43.com/Terms of Service.txt done
+crawl/fidelity.com/Privacy Policy.txt done
+crawl/figis.com/Privacy Policy.txt cannotRead
+crawl/filestube.com/Privacy Policy.txt cannotRead
+crawl/finance.yahoo.com/Privacy Policy.txt done
+crawl/finishline.com/Privacy Policy.txt cannotRead
+crawl/fisher-price.com/Privacy Policy.txt done
+crawl/fitbit.com/Privacy Policy.txt done
+crawl/fitocracy.com/Privacy Policy.txt done
+crawl/flickr.com/Additional Terms of Service.txt unknownType
+crawl/flickr.com/Community Guidelines.txt done
+crawl/flickr.com/Privacy Policy.txt duplicateType
+crawl/flightstats.com/Terms of Service.txt cannotRead
+crawl/food.com/Privacy Policy.txt cannotRead
+crawl/food2.com/Privacy Policy.txt cannotRead
+crawl/foodfunandfacts.com/Privacy Policy.txt cannotRead
+crawl/foodnetwork.co.uk/Privacy Policy.txt cannotRead
+crawl/foodnetwork.com/Privacy Policy.txt cannotRead
+crawl/forbes.com/Privacy Policy.txt done
+crawl/ford.com/Privacy Policy.txt cannotRead
+crawl/forever21.com/Privacy Policy.txt cannotRead
+crawl/formspring.me/Privacy Policy.txt cannotRead
+crawl/formspring.me/Terms of Service.txt cannotRead
+crawl/fossil.com/Privacy Policy.txt cannotRead
+crawl/foxnews.com/Privacy Policy.txt done
+crawl/foxnews.com/Terms of Service.txt ruleWasDeleted
+crawl/fragrancenet.com/Privacy Policy.txt cannotRead
+crawl/freecode.com/Privacy Policy.txt ruleWasDeleted
+crawl/freecode.com/Privacy Statement.txt cannotRead
+crawl/freecode.com/Terms of Use.txt cannotRead
+crawl/freecreditreport.com/Privacy Policy.txt cannotRead
+crawl/freecreditscore.com/Privacy Policy.txt cannotRead
+crawl/freefilefillableforms.com/Terms of Service.txt cannotRead
+crawl/freeforums.org/Privacy Policy.txt cannotRead
+crawl/freeonlinegames.com/Privacy Policy.txt done
+crawl/freescottwalsh.info/Privacy Policy.txt noFilteredContent
+crawl/freeze.com/Privacy Policy.txt done
+crawl/frontdoor.com/Privacy Policy.txt cannotRead
+crawl/frontdoor.com/Terms of Use.txt cannotRead
+crawl/frontier.com/Terms of Service.txt cannotRead
+crawl/ft.com/Privacy Policy.txt done
+crawl/funbrain.com/Privacy Policy.txt tooShort
+crawl/gactv.com/Privacy Policy.txt cannotRead
+crawl/gamefaqs.com/Privacy Policy.txt cannotRead
+crawl/gamefly.com/Privacy Policy.txt cannotRead
+crawl/gamefly.com/Terms of Use.txt cannotRead
+crawl/gamehouse.com/Privacy Policy.txt cannotRead
+crawl/games.com/Privacy Policy.txt selectorNotFound
+crawl/gamespot.com/Privacy Policy.txt cannotRead
+crawl/gamestop.com/Privacy Policy.txt cannotRead
+crawl/gandermountain.com/Privacy Policy.txt cannotRead
+crawl/gap.com/Privacy Policy.txt cannotRead
+crawl/gap.com/Terms of Use.txt cannotRead
+crawl/gartner.com/Privacy Policy.txt done
+crawl/gateway.com/Privacy Policy.txt cannotRead
+crawl/gather.com/Privacy Policy.txt cannotRead
+crawl/gawker.com/Privacy Policy.txt cannotRead
+crawl/gawker.com/Terms of Use.txt cannotRead
+crawl/gci.com/Privacy Policy.txt cannotRead
+crawl/geek.com/Privacy Policy.txt cannotRead
+crawl/geek.net/Privacy Policy.txt cannotRead
+crawl/geek.net/Terms of Use.txt cannotRead
+crawl/geico.com/Privacy Policy.txt cannotRead
+crawl/getcocoon.com/Privacy Policy.txt done
+crawl/getpocket.com/Privacy Policy.txt cannotRead
+crawl/getpocket.com/Terms of Service.txt cannotRead
+crawl/gifts.com/Privacy Policy.txt cannotRead
+crawl/gilt.com/Privacy Policy.txt cannotRead
+crawl/girlsgogames.com/Privacy Policy.txt cannotRead
+crawl/github.com/Privacy Policy.txt done
+crawl/github.com/Security.txt ruleWasDeleted
+crawl/github.com/Terms of Service.txt done
+crawl/gitlab.com/Privacy Policy.txt done
+crawl/gitlab.com/Security.txt done
+crawl/gitlab.com/Terms of Use.txt done
+crawl/gittip.com/Fraud.txt unknownType
+crawl/gittip.com/Privacy Policy.txt noFilteredContent
+crawl/gittip.com/Security.txt noFilteredContent
+crawl/gittip.com/Terms of Service.txt noFilteredContent
+crawl/gizmodo.com/Privacy Policy.txt cannotRead
+crawl/gizmodo.com/Terms of Use.txt cannotRead
+crawl/glassdoor.com/Privacy Policy.txt cannotRead
+crawl/globalresearch.ca/Privacy Policy.txt done
+crawl/globo.com/Privacy Policy.txt cannotRead
+crawl/gm.com/Privacy Policy.txt cannotRead
+crawl/gmx.com/Privacy Policy.txt cannotRead
+crawl/gmx.net/Privacy Policy.txt cannotRead
+crawl/go.com/Privacy Policy.txt cannotRead
+crawl/go.com/Terms of Use.txt cannotRead
+crawl/godaddy.com/Civil Subpoena Policy.txt unknownType
+crawl/godaddy.com/Domain Name Proxy Agreement.txt unknownType
+crawl/godaddy.com/Domain Name Registration Agreement.txt unknownType
+crawl/godaddy.com/Privacy Policy.txt cannotRead
+crawl/godaddy.com/Trademark and Copyright Infringement Policy.txt unknownType
+crawl/godaddy.com/Uniform Domain Name Dispute Resolution Policy.txt unknownType
+crawl/godaddy.com/Universal Terms Of Service.txt ruleWasDeleted
+crawl/godlikeproductions.com/Privacy Policy.txt done
+crawl/godtube.com/Privacy Policy.txt cannotRead
+crawl/godtube.com/Terms of Use.txt done
+crawl/golfchannel.com/Privacy Policy.txt cannotRead
+crawl/goodhousekeeping.com/Privacy Policy.txt done
+crawl/goodreads.com/Privacy Policy.txt duplicateType
+crawl/google.ca/Privacy Policy.txt duplicateType
+crawl/google.co.uk/Privacy Policy.txt duplicateType
+crawl/google.com.br/Privacy Policy.txt duplicateType
+crawl/google.com/Advertising Cookies Policy.txt unknownType
+crawl/google.com/GOOGLE PRIVACY POLICY.txt ruleWasDeleted
+crawl/google.com/Google Analytics Terms of Service.txt unknownType
+crawl/google.com/Google Wifi and your privacy.txt unknownType
+crawl/google.com/Privacy Policy.txt duplicateType
+crawl/google.com/Terms of Service.txt duplicateType
+crawl/google.de/Privacy Policy.txt duplicateType
+crawl/google.fr/Privacy Policy.txt duplicateType
+crawl/google.nl/Privacy Policy.txt duplicateType
+crawl/grainger.com/Privacy Policy.txt cannotRead
+crawl/grammarly.com/Privacy Policy.txt done
+crawl/grammarly.com/Terms of Service and License Agreement.txt done
+crawl/gratipay.com/Privacy Policy.txt cannotRead
+crawl/gratipay.com/Security.txt cannotRead
+crawl/gratipay.com/Terms of Service.txt cannotRead
+crawl/grooveshark.com/Privacy Policy.txt cannotRead
+crawl/grooveshark.com/Terms of Service.txt cannotRead
+crawl/groupon.com/Privacy Policy.txt cannotRead
+crawl/groupspaces.com/Terms of Service.txt done
+crawl/guardian.co.uk/Privacy Policy.txt noFilteredContent
+crawl/gutefrage.net/Privacy Policy.txt cannotRead
+crawl/habbo.com/Terms of Service.txt done
+crawl/hallmark.com/Privacy Policy.txt cannotRead
+crawl/harborfreight.com/Privacy Policy.txt cannotRead
+crawl/harpersbazaar.com/Privacy Policy.txt done
+crawl/harryanddavid.com/Privacy Policy.txt cannotRead
+crawl/hautelook.com/Privacy Policy.txt done
+crawl/haven.com/Privacy Policy.txt cannotRead
+crawl/headhunter.com/Privacy Policy.txt cannotRead
+crawl/health.com/Privacy Policy.txt done
+crawl/healthline.com/Privacy Policy.txt cannotRead
+crawl/healthline.com/Terms of Use.txt cannotRead
+crawl/help.twcable.com/Residential Services Subscriber Agreement.txt caseSensitivity
+crawl/heroku.com/Terms of Service.txt cannotRead
+crawl/hgtv.com/Privacy Policy.txt cannotRead
+crawl/hgtvremodels.com/Privacy Policy.txt cannotRead
+crawl/hickoryfarms.com/Privacy Policy.txt inconsistent
+crawl/hollisterco.com/Privacy Policy.txt cannotRead
+crawl/home.mywebsearch.com/Privacy Policy.txt done
+crawl/homedecorators.com/Privacy Policy.txt cannotRead
+crawl/homedepot.com/Privacy Policy.txt cannotRead
+crawl/homes.com/Privacy Policy.txt cannotRead
+crawl/homestead.com/Privacy Policy.txt done
+crawl/honda.com/Privacy Policy.txt cannotRead
+crawl/honeywell.com/Privacy Policy.txt done
+crawl/honeywell.com/Security.txt done
+crawl/hootsuite.com/Privacy Policy.txt cannotRead
+crawl/hotels.com/Privacy Policy.txt inconsistent
+crawl/hottopic.com/Privacy Policy.txt inconsistent
+crawl/hottopic.com/Terms of Use.txt inconsistent
+crawl/housebeautiful.com/Privacy Policy.txt done
+crawl/howstuffworks.com/Privacy Policy.txt done
+crawl/hp.com/Privacy Policy.txt cannotRead
+crawl/hsbc.com/Privacy Policy.txt done
+crawl/hsn.com/Privacy Policy.txt cannotRead
+crawl/hubpages.com/Privacy Policy.txt done
+crawl/huffingtonpost.com/Privacy Policy.txt cannotRead
+crawl/huffingtonpost.com/Terms and Conditions.txt cannotRead
+crawl/hulu.com/Privacy Policy.txt cannotRead
+crawl/hyundaiusa.com/Privacy Policy.txt cannotRead
+crawl/ideeli.com/Privacy Policy.txt cannotRead
+crawl/iegallery.com/Privacy Policy.txt done
+crawl/ign.com/Privacy Policy.txt done
+crawl/ikea.com/Privacy Policy.txt cannotRead
+crawl/imageshack.us/Privacy Policy.txt cannotRead
+crawl/imageshack.us/Terms of Service.txt cannotRead
+crawl/imdb.com/Privacy Policy.txt done
+crawl/imdb.com/Terms of Service.txt cannotRead
+crawl/imesh.com/Privacy Policy.txt cannotRead
+crawl/imgur.com/Privacy Policy.txt done
+crawl/imgur.com/Terms of Service.txt cannotRead
+crawl/imvu.com/Privacy Policy.txt done
+crawl/inbox.com/Privacy Policy.txt done
+crawl/indeed.com/Privacy Policy.txt inconsistent
+crawl/infoplease.com/Privacy Policy.txt tooShort
+crawl/infospace.com/Privacy Policy.txt cannotRead
+crawl/instagr.am/Privacy Policy.txt ruleWasDeleted
+crawl/instagram.com/Privacy Policy.txt ruleWasDeleted
+crawl/instagram.com/Terms of Service.txt covered
+crawl/instapaper.com/API Terms of Use.txt done
+crawl/instapaper.com/Copyright Policy.txt unknownType
+crawl/instapaper.com/Privacy Policy.txt done
+crawl/instapaper.com/Terms of Service.txt done
+crawl/instructables.com/Privacy Policy.txt inconsistent
+crawl/intel.com/Privacy Policy.txt cannotRead
+crawl/intellicast.com/Privacy Policy.txt done
+crawl/intuit.com/Privacy Policy.txt cannotRead
+crawl/invizua.com/Privacy Policy.txt done
+crawl/irs.gov/Privacy Policy.txt cannotRead
+crawl/ivillage.com/Privacy Policy.txt cannotRead
+crawl/ixquick.com/Privacy Policy.txt cannotRead
+crawl/jcpenney.com/Privacy Policy.txt cannotRead
+crawl/jcpenny.com/Privacy Policy.txt noFilteredContent
+crawl/jcrew.com/Privacy Policy.txt done
+crawl/jeep.com/Privacy Policy.txt inconsistent
+crawl/jetblue.com/Privacy Policy.txt cannotRead
+crawl/jetsetter.com/Privacy Policy.txt cannotRead
+crawl/jny.com/Privacy Policy.txt cannotRead
+crawl/joann.com/Privacy Policy.txt cannotRead
+crawl/jobgo.com/Privacy Policy.txt done
+crawl/jobs.net/Privacy Policy.txt cannotRead
+crawl/jobsonthemenu.com/Privacy Policy.txt done
+crawl/josbank.com/Privacy Policy.txt cannotRead
+crawl/journeys.com/Privacy Policy.txt cannotRead
+crawl/jpost.com/Privacy Policy.txt cannotRead
+crawl/juno.com/Privacy Policy.txt inconsistent
+crawl/justanswer.com/Privacy Policy.txt cannotRead
+crawl/kaboodle.com/Privacy Policy.txt cannotRead
+crawl/kansascity.com/Privacy Policy.txt cannotRead
+crawl/karoo.co.uk/Privacy Policy.txt cannotRead
+crawl/kay.com/Privacy Policy.txt cannotRead
+crawl/kayak.co.uk/Privacy Policy.txt cannotRead
+crawl/kayak.com/Privacy Policy.txt cannotRead
+crawl/kbb.com/Privacy Policy.txt cannotRead
+crawl/kbb.com/Terms of Service.txt cannotRead
+crawl/khanacademy.org/Privacy Policy.txt done
+crawl/kidshealth.org/Privacy Policy and Terms of Use.txt done
+crawl/kidshealth.org/Privacy Policy.txt ruleWasDeleted
+crawl/kineticglue.com/Privacy Policy.txt noFilteredContent
+crawl/kmart.com/Privacy Policy.txt cannotRead
+crawl/kodakgallery.com/Privacy Policy.txt noFilteredContent
+crawl/kohls.com/Privacy Policy.txt cannotRead
+crawl/komando.com/Privacy Policy.txt cannotRead
+crawl/kongregate.com/Privacy Policy.txt done
+crawl/kongrenate.com/Privacy Policy.txt noFilteredContent
+crawl/kraftfoods.com/Privacy Policy.txt cannotRead
+crawl/kruxdigital.com/Privacy Policy.txt cannotRead
+crawl/lakeside.com/Privacy Policy.txt cannotRead
+crawl/lampsplus.com/Privacy Policy.txt cannotRead
+crawl/landsend.com/Privacy Policy.txt done
+crawl/laredoute.fr/Privacy Policy.txt cannotRead
+crawl/last.fm/Privacy Policy.txt duplicateType
+crawl/latimes.com/Privacy Policy.txt cannotRead
+crawl/latimes.com/Terms of Service.txt cannotRead
+crawl/lausd.net/Privacy Policy.txt cannotRead
+crawl/legacy.com/Privacy Policy.txt cannotRead
+crawl/lego.com/Privacy Policy.txt cannotRead
+crawl/lehigh.edu/Privacy Policy.txt cannotRead
+crawl/lexus.com/Privacy Policy.txt done
+crawl/lifehacker.com/Privacy Policy.txt cannotRead
+crawl/lifehacker.com/Terms of Use.txt cannotRead
+crawl/linkedin.com/LinkedIn in Microsoft Applications with Your Personal Account.txt cannotRead
+crawl/linkedin.com/Privacy Policy.txt cannotRead
+crawl/linkedin.com/Terms of Service.txt cannotRead
+crawl/linkline.com/Privacy Policy.txt inconsistent
+crawl/linksys.com/Belkin Ad and Cookie Policy.txt unknownType
+crawl/linksys.com/COORDINATED VULNERABILITY DISCLOSURE PROGRAM.txt unknownType
+crawl/linksys.com/Linksys Shield Privacy Notice.txt unknownType
+crawl/linksys.com/Linksys Shield Terms of Service.txt unknownType
+crawl/linksys.com/Privacy Policy.txt cannotRead
+crawl/linksys.com/Terms of Use.txt done
+crawl/linkwithin.com/Privacy Policy.txt cannotRead
+crawl/live.com/Microsoft Services Agreement.txt done
+crawl/live.com/Privacy Policy.txt done
+crawl/livejournal.com/Privacy Policy.txt cannotRead
+crawl/livejournal.com/Terms of Service.txt duplicateType
+crawl/liveleak.com/Privacy Policy.txt cannotRead
+crawl/livestrong.com/Privacy Policy.txt cannotRead
+crawl/livingsocial.com/Privacy Policy.txt cannotRead
+crawl/llbean.com/Privacy Policy.txt done
+crawl/local.com/Privacy Policy.txt cannotRead
+crawl/locatetv.com/Privacy Policy.txt cannotRead
+crawl/lockerz.com/Terms of Service.txt cannotRead
+crawl/logitech.com/Terms of Service.txt done
+crawl/lowes.com/Privacy Policy.txt cannotRead
+crawl/macys.com/Privacy Policy.txt cannotRead
+crawl/mail.google.com/GMail Legal Notices.txt unknownType
+crawl/mail.google.com/GMail Privacy Policy.txt unknownType
+crawl/mail.google.com/GMail Program Policies.txt unknownType
+crawl/mail.google.com/Privacy Policy.txt noFilteredContent
+crawl/mailgun.com/Privacy Policy.txt cannotRead
+crawl/mailgun.com/Terms of Service.txt tooShort
+crawl/mainstreet.com/Privacy Policy.txt cannotRead
+crawl/mall.soc.io/Privacy Policy.txt cannotRead
+crawl/manta.com/Privacy Policy.txt cannotRead
+crawl/mapquest.com/Privacy Policy.txt selectorNotFound
+crawl/mapstone.net/Privacy Policy.txt cannotRead
+crawl/marieclaire.com/Privacy Policy.txt done
+crawl/marketingvox.com/Privacy Policy.txt done
+crawl/marketwatch.com/Privacy Policy.txt cannotRead
+crawl/markosweb.com/Privacy Policy.txt cannotRead
+crawl/marqueemedia.com/Privacy Policy.txt cannotRead
+crawl/marriott.com/Privacy Policy.txt cannotRead
+crawl/marthastewart.com/Privacy Policy.txt cannotRead
+crawl/mashable.com/Privacy Policy.txt cannotRead
+crawl/match.com/Privacy Policy.txt duplicateType
+crawl/mattel.com/Privacy Policy.txt cannotRead
+crawl/mattressfirm.com/Privacy Policy.txt cannotRead
+crawl/mattressgiant.com/Privacy Policy.txt noFilteredContent
+crawl/mbusa.com/Privacy Policy.txt cannotRead
+crawl/mcafee.com/Privacy Policy.txt cannotRead
+crawl/mediaplex.com/Privacy Policy.txt inconsistent
+crawl/medicinenet.com/Privacy Policy.txt cannotRead
+crawl/medium.com/Privacy Policy.txt cannotRead
+crawl/medium.com/Terms of Service.txt cannotRead
+crawl/meebo.com/Privacy Policy.txt cannotRead
+crawl/meetup.com/Privacy Policy.txt duplicateType
+crawl/meetup.com/Terms of Service.txt duplicateType
+crawl/mega.co.nz/Notice of Alleged Infringement.txt unknownType
+crawl/mega.co.nz/Privacy Policy.txt done
+crawl/mega.co.nz/Terms of Service.txt done
+crawl/megavideo.com/Privacy Policy.txt noFilteredContent
+crawl/mendeley.com/Privacy Policy.txt cannotRead
+crawl/mendeley.com/Terms of Service.txt done
+crawl/merriam-webster.com/Privacy Policy.txt done
+crawl/metacafe.com/Privacy Policy.txt cannotRead
+crawl/metrolyrics.com/Privacy Policy.txt cannotRead
+crawl/michaels.com/Privacy Policy.txt inconsistent
+crawl/microsoft.com/Law Enforcement Requests Report.txt unknownType
+crawl/microsoft.com/Microsoft Services Agreement.txt duplicateType
+crawl/microsoft.com/Microsoft Terms of Use.txt done
+crawl/microsoft.com/Privacy Policy.txt done
+crawl/microsoft.com/Terms of Service.txt ruleWasDeleted
+crawl/microsoft.com/Windows 10 location service and privacy.txt unknownType
+crawl/minecraft.net/Terms and Conditions.txt cannotRead
+crawl/miniclip.com/Privacy Policy.txt cannotRead
+crawl/mint.com/Legal Information (Intuit).txt cannotRead
+crawl/mint.com/Privacy Policy.txt cannotRead
+crawl/mint.com/Terms of Use.txt cannotRead
+crawl/miracleworkers.com/Privacy Policy.txt cannotRead
+crawl/mittromney.com/Privacy Policy.txt noFilteredContent
+crawl/mlb.mlb.com/Privacy Policy.txt done
+crawl/mobilytrip.com/Privacy Policy.txt cannotRead
+crawl/mobilytrip.com/Terms of Use.txt cannotRead
+crawl/modcloth.com/Privacy Policy.txt cannotRead
+crawl/modnique.com/Privacy Policy.txt cannotRead
+crawl/modnique.com/Terms and Conditions.txt cannotRead
+crawl/monkeybrains.net/All Policies.txt done
+crawl/monster.com/Privacy Policy.txt done
+crawl/monster.com/Terms of Use.txt done
+crawl/motorola.com/Privacy Policy.txt cannotRead
+crawl/motortrend.com/Privacy Policy.txt done
+crawl/moviefone.com/Privacy Policy.txt selectorNotFound
+crawl/mozilla.org/Privacy Policy.txt done
+crawl/msn.ca/Privacy Policy.txt cannotRead
+crawl/msn.co.uk/Privacy Policy.txt cannotRead
+crawl/msn.com.br/Privacy Policy.txt cannotRead
+crawl/msn.com/Privacy Policy.txt done
+crawl/msn.com/Terms of Service.txt done
+crawl/msn.de/Privacy Policy.txt cannotRead
+crawl/msn.foxsports.com/Privacy Policy.txt cannotRead
+crawl/msn.fr/Privacy Policy.txt cannotRead
+crawl/msn.nl/Privacy Policy.txt cannotRead
+crawl/msnbc.msn.com/Privacy Policy.txt cannotRead
+crawl/msnlatino.telemundo.com/Privacy Policy.txt cannotRead
+crawl/mtv.com/Privacy Policy.txt cannotRead
+crawl/mtv.com/Terms of Use.txt cannotRead
+crawl/mun2.tv/Privacy Policy.txt cannotRead
+crawl/mycertifiedservice.com/Privacy Policy.txt done
+crawl/mylife.com/Privacy Policy.txt cannotRead
+crawl/mylifetime.com/Privacy Policy.txt cannotRead
+crawl/myoffers.co.uk/Privacy Policy.txt cannotRead
+crawl/mypoints.com/Privacy Policy.txt cannotRead
+crawl/myspace.com/Privacy Policy.txt duplicateType
+crawl/myspace.com/Terms of Service.txt covered
+crawl/nadaguides.com/Privacy Policy.txt cannotRead
+crawl/naplesnews.com/Privacy Policy.txt cannotRead
+crawl/nationalgeographic.com/Privacy Policy.txt done
+crawl/nationalgeographic.com/Terms of Service.txt done
+crawl/nature.org/Privacy Policy.txt inconsistent
+crawl/naver.com/Privacy Policy.txt done
+crawl/nbc.com/Privacy Policy.txt cannotRead
+crawl/nbc.com/Terms of Service 1.txt cannotRead
+crawl/nbc.com/Terms of Service 2.txt unknownType
+crawl/nbc.com/Terms of Service 3.txt unknownType
+crawl/nbcsports.msnbc.com/Privacy Policy.txt cannotRead
+crawl/nbcuni.com/Terms of Service.txt cannotRead
+crawl/neimanmarcus.com/Privacy Policy.txt done
+crawl/nest.com/End User License Agreement.txt unknownType
+crawl/nest.com/Frequently asked questions about privacy.txt unknownType
+crawl/nest.com/Google Nest: welcome to the helpful home.txt unknownType
+crawl/nest.com/How Google retains data we collect.txt unknownType
+crawl/nest.com/Nest Retention Statement.txt unknownType
+crawl/nest.com/Our Privacy and Security Principles.txt unknownType
+crawl/nest.com/Privacy Notice.txt cannotRead
+crawl/nest.com/Terms of Service.txt cannotRead
+crawl/nest.com/Who are Google's partners?.txt unknownType
+crawl/netflix.com/Privacy Policy.txt done
+crawl/netflix.com/Terms of Use.txt done
+crawl/netgear.com/Privacy Policy.txt done
+crawl/netgear.com/Terms and Conditions.txt ruleWasDeleted
+crawl/netgear.com/Terms of Service.txt done
+crawl/networkworld.com/Privacy Policy.txt cannotRead
+crawl/netzero.net/Privacy Policy.txt inconsistent
+crawl/netzero.net/Terms of Service.txt inconsistent
+crawl/newegg.com/Privacy Policy.txt cannotRead
+crawl/newgrounds.com/Privacy Policy.txt done
+crawl/newser.com/Privacy Policy.txt done
+crawl/newsmax.com/Privacy Policy.txt cannotRead
+crawl/nextag.com/Privacy Policy.txt cannotRead
+crawl/nfl.com/Privacy Policy.txt done
+crawl/nick.com/Privacy Policy.txt cannotRead
+crawl/nickjr.com/Privacy Policy.txt done
+crawl/nih.gov/Privacy Policy.txt cannotRead
+crawl/nike.com/Privacy Policy.txt inconsistent
+crawl/ning.com/Privacy Policy.txt duplicateType
+crawl/ning.com/Terms of Service.txt duplicateType
+crawl/nissan.com/Privacy Policy.txt done
+crawl/noaa.gov/Privacy Policy.txt done
+crawl/nordstrom.com/Customer Privacy Policy.txt cannotRead
+crawl/nordstrom.com/Privacy Policy.txt cannotRead
+crawl/northerntool.com/Privacy Policy.txt cannotRead
+crawl/npr.org/Privacy Policy.txt done
+crawl/nps.gov/Privacy Policy.txt done
+crawl/nwf.org/Privacy Policy.txt inconsistent
+crawl/nwf.org/Terms of Use.txt inconsistent
+crawl/nyandcompany.com/Privacy Policy.txt cannotRead
+crawl/nydailynews.com/Privacy Policy.txt cannotRead
+crawl/nypost.com/Privacy Policy.txt cannotRead
+crawl/nytimes.com/Privacy Policy.txt done
+crawl/o2.co.uk/Privacy Policy.txt cannotRead
+crawl/oath.com/About Your Choices.txt unknownType
+crawl/oath.com/Ad Serving.txt unknownType
+crawl/oath.com/Appended and Matched Data.txt unknownType
+crawl/oath.com/Beacons & SDKs.txt unknownType
+crawl/oath.com/Browser Apps.txt unknownType
+crawl/oath.com/Children's Privacy And Family Accounts.txt unknownType
+crawl/oath.com/Communication Products.txt unknownType
+crawl/oath.com/Cookies and Similar Technologies.txt unknownType
+crawl/oath.com/Copyright and Intellectual Property Policy.txt unknownType
+crawl/oath.com/Data Storage and Anonymization.txt unknownType
+crawl/oath.com/Data Transfer.txt unknownType
+crawl/oath.com/IP Address.txt unknownType
+crawl/oath.com/Location.txt unknownType
+crawl/oath.com/Media.txt unknownType
+crawl/oath.com/OATH ENTERPRISE ACCOUNT PRIVACY POLICY.txt unknownType
+crawl/oath.com/Oath Analytics.txt unknownType
+crawl/oath.com/Oath Community Guidelines.txt unknownType
+crawl/oath.com/Oath Privacy Center.txt done
+crawl/oath.com/Oath Promotions.txt unknownType
+crawl/oath.com/Oath Terms of Service.txt unknownType
+crawl/oath.com/Research.txt unknownType
+crawl/oath.com/Search Services.txt unknownType
+crawl/oath.com/Security.txt done
+crawl/oath.com/Smart TV.txt unknownType
+crawl/oath.com/Third Parties.txt unknownType
+crawl/oath.com/Why This Ad?.txt unknownType
+crawl/oath.com/Yahoo Developer Network.txt unknownType
+crawl/officedepot.com/Privacy Policy.txt cannotRead
+crawl/officedepot.com/Terms of Use.txt cannotRead
+crawl/officemax.com/Privacy Policy.txt done
+crawl/oficedepot.com/Privacy Policy.txt noFilteredContent
+crawl/okcupid.com/Privacy Policy.txt done
+crawl/olx.com/Terms of Use.txt cannotRead
+crawl/onestopplus.com/Privacy Policy.txt cannotRead
+crawl/onlineshoes.com/Privacy Policy.txt cannotRead
+crawl/onstar.com/Terms of Service.txt cannotRead
+crawl/oodle.com/Privacy Policy.txt done
+crawl/opencongress.org/Terms of Service.txt cannotRead
+crawl/opendns.com/Privacy Policy.txt cannotRead
+crawl/oprah.com/Privacy Policy.txt cannotRead
+crawl/optimum.com/Acceptable Use Policy.txt done
+crawl/orange.fr/Privacy Policy.txt done
+crawl/orbitz.com/Privacy Policy.txt cannotRead
+crawl/oreilly.com/Privacy Policy.txt done
+crawl/orientaltrading.com/Privacy Policy.txt cannotRead
+crawl/otalliance.org/Privacy Policy.txt done
+crawl/ourtoolbar.com/Privacy Policy.txt cannotRead
+crawl/outbrain.com/Privacy Policy.txt cannotRead
+crawl/over-blog.com/Privacy Policy.txt cannotRead
+crawl/overstock.com/Privacy Policy.txt cannotRead
+crawl/owncube.com/Privacy.txt cannotRead
+crawl/owncube.com/Terms of Use.txt cannotRead
+crawl/oxygen.com/Privacy Policy.txt cannotRead
+crawl/pages.ebay.com/User Agreement.txt unknownType
+crawl/pagesjaunes.fr/Privacy Policy.txt inconsistent
+crawl/paidcontent.org/Privacy Policy.txt cannotRead
+crawl/paidcontent.org/Terms of Service.txt cannotRead
+crawl/pandora.com/Privacy Policy.txt cannotRead
+crawl/partycity.com/Privacy Policy.txt cannotRead
+crawl/patch.com/Privacy Policy.txt done
+crawl/paypal.com/Privacy Policy.txt cannotRead
+crawl/pbs.org/Privacy Policy.txt cannotRead
+crawl/pbs.org/Terms of Use.txt cannotRead
+crawl/pbskids.org/Privacy Policy.txt done
+crawl/pch.com/Privacy Policy.txt inconsistent
+crawl/pchlotto.com/Privacy Policy.txt inconsistent
+crawl/pcmag.com/Privacy Policy.txt cannotRead
+crawl/pcworld.com/Privacy Policy.txt cannotRead
+crawl/pcworld.com/Terms of Service.txt cannotRead
+crawl/peekyou.com/Privacy Policy.txt done
+crawl/people.com/Privacy Policy.txt done
+crawl/peoplesmart.com/Privacy Policy.txt done
+crawl/pepsico.com/Privacy Policy.txt cannotRead
+crawl/personalcreations.com/Privacy Policy.txt cannotRead
+crawl/personalizationmall.com/Privacy Policy.txt cannotRead
+crawl/personified.com/Privacy Policy.txt cannotRead
+crawl/petco.com/Privacy Policy.txt cannotRead
+crawl/petsathome.com/Privacy Policy.txt cannotRead
+crawl/petsmart.com/Privacy Policy.txt cannotRead
+crawl/pg.com/Privacy Policy.txt done
+crawl/philanthropy.com/Privacy Policy.txt cannotRead
+crawl/phoenix.edu/Privacy Policy.txt cannotRead
+crawl/phoenix.edu/Terms and Conditions.txt cannotRead
+crawl/phonedeck.com/Privacy Policy.txt cannotRead
+crawl/photobucket.com/Privacy Policy.txt cannotRead
+crawl/photobucket.com/Terms of Use.txt cannotRead
+crawl/piazza.com/Terms of Service.txt cannotRead
+crawl/pier1.com/Privacy Policy.txt cannotRead
+crawl/pillsbury.com/Privacy Policy.txt cannotRead
+crawl/pinterest.com/Privacy Policy.txt duplicateType
+crawl/pinterest.com/Terms of Service.txt duplicateType
+crawl/pipl.com/Privacy Policy.txt cannotRead
+crawl/pjmedia.com/Privacy Policy.txt cannotRead
+crawl/playfirst.com/Privacy Policy.txt cannotRead
+crawl/plus.google.com/Privacy Policy.txt done
+crawl/pocruises.com/Privacy Policy.txt cannotRead
+crawl/pof.com/Privacy Policy.txt ruleWasDeleted
+crawl/pof.com/Terms of Use.txt cannotRead
+crawl/pogo.com/Privacy Policy.txt done
+crawl/politico.com/Privacy Policy.txt cannotRead
+crawl/pollen.com/Privacy Policy.txt done
+crawl/popcap.com/Privacy Policy.txt done
+crawl/poptropica.com/Privacy Policy.txt tooShort
+crawl/popularmechanics.com/Privacy Policy.txt done
+crawl/potterybarn.com/Privacy Policy.txt cannotRead
+crawl/pricegrabber.com/Privacy Policy.txt cannotRead
+crawl/priceline.com/Privacy Policy.txt cannotRead
+crawl/priceminister.com/Privacy Policy.txt cannotRead
+crawl/primarygames.com/Privacy Policy.txt cannotRead
+crawl/primecb.com/Privacy Policy.txt cannotRead
+crawl/privacychoice.org/Privacy Policy.txt cannotRead
+crawl/privacyscore.com/Privacy Policy.txt cannotRead
+crawl/progress.audiusa.com/Privacy Policy.txt selectorNotFound
+crawl/progressive.com/Privacy Policy.txt done
+crawl/pronto.com/Privacy Policy.txt cannotRead
+crawl/putlocker.com/Privacy Policy.txt cannotRead
+crawl/pwc.com/Privacy Policy.txt cannotRead
+crawl/quakelive.com/EULA.txt cannotRead
+crawl/quakelive.com/Legal Notices.txt cannotRead
+crawl/quakelive.com/Notices.txt unknownType
+crawl/quakelive.com/Privacy Policy.txt cannotRead
+crawl/quakelive.com/TOS.txt unknownType
+crawl/quakelive.com/Terms of Use.txt cannotRead
+crawl/quisma.com/Privacy Policy.txt cannotRead
+crawl/quora.com/Privacy Policy.txt covered
+crawl/qvc.com/Privacy Policy.txt done
+crawl/rachaelray.com/Privacy Policy.txt cannotRead
+crawl/rackspace.com/Beleid voor Acceptabel Gebruik.txt unknownType
+crawl/rackspace.com/Global Acceptable Use Policy.txt unknownType
+crawl/rackspace.com/Nutzungsbedingungen.txt unknownType
+crawl/rackspace.com/Privacy Statement.txt cannotRead
+crawl/rackspace.com/US Acceptable Use Policy.txt unknownType
+crawl/radioshack.com/Privacy Policy.txt cannotRead
+crawl/ralphlauren.com/Privacy Policy.txt cannotRead
+crawl/readwrite.com/Privacy Policy.txt done
+crawl/readwriteweb.com/Privacy Policy.txt noFilteredContent
+crawl/realclearpolitics.com/Privacy Policy.txt done
+crawl/realtor.com/Privacy Policy.txt done
+crawl/redbookmag.com/Privacy Policy.txt done
+crawl/redbox.com/Privacy Policy.txt cannotRead
+crawl/redding.com/Privacy Policy.txt cannotRead
+crawl/reddit.com/Privacy Policy.txt duplicateType
+crawl/reddit.com/Terms of Service.txt duplicateType
+crawl/redenvelope.com/Privacy Policy.txt cannotRead
+crawl/reference.com/Privacy Policy.txt cannotRead
+crawl/rei.com/Privacy Policy.txt cannotRead
+crawl/replacements.com/Privacy Policy.txt inconsistent
+crawl/reputation.com/Privacy Policy.txt cannotRead
+crawl/reputation.com/Terms of Use.txt cannotRead
+crawl/researchgate.net/Privacy Policy.txt done
+crawl/researchgate.net/Terms of Service.txt cannotRead
+crawl/retailmenot.com/Privacy Policy.txt cannotRead
+crawl/reuters.com/Privacy Policy.txt done
+crawl/roadandtrack.com/Privacy Policy.txt done
+crawl/rollingstone.com/Privacy Policy.txt cannotRead
+crawl/rotoworld.com/Privacy Policy.txt cannotRead
+crawl/rr.com/Privacy Policy.txt selectorNotFound
+crawl/rxlist.com/Privacy Policy.txt cannotRead
+crawl/safeway.com/Privacy Policy.txt cannotRead
+crawl/saksfifthavenue.com/Privacy Policy.txt cannotRead
+crawl/salesforce.com/Privacy Policy.txt inconsistent
+crawl/salon.com/Privacy Policy.txt cannotRead
+crawl/samsclub.com/Privacy Policy.txt cannotRead
+crawl/samsclub.com/Terms and Conditions.txt cannotRead
+crawl/samsung.com/Legal.txt unknownType
+crawl/samsung.com/Privacy Policy.txt cannotRead
+crawl/samsung.com/SAMSUNG PRIVACY POLICY FOR THE U.S..txt done
+crawl/samsung.com/SmartThings Privacy Policy.txt unknownType
+crawl/samsung.com/SmartThings Terms.txt unknownType
+crawl/savemore.com/Privacy Policy.txt noFilteredContent
+crawl/sbnation.com/Privacy Policy.txt cannotRead
+crawl/sbnation.com/Terms of Use.txt cannotRead
+crawl/scienceblogs.com/Terms of Service.txt cannotRead
+crawl/scmagazine.com/Privacy Policy.txt inconsistent
+crawl/scottrade.com/Privacy Policy.txt cannotRead
+crawl/scout.com/Privacy Policy.txt cannotRead
+crawl/scribd.com/Privacy Policy.txt cannotRead
+crawl/scrippsnetworksinteractive.com/Privacy Policy.txt cannotRead
+crawl/scrippsnetworksinteractive.com/Terms of Use.txt cannotRead
+crawl/sdge.com/Terms of Service.txt cannotRead
+crawl/search-results.com/Privacy Policy.txt cannotRead
+crawl/sears.com/Privacy Policy.txt cannotRead
+crawl/seattletimes.nwsource.com/Privacy Policy.txt done
+crawl/secondlife.com/Terms of Service.txt cannotRead
+crawl/seekingalpha.com/Privacy Policy.txt done
+crawl/sencha.com/Privacy Policy.txt inconsistent
+crawl/seventeen.com/Privacy Policy.txt done
+crawl/sfbc.com/Privacy Policy.txt cannotRead
+crawl/sfgate.com/Privacy Policy.txt cannotRead
+crawl/sheplers.com/Privacy Policy.txt cannotRead
+crawl/shockwave.com/Privacy Policy.txt done
+crawl/shoebuy.com/Privacy Policy.txt cannotRead
+crawl/shoes.com/Privacy Policy.txt cannotRead
+crawl/shop.lenovo.com/Privacy Policy.txt inconsistent
+crawl/shop.pacsun.com/Privacy Policy.txt cannotRead
+crawl/shopathome.com/Privacy Policy.txt cannotRead
+crawl/shopjustice.com/Privacy Policy.txt cannotRead
+crawl/shoplocal.com/Privacy Policy.txt ruleWasDeleted
+crawl/shoplocal.com/Terms of Use and Privacy Policy.txt cannotRead
+crawl/shopping.com/Network User Agreement.txt unknownType
+crawl/shopping.com/Privacy Policy.txt cannotRead
+crawl/shopstyle.com/Privacy Policy.txt done
+crawl/shopstyle.com/Terms of Service.txt done
+crawl/shopzilla.com/Privacy Policy.txt cannotRead
+crawl/shutterfly.com/Privacy Policy.txt done
+crawl/shutterfly.com/Terms and Conditions.txt done
+crawl/sierratradingpost.com/Privacy Policy.txt cannotRead
+crawl/simplyhired.com/Privacy Policy.txt cannotRead
+crawl/sixdegreesrecords.com/Privacy Policy.txt cannotRead
+crawl/skype.com/Business End User License Agreement (US).txt unknownType
+crawl/skype.com/Business End User License Agreement.txt unknownType
+crawl/skype.com/Cookies Policy.txt unknownType
+crawl/skype.com/Etiquette.txt unknownType
+crawl/skype.com/Fair Usage Policy for Subscriptions.txt unknownType
+crawl/skype.com/Fair Usage Policy for US Minute Bundles.txt unknownType
+crawl/skype.com/Group Video Calling Fair Usage Policy.txt unknownType
+crawl/skype.com/Privacy Policies.txt unknownType
+crawl/skype.com/Privacy Policy English (International).txt unknownType
+crawl/skype.com/Skype Emergency Calling.txt unknownType
+crawl/skype.com/Terms and Policies.txt unknownType
+crawl/skype.com/Terms of Service - Business (US).txt unknownType
+crawl/skype.com/Terms of Service - Business.txt unknownType
+crawl/skype.com/Terms of Use.txt duplicateType
+crawl/skype.com/Trademark Guidelines.txt unknownType
+crawl/slashdot.org/Privacy Policy.txt cannotRead
+crawl/slate.com/Privacy Policy.txt cannotRead
+crawl/slate.com/Terms of Service.txt cannotRead
+crawl/slideshare.net/Privacy Policy.txt done
+crawl/smugmug.com/Privacy Policy.txt cannotRead
+crawl/snapfish.com/Privacy Policy.txt done
+crawl/softpedia.com/Privacy Policy.txt cannotRead
+crawl/sologig.com/Privacy Policy.txt cannotRead
+crawl/sonic.net/All Policies.txt noFilteredContent
+crawl/sony.com/Privacy Policy.txt done
+crawl/sonypictures.com/Terms of Service.txt cannotRead
+crawl/soundcloud.com/Community Guidelines.txt cannotRead
+crawl/soundcloud.com/Privacy Policy.txt cannotRead
+crawl/soundcloud.com/Terms of Service.txt cannotRead
+crawl/sourceforge.net/Privacy Policy.txt cannotRead
+crawl/sourceforge.net/Terms of Service.txt cannotRead
+crawl/southwest.com/Privacy Policy.txt done
+crawl/sparkpeople.com/Privacy Policy.txt done
+crawl/speeddate.com/Privacy Policy.txt cannotRead
+crawl/spencersonline.com/Privacy Policy.txt cannotRead
+crawl/spiceworks.com/Privacy Policy.txt cannotRead
+crawl/spiceworks.com/Terms and Conditions.txt cannotRead
+crawl/spiegel.de/Privacy Policy.txt cannotRead
+crawl/spokeo.com/Privacy Policy.txt cannotRead
+crawl/spokeo.com/Terms of Use (Consumer).txt cannotRead
+crawl/spokeo.com/Terms of Use (Enterprise).txt unknownType
+crawl/sportsillustrated.cnn.com/Privacy Policy.txt done
+crawl/sportsmansguide.com/Privacy Policy.txt cannotRead
+crawl/spotify.com/Privacy Policy.txt done
+crawl/spotify.com/Terms and Conditions (Mobile).txt ruleWasDeleted
+crawl/spotify.com/Terms and Conditions (Premium).txt ruleWasDeleted
+crawl/spotify.com/Terms and Conditions (Unlimited).txt ruleWasDeleted
+crawl/spotify.com/Terms and Conditions of Use.txt done
+crawl/springfieldnewssun.com/Privacy Policy.txt cannotRead
+crawl/sprint.com/Privacy Policy.txt cannotRead
+crawl/sprintpcs.com/Terms and Conditions.txt cannotRead
+crawl/squidoo.com/Privacy Policy.txt done
+crawl/stackexchange.com/APIs Terms of Use.txt ruleWasDeleted
+crawl/stackexchange.com/Content Policy.txt unknownType
+crawl/stackexchange.com/Privacy Policy.txt cannotRead
+crawl/stackexchange.com/Terms of Service.txt cannotRead
+crawl/stackexchange.com/Trademark Guidance.txt unknownType
+crawl/staples.com/Privacy Policy.txt cannotRead
+crawl/starbucks.com/Privacy Policy.txt done
+crawl/starbucks.com/Terms of Service.txt done
+crawl/starwoodhotels.com/Privacy Policy.txt cannotRead
+crawl/statefarm.com/Privacy Policy.txt cannotRead
+crawl/statefarm.com/Terms of Service.txt cannotRead
+crawl/steampowered.com/Privacy Policy Agreement.txt done
+crawl/steampowered.com/Steam Subscriber Agreement.txt unknownType
+crawl/stepstone.com/Privacy Policy.txt done
+crawl/stubhub.com/Privacy Policy.txt cannotRead
+crawl/stumbleupon.com/Privacy Policy.txt done
+crawl/subaru.com/Privacy Policy.txt done
+crawl/suddenlink.com/Terms of Service.txt noFilteredContent
+crawl/sugarsync.com/Privacy Policy.txt cannotRead
+crawl/suntimes.com/Privacy Policy.txt cannotRead
+crawl/superpages.com/Privacy Policy.txt done
+crawl/surveymonkey.com/Privacy Policy.txt done
+crawl/swisscolony.com/Privacy Policy.txt cannotRead
+crawl/syfy.com/Privacy Policy.txt cannotRead
+crawl/symantec.com/Privacy Policy.txt cannotRead
+crawl/synology.com/Cookie Policy.txt unknownType
+crawl/synology.com/End User Agreement.txt unknownType
+crawl/synology.com/LIMITED PRODUCT WARRANTY.txt unknownType
+crawl/synology.com/Privacy Policy.txt done
+crawl/synology.com/Privacy Statement.txt ruleWasDeleted
+crawl/synology.com/Terms of Service.txt done
+crawl/synology.com/WEBSITE TERMS OF USE.txt unknownType
+crawl/synology.com/Website Terms of Use.txt unknownType
+crawl/synology.com/Your Privacy Matters.txt unknownType
+crawl/t-mobile.com/Privacy Policy.txt cannotRead
+crawl/t-mobile.com/Terms and Conditions.txt cannotRead
+crawl/t-online.de/Privacy Policy.txt done
+crawl/tagged.com/Privacy Policy.txt duplicateType
+crawl/target.com/Privacy Policy.txt cannotRead
+crawl/tbs.com/Privacy Policy.txt cannotRead
+crawl/tealium.com/Privacy Policy.txt done
+crawl/techcrunch.com/Privacy Policy.txt selectorNotFound
+crawl/techradar.com/Privacy Policy.txt cannotRead
+crawl/techrepublic.com/Privacy Policy.txt cannotRead
+crawl/telegraph.co.uk/Privacy Policy.txt cannotRead
+crawl/telekom.de/Privacy Policy.txt cannotRead
+crawl/theapprovedcard.com/Privacy Policy.txt done
+crawl/theatlantic.com/Privacy Policy.txt cannotRead
+crawl/theblaze.com/Privacy Policy.txt cannotRead
+crawl/thedailybeast.com/Privacy Policy.txt cannotRead
+crawl/thefreedictionary.com/Privacy Policy.txt cannotRead
+crawl/theguardian.com/Privacy Policy.txt done
+crawl/thehill.com/Privacy Policy.txt cannotRead
+crawl/thelawportal.co.uk/Privacy Policy.txt done
+crawl/thenorthface.com/Privacy Policy.txt cannotRead
+crawl/thepiratebay.org/Privacy Policy.txt ruleWasDeleted
+crawl/thepiratebay.org/Terms of Service.txt cannotRead
+crawl/thepostgame.com/Privacy Policy.txt cannotRead
+crawl/theregister.co.uk/Privacy Policy.txt done
+crawl/thestreet.com/Privacy Policy.txt cannotRead
+crawl/thestreet.com/Terms of Use.txt cannotRead
+crawl/thingsremembered.com/Privacy Policy.txt cannotRead
+crawl/thinkgeek.com/Legal Information.txt cannotRead
+crawl/thinkgeek.com/Privacy Policy.txt cannotRead
+crawl/thinkgeek.com/Terms of Use.txt cannotRead
+crawl/thisismyjam.com/Privacy Policy.txt done
+crawl/thomasnet.com/Privacy Policy.txt cannotRead
+crawl/ticketmaster.com/Privacy Policy.txt cannotRead
+crawl/ticketmaster.com/Terms of Use.txt cannotRead
+crawl/tiffany.com/Privacy Policy.txt cannotRead
+crawl/tigerdirect.com/Privacy Policy.txt cannotRead
+crawl/time.com/Privacy Policy.txt done
+crawl/timeanddate.com/Privacy Policy.txt done
+crawl/timewarnercable.com/Privacy Policy.txt cannotRead
+crawl/timewarnercable.com/Residential Services Subscriber Agreement.txt unknownType
+crawl/timewarnercable.com/Terms of Service and AUP.txt unknownType
+crawl/timewarnercable.com/Terms of Service.txt cannotRead
+crawl/tinypic.com/Privacy Policy.txt cannotRead
+crawl/tinyurl.com/Terms of Service.txt cannotRead
+crawl/tmz.com/Privacy Policy.txt cannotRead
+crawl/today.msnbc.msn.com/Privacy Policy.txt cannotRead
+crawl/toodledo.com/Privacy Policy.txt done
+crawl/toodledo.com/Terms of Service.txt done
+crawl/topix.com/Privacy Policy.txt cannotRead
+crawl/topspin.net/Terms of Service.txt cannotRead
+crawl/townandcountrymag.com/Privacy Policy.txt cannotRead
+crawl/toyota.com/Privacy Policy.txt done
+crawl/toysrus.com/Privacy Policy.txt cannotRead
+crawl/tp-link.com/Customer Data Privacy for Smart Home.txt unknownType
+crawl/tp-link.com/Privacy Policy.txt cannotRead
+crawl/tp-link.com/Privacy and Terms of Use.txt unknownType
+crawl/tp-link.com/Security Advisory.txt done
+crawl/tp-link.com/TP-LINK Cloud Privacy Policy.txt unknownType
+crawl/tp-link.com/Terms of Service.txt done
+crawl/travelchannel.com/Privacy Policy.txt cannotRead
+crawl/travelocity.com/Privacy Policy.txt cannotRead
+crawl/travelzoo.com/Privacy Policy.txt cannotRead
+crawl/trendmicro.com/Router Compatibility List.txt unknownType
+crawl/tribalfusion.com/Privacy Policy.txt cannotRead
+crawl/tripadvisor.com/Privacy Policy.txt cannotRead
+crawl/trulia.com/Privacy Policy.txt cannotRead
+crawl/tube8.com/Privacy Policy.txt inconsistent
+crawl/tumblr.com/Privacy Policy.txt done
+crawl/tumblr.com/Terms of Service.txt done
+crawl/turnitin.com/Terms of Service.txt cannotRead
+crawl/tv.com/Privacy Policy.txt cannotRead
+crawl/tvguide.com/Privacy Policy.txt cannotRead
+crawl/twitpic.com/Privacy Policy.txt done
+crawl/twitpic.com/Terms of Service.txt done
+crawl/twitter.com/Ads API Agreement.txt unknownType
+crawl/twitter.com/Developer Agreement.txt unknownType
+crawl/twitter.com/Developer Policy.txt unknownType
+crawl/twitter.com/Display requirements: Replies.txt unknownType
+crawl/twitter.com/Display requirements: Tweets.txt unknownType
+crawl/twitter.com/Geo guidelines.txt unknownType
+crawl/twitter.com/More about restricted uses of the Twitter APIs.txt unknownType
+crawl/twitter.com/Our use of cookies and similar technologies.txt unknownType
+crawl/twitter.com/Privacy Policy.txt duplicateType
+crawl/twitter.com/Terms of Service.txt duplicateType
+crawl/twitter.com/Twitter Kit Agreement.txt unknownType
+crawl/twowaylove.com/Privacy Policy.txt cannotRead
+crawl/typepad.com/Privacy Policy.txt cannotRead
+crawl/typepad.com/Terms of Service.txt cannotRead
+crawl/ubuntu.com/Terms of Service.txt done
+crawl/ucla.edu/Privacy Policy.txt done
+crawl/uggaustralia.com/Privacy Policy.txt cannotRead
+crawl/ui.com/Privacy Policy.txt done
+crawl/ui.com/Terms of Service.txt done
+crawl/ui.com/Ubiquiti Beta Store Terms of Service.txt unknownType
+crawl/ui.com/Ubiquiti Networks Privacy Policy.txt unknownType
+crawl/ui.com/Ubiquiti Store Terms and Conditions.txt unknownType
+crawl/ui.com/UniFi Controller Terms of Service.txt unknownType
+crawl/ui.com/Unifi Elite Terms and Conditions.txt unknownType
+crawl/uk.yahoo.com/Privacy Policy.txt cannotRead
+crawl/ulster.ac.uk/Privacy Policy.txt done
+crawl/uncommongoods.com/Privacy Policy.txt cannotRead
+crawl/underarmour.com/Privacy Policy.txt cannotRead
+crawl/united.com/Privacy Policy.txt cannotRead
+crawl/upmystreet.com/Privacy Policy.txt noFilteredContent
+crawl/ups.com/Privacy Policy.txt cannotRead
+crawl/urbandictionary.com/Privacy Policy.txt done
+crawl/urbanoutfitters.com/Privacy Policy.txt cannotRead
+crawl/urbanspoon.com/Privacy Policy.txt cannotRead
+crawl/urbanspoon.com/Terms of Service.txt cannotRead
+crawl/usa.autodesk.com/Privacy Policy.txt inconsistent
+crawl/usa.gov/Privacy Policy.txt done
+crawl/usanetwork.com/Privacy Policy.txt cannotRead
+crawl/usatoday.com/Privacy Policy.txt cannotRead
+crawl/usatoday.com/Terms of Service.txt cannotRead
+crawl/usestealth.com/Privacy Policy.txt cannotRead
+crawl/usmagazine.com/Privacy Policy.txt cannotRead
+crawl/usps.com/Privacy Policy.txt tooShort
+crawl/vanguard.com/Privacy Policy.txt cannotRead
+crawl/vcstar.com/Privacy Policy.txt cannotRead
+crawl/veracitypayments.com/Privacy Policy.txt done
+crawl/veranda.com/Privacy Policy.txt done
+crawl/verizon.com/AppFlash Privacy Policy.txt unknownType
+crawl/verizon.com/Business and Marketing Insights FAQs.txt unknownType
+crawl/verizon.com/Cookies & Related Technologies.txt unknownType
+crawl/verizon.com/Frequently Asked Questions about Copyrights and Verizon's Anti-Piracy Cooperation Program.txt unknownType
+crawl/verizon.com/Full Privacy Policy.txt unknownType
+crawl/verizon.com/Gizmo Privacy Policy.txt done
+crawl/verizon.com/Hum Privacy Policy.txt unknownType
+crawl/verizon.com/International Privacy Centre.txt unknownType
+crawl/verizon.com/MapQuest Privacy Policy.txt unknownType
+crawl/verizon.com/Master Domain Registration Agreement for Verizon Domain Names.txt unknownType
+crawl/verizon.com/Message+ Privacy Policy.txt unknownType
+crawl/verizon.com/Mobile Location Analytics Privacy Notice.txt unknownType
+crawl/verizon.com/Privacy Policy Summary.txt unknownType
+crawl/verizon.com/Privacy Policy for Fios and other Fiber-to-the-Premises Customers.txt unknownType
+crawl/verizon.com/Privacy Policy.txt duplicateType
+crawl/verizon.com/Smart Family Privacy Policy.txt unknownType
+crawl/verizon.com/Terms of Service.txt done
+crawl/verizon.com/VZ Navigator App Privacy Policy.txt unknownType
+crawl/verizon.com/Verizon Home Privacy Policy.txt unknownType
+crawl/verizon.com/Verizon Selects FAQs.txt unknownType
+crawl/verizon.com/Web com Master Services Agreement.txt unknownType
+crawl/verizonwireless.com/Privacy Policy.txt noFilteredContent
+crawl/vermontcountrystore.com/Privacy Policy.txt selectorNotFound
+crawl/vh1.com/Privacy Policy.txt done
+crawl/victoriassecret.com/Privacy Policy.txt cannotRead
+crawl/videobash.com/Privacy Policy.txt cannotRead
+crawl/vimeo.com/Privacy Policy.txt duplicateType
+crawl/vimeo.com/Terms of Service.txt duplicateType
+crawl/visible.com/Privacy Policy.txt done
+crawl/visible.com/Terms and Conditions.txt done
+crawl/visible.com/Terms of Use.txt duplicateType
+crawl/visible.com/Visible Service Terms & Conditions.txt unknownType
+crawl/vistaprint.com/Privacy Policy.txt cannotRead
+crawl/voanews.com/Privacy Policy.txt cannotRead
+crawl/vstar.com/Privacy Policy.txt noFilteredContent
+crawl/walgreens.com/Privacy Policy.txt cannotRead
+crawl/walmart.com/Privacy Policy.txt cannotRead
+crawl/warnerbros.com/Privacy Policy.txt cannotRead
+crawl/washingtonpost.com/Privacy Policy.txt cannotRead
+crawl/waterhavens.com/Privacy Policy.txt done
+crawl/wave.ac/Privacy Policy.txt cannotRead
+crawl/wave.ac/Terms and Conditions of Use.txt cannotRead
+crawl/wayfair.com/Privacy Policy.txt cannotRead
+crawl/weather.com/Privacy Policy.txt cannotRead
+crawl/web.de/Privacy Policy.txt cannotRead
+crawl/web.de/Terms and Conditions.txt cannotRead
+crawl/webcrawler.com/Privacy Policy.txt done
+crawl/webmd.com/Privacy Policy.txt inconsistent
+crawl/webpronews.com/Privacy Policy.txt done
+crawl/webs.com/Privacy Policy.txt done
+crawl/webshots.com/Privacy Policy.txt cannotRead
+crawl/weebly.com/Privacy Policy.txt cannotRead
+crawl/weebly.com/Terms of Service.txt cannotRead
+crawl/weightwatchers.com/Privacy Policy.txt cannotRead
+crawl/wellsfargo.com/Privacy Policy.txt inconsistent
+crawl/whitepages.com/Privacy Policy.txt cannotRead
+crawl/wiki.answers.com/Privacy Policy.txt noFilteredContent
+crawl/wikia.com/Privacy Policy.txt cannotRead
+crawl/wikianswers.com/Privacy Policy.txt noFilteredContent
+crawl/wikihow.com/Privacy Policy.txt cannotRead
+crawl/wikimediafoundation.org/Privacy Policy.txt done
+crawl/wikimediafoundation.org/Terms of Use.txt done
+crawl/wikipedia.org/Privacy Policy.txt done
+crawl/wikipedia.org/Terms of Use.txt done
+crawl/williams-sonoma.com/Privacy Policy.txt ruleWasDeleted
+crawl/williams-sonoma.com/Terms and Conditions and Privacy Policy.txt cannotRead
+crawl/windstream.com/Term of Service.txt ruleWasDeleted
+crawl/windstream.com/Terms of Service.txt done
+crawl/wineverygame.com/Privacy Policy.txt done
+crawl/wired.com/Privacy Policy.txt cannotRead
+crawl/wix.com/Privacy Policy.txt done
+crawl/wolfram.com/Privacy Policy.txt done
+crawl/wolframalpha.com/Privacy Policy.txt done
+crawl/womansday.com/Privacy Policy.txt done
+crawl/wordpress.com/Privacy Policy.txt cannotRead
+crawl/wordpress.com/Terms Of Service.txt unknownType
+crawl/wordpress.com/WordPress.com Terms Of Service.txt unknownType
+crawl/workinretail.com/Privacy Policy.txt cannotRead
+crawl/worldmarket.com/Privacy Policy.txt done
+crawl/worldofwarcraft.com/World Of Warcraft Terms Of Use Agreement.txt ruleWasDeleted
+crawl/worldstarhiphop.com/Privacy Policy.txt cannotRead
+crawl/wsj.com/Privacy Policy.txt cannotRead
+crawl/wunderground.com/Privacy Policy.txt cannotRead
+crawl/www.amazon.com/Kindle License Agreement and Terms of Use.txt unknownType
+crawl/www.amazon.com/Privacy Notice.txt noFilteredContent
+crawl/www.apple.com/Customer Privacy Policy.txt noFilteredContent
+crawl/www.apple.com/MobileMe Terms of Service.txt unknownType
+crawl/www.apple.com/iTunes Terms Of Service.txt unknownType
+crawl/www.blogger.com/Blogger Terms Of Service.txt unknownType
+crawl/www.comcast.net/Acceptable Use Policy.txt noFilteredContent
+crawl/www.comcast.net/Network Management Policy.txt unknownType
+crawl/www.comcast.net/Subscriber Agreement.txt unknownType
+crawl/www.craigslist.org/Terms Of Use.txt caseSensitivity
+crawl/www.craigslist.org/Terms of Use.txt caseSensitivity
+crawl/www.data.gov/Data Policy.txt noFilteredContent
+crawl/www.data.gov/Privacy Policy.txt noFilteredContent
+crawl/www.earthlink.net/Internet Service Agreement.txt unknownType
+crawl/www.eff.org/Privacy Policy.txt noFilteredContent
+crawl/www.facebook.com/Privacy Policy.txt noFilteredContent
+crawl/www.facebook.com/Terms of Use.txt noFilteredContent
+crawl/www.flickr.com/Additional Terms of Service.txt unknownType
+crawl/www.godaddy.com/Civil Subpoena Policy.txt unknownType
+crawl/www.godaddy.com/Criminal Subpoena Policy.txt unknownType
+crawl/www.godaddy.com/Domain Name Proxy Agreement.txt unknownType
+crawl/www.godaddy.com/Domain Name Registration Agreement.txt unknownType
+crawl/www.godaddy.com/Privacy Policy.txt noFilteredContent
+crawl/www.godaddy.com/Trademark and Copyright Infringement Policy.txt unknownType
+crawl/www.godaddy.com/Uniform Domain Name Dispute Resolution Policy.txt unknownType
+crawl/www.godaddy.com/Universal Terms Of Service.txt noFilteredContent
+crawl/www.google.com/Privacy Policy for Google Ads.txt unknownType
+crawl/www.netflix.com/Terms of Use.txt noFilteredContent
+crawl/www.sprintpcs.com/PCS Terms & Conditions.txt unknownType
+crawl/www.t-mobile.com/Terms and Conditions.txt noFilteredContent
+crawl/www.whitehouse.gov/Privacy Policy.txt noFilteredContent
+crawl/www.wireless.att.com/Wireless Plan Terms.txt unknownType
+crawl/www.worldofwarcraft.com/World Of Warcraft Terms Of Use Agreement.txt noFilteredContent
+crawl/www.youtube.com/Community Guidelines.txt noFilteredContent
+crawl/www.youtube.com/Privacy Notice.txt noFilteredContent
+crawl/xanga.com/Privacy Policy.txt done
+crawl/xbox.com/Privacy Policy.txt cannotRead
+crawl/xfinity.com/Xfinity Mobile Customer Privacy Policy.txt unknownType
+crawl/xfinity.comcast.net/Privacy Policy.txt noFilteredContent
+crawl/xhamster.com/Privacy Policy.txt cannotRead
+crawl/xing.com/Privacy Policy.txt done
+crawl/xing.com/Terms and Conditions.txt done
+crawl/y8.com/Privacy Policy.txt inconsistent
+crawl/yahoo.com/Privacy Policy.txt duplicateType
+crawl/yahoo.com/Terms of Service.txt done
+crawl/yahoo.de/Privacy Policy.txt cannotRead
+crawl/yahoo.fr/Privacy Policy.txt done
+crawl/yammer.com/Privacy Policy.txt cannotRead
+crawl/yardbarker.com/Privacy Policy.txt cannotRead
+crawl/yellowpages.com/Privacy Policy.txt done
+crawl/yelp.com/Privacy Policy.txt duplicateType
+crawl/yelp.com/Terms of Service.txt duplicateType
+crawl/yfrog.com/Privacy Policy.txt done
+crawl/youtube.com/Community Guidelines.txt cannotRead
+crawl/youtube.com/Privacy Policy.txt done
+crawl/zales.com/Privacy Policy.txt cannotRead
+crawl/zap2it.com/Privacy Policy.txt cannotRead
+crawl/zappos.com/Privacy Policy.txt inconsistent
+crawl/zazzle.com/Privacy Policy.txt cannotRead
+crawl/zdnet.com/Privacy Policy.txt cannotRead
+crawl/zedo.com/Privacy Policy.txt cannotRead
+crawl/zendesk.com/Terms of Service.txt cannotRead
+crawl/zillow.com/Privacy Policy.txt done
+crawl/zimbio.com/Privacy Policy.txt cannotRead
+crawl/zoomerang.com/Privacy Policy.txt done
+crawl/zoopla.co.uk/Privacy Policy.txt cannotRead
+crawl/zoosk.com/Privacy Policy.txt done
+crawl/zynga.com/Privacy Policy.txt cannotRead
+crawl_reviewed/500px.com/Privacy Policy.txt cannotRead
+crawl_reviewed/500px.com/Terms of Service.txt cannotRead
+crawl_reviewed/Sonic.net/All Policies.txt noFilteredContent
+crawl_reviewed/allrecipes.com/Privacy Policy.txt cannotRead
+crawl_reviewed/allrecipes.com/Terms and Conditions.txt done
+crawl_reviewed/amazon.com/AMAZON SILK TERMS & CONDITIONS.txt unknownType
+crawl_reviewed/amazon.com/Alexa Terms of Use.txt done
+crawl_reviewed/amazon.com/Amazon App Suite Legal Notices.txt ruleWasDeleted
+crawl_reviewed/amazon.com/Amazon Appstore for Android Terms of Use.txt done
+crawl_reviewed/amazon.com/Amazon Coins Terms.txt done
+crawl_reviewed/amazon.com/Amazon Device Terms of Use.txt done
+crawl_reviewed/amazon.com/Amazon Drive and Prime Photos Terms of Use.txt done
+crawl_reviewed/amazon.com/Amazon FreeTime Unlimited Terms & Conditions and Kindle FreeTime Unlimited Terms & Conditions.txt inconsistent
+crawl_reviewed/amazon.com/Amazon GameCircle Terms of Use.txt inconsistent
+crawl_reviewed/amazon.com/Amazon Kindle Store Terms of Use.txt ruleWasDeleted
+crawl_reviewed/amazon.com/Amazon Maps Terms of Use.txt done
+crawl_reviewed/amazon.com/Amazon Music Terms of Use.txt done
+crawl_reviewed/amazon.com/Amazon Prime Terms.txt done
+crawl_reviewed/amazon.com/Amazon Privacy Notice.txt done
+crawl_reviewed/amazon.com/Amazon Silk Terms & Conditions.txt done
+crawl_reviewed/amazon.com/Amazon.com Privacy Notice.txt ruleWasDeleted
+crawl_reviewed/amazon.com/Backup and Restore FAQ.txt unknownType
+crawl_reviewed/amazon.com/Conditions of Use.txt done
+crawl_reviewed/amazon.com/Firefly FAQ.txt unknownType
+crawl_reviewed/amazon.com/Interest-Based Ads.txt unknownType
+crawl_reviewed/amazon.com/Kindle Cloud Reader Legal Notices.txt ruleWasDeleted
+crawl_reviewed/amazon.com/Kindle E-Reader and Fire Tablet Terms.txt done
+crawl_reviewed/amazon.com/Kindle Personal Documents Distributor Terms of Use.txt inconsistent
+crawl_reviewed/amazon.com/Kindle Special Offer Text Notifications Terms & Conditions.txt inconsistent
+crawl_reviewed/amazon.com/Kindle Store Terms of Use.txt done
+crawl_reviewed/amazon.com/Kindle Unlimited Terms of Use.txt cannotRead
+crawl_reviewed/amazon.com/Kindle for Android Legal Notices.txt ruleWasDeleted
+crawl_reviewed/amazon.com/Kindle for Mac Legal Notices.txt ruleWasDeleted
+crawl_reviewed/amazon.com/Kindle for PC Legal Notices.txt ruleWasDeleted
+crawl_reviewed/amazon.com/Kindle for Windows 8 Legal Notices.txt ruleWasDeleted
+crawl_reviewed/amazon.com/Limited-Time Special Offers Promotional Discount Terms & Conditions.txt inconsistent
+crawl_reviewed/amazon.com/Location Services FAQ.txt unknownType
+crawl_reviewed/amazon.com/Monthly Payments Terms & Conditions.txt done
+crawl_reviewed/amazon.com/Saving Your Wi-Fi Passwords to Amazon FAQs.txt unknownType
+crawl_reviewed/amazon.com/Third Party Licenses.txt unknownType
+crawl_reviewed/android.com/Privacy Policy.txt done
+crawl_reviewed/app.net/Privacy Policy.txt noFilteredContent
+crawl_reviewed/app.net/Terms of Service.txt noFilteredContent
+crawl_reviewed/apple.com/Apple Support Communities Use Agreement.txt done
+crawl_reviewed/apple.com/Application-Based Services Terms of Use.txt cannotRead
+crawl_reviewed/apple.com/Game Center Terms and Conditions.txt done
+crawl_reviewed/apple.com/Privacy Policy.txt covered
+crawl_reviewed/apple.com/Website Terms of Service.txt done
+crawl_reviewed/apple.com/iChat Account Terms of Service.txt done
+crawl_reviewed/apple.com/iCloud Terms of Service.txt done
+crawl_reviewed/apple.com/iTunes Terms of Service.txt done
+crawl_reviewed/att.com/Acceptable Use Policy.txt done
+crawl_reviewed/att.com/Internet Terms of Service.txt duplicateType
+crawl_reviewed/att.com/Privacy Policy.txt cannotRead
+crawl_reviewed/att.com/Wireless Plan Terms.txt unknownType
+crawl_reviewed/bbc.com/Privacy and Cookies Policy.txt done
+crawl_reviewed/bbc.com/Terms of Use.txt done
+crawl_reviewed/bearshare.com/Privacy Policy.txt noFilteredContent
+crawl_reviewed/bearshare.com/Terms and Conditions.txt noFilteredContent
+crawl_reviewed/bit.ly/Privacy Policy.txt cannotRead
+crawl_reviewed/bit.ly/Terms of Service.txt cannotRead
+crawl_reviewed/blizzard.com/Privacy Policy.txt done
+crawl_reviewed/blizzard.com/Terms of Use.txt done
+crawl_reviewed/blogger.com/Privacy Policy.txt done
+crawl_reviewed/blogger.com/Terms Of Service.txt unknownType
+crawl_reviewed/blogger.com/Terms of Service.txt done
+crawl_reviewed/blogspot.com/Privacy Policy.txt done
+crawl_reviewed/blogspot.com/Terms Of Service.txt unknownType
+crawl_reviewed/blogspot.com/Terms of Service.txt done
+crawl_reviewed/cloudant.com/Privacy.txt done
+crawl_reviewed/cloudant.com/Terms of Service.txt done
+crawl_reviewed/cnet.com/Cbs Interactive Privacy Policy.txt ruleWasDeleted
+crawl_reviewed/cnn.com/Privacy and Cookies Policy.txt done
+crawl_reviewed/cnn.com/Terms of Use.txt done
+crawl_reviewed/comcast.com/Acceptable Use Policy for Xfinity Internet.txt noFilteredContent
+crawl_reviewed/comcast.com/Customer Privacy Policy.txt noFilteredContent
+crawl_reviewed/comcast.com/Privacy Statement.txt noFilteredContent
+crawl_reviewed/comcast.com/Residential Subscriber Agreement.txt noFilteredContent
+crawl_reviewed/comcast.net/Software License Agreement.txt noFilteredContent
+crawl_reviewed/comcast.net/Web Services Privacy Policy.txt noFilteredContent
+crawl_reviewed/comcast.net/Web Terms of Service.txt unknownType
+crawl_reviewed/couchsurfing.org/Privacy Policy.txt done
+crawl_reviewed/couchsurfing.org/Terms of Use.txt done
+crawl_reviewed/coursera.org/Cookies Policy.txt unknownType
+crawl_reviewed/coursera.org/Privacy Policy.txt done
+crawl_reviewed/coursera.org/Terms of Use.txt done
+crawl_reviewed/del.icio.us/Privacy Policy.txt cannotRead
+crawl_reviewed/del.icio.us/Terms of Service.txt cannotRead
+crawl_reviewed/delicious.com/Privacy Policy.txt noFilteredContent
+crawl_reviewed/delicious.com/Terms of Service.txt noFilteredContent
+crawl_reviewed/dictionary.com/Terms of Service & Privacy Policy.txt done
+crawl_reviewed/discordapp.com/Terms.txt done
+crawl_reviewed/disqus.com/Privacy Policy.txt done
+crawl_reviewed/disqus.com/Terms of Service.txt done
+crawl_reviewed/dropbox.com/Privacy Policy.txt cannotRead
+crawl_reviewed/duckduckgo.com/Privacy Policy.txt done
+crawl_reviewed/ebuddy.com/Privacy Policy.txt cannotRead
+crawl_reviewed/ebuddy.com/Terms of Use.txt cannotRead
+crawl_reviewed/envato.com/Privacy Policy.txt cannotRead
+crawl_reviewed/envato.com/Terms and Conditions.txt ruleWasDeleted
+crawl_reviewed/evernote.com/Privacy Policy.txt done
+crawl_reviewed/evernote.com/Terms of Service.txt done
+crawl_reviewed/facebook.com/Data Policy.txt duplicateType
+crawl_reviewed/facebook.com/Data Use Policy.txt covered
+crawl_reviewed/facebook.com/Terms of Service.txt duplicateType
+crawl_reviewed/faranow.com/Privacy Policy.txt noFilteredContent
+crawl_reviewed/faranow.com/Terms of Service.txt noFilteredContent
+crawl_reviewed/finance.yahoo.com/Privacy Policy.txt done
+crawl_reviewed/flattr.com/Privacy Policy.txt cannotRead
+crawl_reviewed/flattr.com/Terms of Use.txt cannotRead
+crawl_reviewed/flickr.com/Community Guidelines.txt done
+crawl_reviewed/flickr.com/Flickr Privacy Policy.txt duplicateType
+crawl_reviewed/flickr.com/Privacy Policy.txt duplicateType
+crawl_reviewed/flickr.com/Terms of Service.txt duplicateType
+crawl_reviewed/forums.informe.com/Terms of Service.txt done
+crawl_reviewed/foursquare.com/Privacy Policy.txt covered
+crawl_reviewed/foursquare.com/Terms of Use.txt covered
+crawl_reviewed/foxnews.com/Closed Captioning Policy.txt done
+crawl_reviewed/foxnews.com/Privacy Policy.txt done
+crawl_reviewed/foxnews.com/Terms of Use.txt done
+crawl_reviewed/freeforums.org/Privacy Policy.txt cannotRead
+crawl_reviewed/github.com/Privacy Policy.txt done
+crawl_reviewed/github.com/Terms of Service.txt done
+crawl_reviewed/gmail.com/Privacy Policy.txt done
+crawl_reviewed/google.com/Privacy Policy.txt duplicateType
+crawl_reviewed/google.com/Terms of Service.txt duplicateType
+crawl_reviewed/grammarly.com/Privacy Policy.txt done
+crawl_reviewed/grammarly.com/Terms of Service and License Agreement.txt done
+crawl_reviewed/gravatar.com/Privacy Policy.txt cannotRead
+crawl_reviewed/habbo.com/Privacy Policy.txt done
+crawl_reviewed/habbo.com/Terms of Service.txt done
+crawl_reviewed/hypster.com/Privacy Policy.txt cannotRead
+crawl_reviewed/hypster.com/Terms of Service.txt cannotRead
+crawl_reviewed/identi.ca/Privacy Policy.txt cannotRead
+crawl_reviewed/identi.ca/Terms of Service.txt cannotRead
+crawl_reviewed/ifttt.com/Privacy Policy.txt cannotRead
+crawl_reviewed/ifttt.com/Terms of Use.txt done
+crawl_reviewed/imgur.com/Privacy Policy.txt done
+crawl_reviewed/imgur.com/Terms of Service.txt cannotRead
+crawl_reviewed/instagr.am/Data Policy.txt covered
+crawl_reviewed/instagr.am/Privacy Policy.txt ruleWasDeleted
+crawl_reviewed/instagram.com/Data Policy.txt covered
+crawl_reviewed/instagram.com/Privacy Policy.txt ruleWasDeleted
+crawl_reviewed/instagram.com/Terms of Service.txt covered
+crawl_reviewed/lastpass.com/Privacy Statement.txt done
+crawl_reviewed/lastpass.com/Terms of Service.txt done
+crawl_reviewed/linkedin.com/Privacy Policy.txt cannotRead
+crawl_reviewed/linkedin.com/Terms of Service.txt cannotRead
+crawl_reviewed/live.com/Microsoft Services Agreement.txt done
+crawl_reviewed/live.com/Privacy Policy.txt done
+crawl_reviewed/market.envato.com/Terms and Conditions.txt done
+crawl_reviewed/microsoft.com/Microsoft Services Agreement.txt duplicateType
+crawl_reviewed/microsoft.com/Privacy Policy.txt done
+crawl_reviewed/microsoft.com/Terms of Service.txt ruleWasDeleted
+crawl_reviewed/microsoftstore.com/Privacy Policy.txt done
+crawl_reviewed/microsoftstore.com/Terms of Sale.txt done
+crawl_reviewed/microsoftstore.com/Terms of Service.txt ruleWasDeleted
+crawl_reviewed/minecraft.net/Terms and Conditions.txt cannotRead
+crawl_reviewed/msn.com/Privacy Policy.txt done
+crawl_reviewed/msn.com/Terms of Service.txt done
+crawl_reviewed/myspace.com/Privacy Policy.txt duplicateType
+crawl_reviewed/myspace.com/Terms of Service.txt covered
+crawl_reviewed/nabble.com/Privacy Policy.txt done
+crawl_reviewed/nabble.com/Terms of Service.txt done
+crawl_reviewed/netflix.com/Privacy Policy.txt done
+crawl_reviewed/netflix.com/Terms of Use.txt done
+crawl_reviewed/olx.com/Terms of Use.txt cannotRead
+crawl_reviewed/owncube.com/Privacy.txt cannotRead
+crawl_reviewed/owncube.com/Terms of Use.txt cannotRead
+crawl_reviewed/packagetrackr.com/Privacy Policy.txt done
+crawl_reviewed/packagetrackr.com/Terms of Service.txt done
+crawl_reviewed/phpbb.com/Privacy Policy.txt done
+crawl_reviewed/phpbb.com/Terms of Use.txt done
+crawl_reviewed/play.google.com/Terms of Service.txt done
+crawl_reviewed/plus.google.com/Privacy Policy.txt done
+crawl_reviewed/quora.com/Privacy Policy.txt covered
+crawl_reviewed/quora.com/Terms of Service.txt covered
+crawl_reviewed/rapidshare.com/Privacy Policy.txt noFilteredContent
+crawl_reviewed/rapidshare.com/Terms of Use.txt noFilteredContent
+crawl_reviewed/researchgate.net/Intellectual Property Policy.txt cannotRead
+crawl_reviewed/researchgate.net/Privacy Policy.txt done
+crawl_reviewed/researchgate.net/Terms of Service.txt cannotRead
+crawl_reviewed/runescape.com/Privacy Policy.txt done
+crawl_reviewed/runescape.com/Terms and Conditions.txt done
+crawl_reviewed/seenthis.net/Intellectual Property.txt done
+crawl_reviewed/signal.org/Signal Terms & Privacy Policy.txt ruleWasDeleted
+crawl_reviewed/skype.com/Business Terms of Use (USA).txt unknownType
+crawl_reviewed/skype.com/Business Terms of Use.txt unknownType
+crawl_reviewed/skype.com/Etiquette.txt unknownType
+crawl_reviewed/skype.com/Fair Usage Policy for Subscriptions.txt unknownType
+crawl_reviewed/skype.com/Fair Usage Policy for US Minute Bundles.txt unknownType
+crawl_reviewed/skype.com/Group Video Calling Fair Usage Policy.txt unknownType
+crawl_reviewed/skype.com/Privacy Policy.txt duplicateType
+crawl_reviewed/skype.com/Skype Emergency Calling.txt unknownType
+crawl_reviewed/skype.com/Terms of Use.txt duplicateType
+crawl_reviewed/skype.com/Trademark Guidelines.txt unknownType
+crawl_reviewed/sonic.com/All Policies.txt done
+crawl_reviewed/sonic.net/All Policies.txt noFilteredContent
+crawl_reviewed/soundcloud.com/Privacy Policy.txt cannotRead
+crawl_reviewed/soundcloud.com/Terms of Service.txt cannotRead
+crawl_reviewed/spideroak.com/Privacy Policy.txt done
+crawl_reviewed/spideroak.com/Terms of Use.txt done
+crawl_reviewed/spotify.com/Privacy Policy.txt done
+crawl_reviewed/spotify.com/Terms and Conditions (Mobile).txt ruleWasDeleted
+crawl_reviewed/spotify.com/Terms and Conditions (Premium).txt ruleWasDeleted
+crawl_reviewed/spotify.com/Terms and Conditions (Unlimited).txt ruleWasDeleted
+crawl_reviewed/spotify.com/Terms and Conditions of Use.txt done
+crawl_reviewed/steampowered.com/Legal Info.txt done
+crawl_reviewed/steampowered.com/Privacy Policy Agreement.txt done
+crawl_reviewed/steampowered.com/Steam Refunds.txt unknownType
+crawl_reviewed/steampowered.com/Steam Subscriber Agreement.txt unknownType
+crawl_reviewed/trello.com/DMCA.txt unknownType
+crawl_reviewed/trello.com/Operations and Security.txt unknownType
+crawl_reviewed/trello.com/Privacy Policy.txt cannotRead
+crawl_reviewed/trello.com/Terms of Service.txt cannotRead
+crawl_reviewed/tumblr.com/Privacy Policy.txt done
+crawl_reviewed/tumblr.com/Terms of Service.txt done
+crawl_reviewed/twitpic.com/Privacy Policy.txt done
+crawl_reviewed/twitpic.com/Terms of Service.txt done
+crawl_reviewed/twitter.com/Privacy Policy.txt duplicateType
+crawl_reviewed/twitter.com/Terms of Service.txt duplicateType
+crawl_reviewed/vbulletin.com/Privacy Policy.txt inconsistent
+crawl_reviewed/vbulletin.com/Terms and Conditions.txt inconsistent
+crawl_reviewed/verizon.com/Privacy Policy.txt duplicateType
+crawl_reviewed/verizon.com/Terms of Service.txt done
+crawl_reviewed/videobb.com/Privacy Policy.txt noFilteredContent
+crawl_reviewed/videobb.com/Terms and Conditions.txt noFilteredContent
+crawl_reviewed/w3schools.com/Cookies and Privacy Policy - About Privacy.txt done
+crawl_reviewed/w3schools.com/Terms of Use - About Copyright.txt done
+crawl_reviewed/wave.ac/Privacy Policy.txt cannotRead
+crawl_reviewed/wave.ac/Terms and Conditions of Use.txt cannotRead
+crawl_reviewed/whatsapp.com/Terms of Service and Privacy (EU).txt unknownType
+crawl_reviewed/whatsapp.com/Terms of Service and Privacy.txt duplicateType
+crawl_reviewed/wikimediafoundation.org/Privacy Policy.txt done
+crawl_reviewed/wikimediafoundation.org/Terms of Use.txt done
+crawl_reviewed/wikipedia.org/Privacy Policy.txt done
+crawl_reviewed/wikipedia.org/Terms of Use.txt done
+crawl_reviewed/wordfeud.com/Privacy Policy.txt done
+crawl_reviewed/wordfeud.com/Terms of Service.txt done
+crawl_reviewed/wordpress.com/Privacy Policy.txt cannotRead
+crawl_reviewed/wordpress.com/Terms Of Service.txt unknownType
+crawl_reviewed/wordpress.com/Terms of Service.txt done
+crawl_reviewed/xfinity.com/Acceptable Use Policy for Xfinity Internet.txt done
+crawl_reviewed/xfinity.com/Customer Privacy Policy.txt done
+crawl_reviewed/xfinity.com/Privacy Statement.txt duplicateType
+crawl_reviewed/xfinity.com/Residential Subscriber Agreement.txt done
+crawl_reviewed/xfinity.com/Software License Agreement.txt duplicateType
+crawl_reviewed/xfinity.com/Web Services Privacy Policy.txt cannotRead
+crawl_reviewed/xfinity.com/Web Services Terms of Service.txt done
+crawl_reviewed/xfire.com/Privacy Policy.txt noFilteredContent
+crawl_reviewed/xfire.com/Terms of Use.txt noFilteredContent
+crawl_reviewed/xing.com/Privacy Policy.txt done
+crawl_reviewed/xing.com/Terms and Conditions.txt done
+crawl_reviewed/yahoo.com/Privacy Policy.txt duplicateType
+crawl_reviewed/yahoo.com/Terms of Service.txt done
+crawl_reviewed/youtube.com/Privacy Policy.txt done
+crawl_reviewed/youtube.com/Terms of Service.txt done
+crawl_reviewed/zoosk.com/Privacy Policy.txt done

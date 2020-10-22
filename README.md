@@ -22,3 +22,10 @@ sh ./run.sh
   - [snapshots](https://github.com/TosbackCgusBridge-Bot/CGUs-snapshots/branches)
   - [versions](https://github.com/TosbackCgusBridge-Bot/CGUs-versions/branches)
   - [rules](https://github.com/TosbackCgusBridge-Bot/CGUs/branches)
+
+## Report
+This script was run once, in October 2020. The result is here:
+https://github.com/ambanum/TOSBack-CGUs-bridge/issues/2#issuecomment-714528176
+
+A report of what we were able to import from each of the 1711 tosback2 crawl files
+was generated using [report-21.js](report-21.js), the result is in [report-21.txt](report-21.txt).
