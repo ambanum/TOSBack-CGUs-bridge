@@ -343,7 +343,7 @@ async function processNow(serviceName, docName, url, xpath, importedFrom, filePa
   let unknownType = false;
   try {
     const type = toType(docName);
-    if (type === 'unknown') { // this will only happen if process.env.INCLUDE_UNKNOWN is true
+    if (type === 'unknown') { // this will only happen if process.env.ALLOW_UNKNOWN is true
       console.log('Unknown type!');
       unknownType = true;
     }
@@ -366,30 +366,38 @@ async function processNow(serviceName, docName, url, xpath, importedFrom, filePa
     const validationResult = await validateDocument(docObj, []);
     if (validationResult.ok) {
       if (unknownType) {
+        console.log('saved-doc=unknown', fileNameOut, type);
         servicesUnknownType[fileNameOut].documents[type] = docObj;
       } else {
+        console.log('saved-doc=normal', fileNameOut, type);
         services[fileNameOut].documents[type] = docObj;
       }
       console.log(filePathIn, serviceName, docName, 'done');  
     } else if (!validationResult.fetchable) {
       console.log(filePathIn, 'not fetchable', url);
+      console.log('saved-doc=invalid', fileNameOut, type);
       servicesInvalid[fileNameOut].documents[type] = docObj;
     } else if (!validationResult.selectorMatchesAnElement) {
       console.log(filePathIn, 'selector not found', url, select);
+      console.log('saved-doc=invalid', fileNameOut, type);
       servicesInvalid[fileNameOut].documents[type] = docObj;
     } else if (!validationResult.hasConsistentFilteredContent) {
       console.log(filePathIn, 'inconsistent');
+      console.log('saved-doc=invalid', fileNameOut, type);
       servicesInvalid[fileNameOut].documents[type] = docObj;
     } else if (!validationResult.isLongEnough) {
       console.log(filePathIn, 'too short');
+      console.log('saved-doc=invalid', fileNameOut, type);
       servicesInvalid[fileNameOut].documents[type] = docObj;
     } else {
       console.log(filePathIn, 'invalid for unrecognized reason');
+      console.log('saved-doc=invalid', fileNameOut, type);
       servicesInvalid[fileNameOut].documents[type] = docObj;
     }
   } catch (e) {
     // console.log(e);
     console.log(filePathIn, serviceName, docName, 'fail', e.message);
+    console.log('saved-doc=invalid', fileNameOut, type);
     servicesInvalid[fileNameOut].documents[type] = docObj;
   }
   await trySave(fileNameOut);
@@ -552,7 +560,7 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
     await tosbackGit.pull();
     const tosback2GitLog = await tosbackGit.log();
     const tosback2Hash = tosback2GitLog.latest.hash;
-    if (versionDestPath || process.env.INCLUDE_UNKNOWN) {
+    if (versionDestPath) {
       try {
         await importRule(domainName, fileName, tosback2Hash, filePathIn);
       } catch (e) {
@@ -726,7 +734,7 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
 }
 
 async function trySave(i) {
-  // console.log('Saving', path.join(SERVICES_PATH, i));
+  console.log('Saving', i, Object.keys(servicesInvalid[i].documents).length, Object.keys(servicesUnknownType[i].documents).length, Object.keys(services[i].documents).length);
   if (Object.keys(servicesInvalid[i].documents).length) {
     try {
       assertValid(serviceSchema, servicesInvalid[i]);
