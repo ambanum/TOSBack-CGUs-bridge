@@ -32,6 +32,8 @@ const TYPES = require('./types.json');
 const fs = fsApi.promises;
 
 const SERVICES_PATH = '../CGUs/services/';
+const SERVICES_UNKNOWN_INVALID = './servicesInvalid/';
+const SERVICES_UNKNOWN_TYPE_PATH = './servicesUnknownType/';
 const LOCAL_TOSBACK2_REPO = (process.env.LAPTOP ? '../../tosdr/tosback2' : '../tosback2');
 const TOSBACK2_WEB_ROOT = 'https://github.com/tosdr/tosback2';
 const BRANCH_TO_USE = 'all-file-paths';
@@ -44,6 +46,8 @@ const SNAPSHOTS_PATH = (process.env.LAPTOP ? '../CGUs/data/snapshots/' : '../CGU
 const VERSIONS_PATH = (process.env.LAPTOP ? '../CGUs/data/versions/' : '../CGUs-versions/');
 
 const services = {};
+const servicesInvalid = {};
+const servicesUnknownType = {};
 const urlAlreadyCovered = {};
 
 const HTML_PREFIX = '<!DOCTYPE html><html><head></head><body>\n';
@@ -322,10 +326,30 @@ async function processNow(serviceName, docName, url, xpath, importedFrom, filePa
       documents: {}
     };
   }
+  if (!servicesInvalid[fileNameOut]) {
+    servicesInvalid[fileNameOut] = {
+      name: serviceName,
+      importedFrom,
+      documents: {}
+    };
+  }
+  if (!servicesUnknownType[fileNameOut]) {
+    servicesUnknownType[fileNameOut] = {
+      name: serviceName,
+      importedFrom,
+      documents: {}
+    };
+  }
+  let unknownType = false;
   try {
     const type = toType(docName);
+    if (type === 'unknown') { // this will only happen if process.env.INCLUDE_UNKNOWN is true
+      console.log('Unknown type!');
+      unknownType = true;
+    }
     if (services[fileNameOut].documents[type]) {
-      throw new Error('Same type used twice!');
+      console.log('Same type used twice!');
+      unknownType = true;
     }
     let select = 'body';
     if (xpath) {
@@ -341,24 +365,35 @@ async function processNow(serviceName, docName, url, xpath, importedFrom, filePa
     };
     const validationResult = await validateDocument(docObj, []);
     if (validationResult.ok) {
-      services[fileNameOut].documents[type] = docObj;
-      await trySave(fileNameOut);
+      if (unknownType) {
+        servicesUnknownType[fileNameOut].documents[type] = docObj;
+      } else {
+        services[fileNameOut].documents[type] = docObj;
+      }
       console.log(filePathIn, serviceName, docName, 'done');  
     } else if (!validationResult.fetchable) {
       console.log(filePathIn, 'not fetchable', url);
+      servicesInvalid[fileNameOut].documents[type] = docObj;
     } else if (!validationResult.selectorMatchesAnElement) {
       console.log(filePathIn, 'selector not found', url, select);
+      servicesInvalid[fileNameOut].documents[type] = docObj;
     } else if (!validationResult.hasConsistentFilteredContent) {
       console.log(filePathIn, 'inconsistent');
+      servicesInvalid[fileNameOut].documents[type] = docObj;
     } else if (!validationResult.isLongEnough) {
       console.log(filePathIn, 'too short');
+      servicesInvalid[fileNameOut].documents[type] = docObj;
     } else {
       console.log(filePathIn, 'invalid for unrecognized reason');
+      servicesInvalid[fileNameOut].documents[type] = docObj;
     }
   } catch (e) {
     // console.log(e);
     console.log(filePathIn, serviceName, docName, 'fail', e.message);
+    servicesInvalid[fileNameOut].documents[type] = docObj;
   }
+  await trySave(fileNameOut);
+
   delete pending[`${serviceName} - ${docName} - ${url}`];
   // console.log('Pending:', Object.keys(pending));
 }
@@ -517,7 +552,7 @@ async function importCrawl(fileName, foldersToTry, domainName, filePathIn) {
     await tosbackGit.pull();
     const tosback2GitLog = await tosbackGit.log();
     const tosback2Hash = tosback2GitLog.latest.hash;
-    if (versionDestPath) {
+    if (versionDestPath || process.env.INCLUDE_UNKNOWN) {
       try {
         await importRule(domainName, fileName, tosback2Hash, filePathIn);
       } catch (e) {
@@ -692,6 +727,34 @@ async function importCrawls(foldersToTry, only, rulesOnly) {
 
 async function trySave(i) {
   // console.log('Saving', path.join(SERVICES_PATH, i));
+  if (Object.keys(servicesInvalid[i].documents).length) {
+    try {
+      assertValid(serviceSchema, servicesInvalid[i]);
+      const fileName = path.join(SERVICES_INVALID_PATH, i);
+      const containingDirRule = path.dirname(fileName);
+      await fs.mkdir(containingDirRule, { recursive: true });
+      await fs.writeFile(fileName, `${JSON.stringify(servicesInvalid[i], null, 2)}\n`);
+      // await new Promise(resolve => setTimeout(resolve, 100));
+      console.log('Saved', path.join(SERVICES_INVALID_PATH, i));
+    } catch (e) {
+      console.error('Could not save', e);
+    }
+  }
+
+  if (Object.keys(servicesUnknownType[i].documents).length) {
+    try {
+      assertValid(serviceSchema, servicesUnknownType[i]);
+      const fileName = path.join(SERVICES_UNKNOWN_TYPE_PATH, i);
+      const containingDirRule = path.dirname(fileName);
+      await fs.mkdir(containingDirRule, { recursive: true });
+      await fs.writeFile(fileName, `${JSON.stringify(servicesUnknownType[i], null, 2)}\n`);
+      // await new Promise(resolve => setTimeout(resolve, 100));
+      console.log('Saved', path.join(SERVICES_UNKNOWN_TYPE_PATH, i));
+    } catch (e) {
+      console.error('Could not save', e);
+    }
+  }
+
   if (Object.keys(services[i].documents).length) {
     try {
       assertValid(serviceSchema, services[i]);
@@ -704,8 +767,6 @@ async function trySave(i) {
     } catch (e) {
       console.error('Could not save', e);
     }
-  } else {
-    // console.log('No docs!', i, services[i]);
   }
 }
 
