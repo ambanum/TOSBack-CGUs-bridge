@@ -1,0 +1,10 @@
+{
+  "name": "WhatsApp",
+  "importedFrom": "https://github.com/tosdr/tosback2/blob/f762cd4bbb2571272985fed009201a23300ba9b2/rules/whatsapp.com.xml",
+  "documents": {
+    "Terms of Service": {
+      "fetch": "https://www.whatsapp.com/legal?eea=0",
+      "select": "div._2z9-"
+    }
+  }
+}

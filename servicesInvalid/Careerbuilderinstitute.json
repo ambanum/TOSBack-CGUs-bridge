@@ -1,0 +1,10 @@
+{
+  "name": "Careerbuilderinstitute",
+  "importedFrom": "https://github.com/tosdr/tosback2/blob/f762cd4bbb2571272985fed009201a23300ba9b2/rules/careerbuilderinstitute.com.xml",
+  "documents": {
+    "Privacy Policy": {
+      "fetch": "http://www.careerbuilderinstitute.com/pages/Privacy.aspx",
+      "select": "body"
+    }
+  }
+}

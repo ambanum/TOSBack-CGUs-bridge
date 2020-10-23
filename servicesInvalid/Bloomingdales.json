@@ -1,0 +1,10 @@
+{
+  "name": "Bloomingdales",
+  "importedFrom": "https://github.com/tosdr/tosback2/blob/f762cd4bbb2571272985fed009201a23300ba9b2/rules/bloomingdales.com.xml",
+  "documents": {
+    "Privacy Policy": {
+      "fetch": "https://customerservice.bloomingdales.com/app/answers/detail/a_id/357/?cm_sp=NAVIGATION-_-BOTTOM_LINKS-_-PRIVACY_POLICY",
+      "select": "body"
+    }
+  }
+}
