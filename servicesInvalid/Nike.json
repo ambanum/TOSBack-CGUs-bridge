@@ -1,0 +1,10 @@
+{
+  "name": "Nike",
+  "importedFrom": "https://github.com/tosdr/tosback2/blob/f762cd4bbb2571272985fed009201a23300ba9b2/rules/nike.com.xml",
+  "documents": {
+    "Privacy Policy": {
+      "fetch": "http://help-all.nike.com/app/answers/detail/article/privacy-policy/lang_local/en_us//a_id/16378",
+      "select": "body"
+    }
+  }
+}

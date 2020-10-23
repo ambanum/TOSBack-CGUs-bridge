@@ -1,0 +1,10 @@
+{
+  "name": "Linkline",
+  "importedFrom": "https://github.com/tosdr/tosback2/blob/f762cd4bbb2571272985fed009201a23300ba9b2/rules/linkline.com.xml",
+  "documents": {
+    "Privacy Policy": {
+      "fetch": "http://linkline.com/company/privacy_policy.php",
+      "select": "body"
+    }
+  }
+}
